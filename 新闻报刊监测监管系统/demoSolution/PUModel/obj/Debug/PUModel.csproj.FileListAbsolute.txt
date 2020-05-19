@@ -1,0 +1,15 @@
+D:\SVN项目\老报刊库代码\PUModel\bin\Debug\PU.Model.dll
+D:\SVN项目\老报刊库代码\PUModel\bin\Debug\PU.Model.pdb
+D:\SVN项目\老报刊库代码\PUModel\obj\Debug\ResolveAssemblyReference.cache
+D:\SVN项目\老报刊库代码\PUModel\obj\Debug\PU.Model.dll
+D:\SVN项目\老报刊库代码\PUModel\obj\Debug\PU.Model.pdb
+D:\SVN项目\老报刊库代码\PUModel\bin\Debug\PU.Model.XML
+D:\SVNProject\老报刊库代码\PUModel\bin\Debug\PU.Model.dll
+D:\SVNProject\老报刊库代码\PUModel\bin\Debug\PU.Model.pdb
+D:\SVNProject\老报刊库代码\PUModel\obj\Debug\PU.Model.dll
+D:\SVNProject\老报刊库代码\PUModel\obj\Debug\PU.Model.pdb
+D:\SVNProject\demo\新闻报刊监测监管系统\demoSolution\PUModel\bin\Debug\PU.Model.dll
+D:\SVNProject\demo\新闻报刊监测监管系统\demoSolution\PUModel\bin\Debug\PU.Model.pdb
+D:\SVNProject\demo\新闻报刊监测监管系统\demoSolution\PUModel\obj\Debug\PU.Model.dll
+D:\SVNProject\demo\新闻报刊监测监管系统\demoSolution\PUModel\obj\Debug\PU.Model.pdb
+D:\SVNProject\demo\新闻报刊监测监管系统\demoSolution\PUModel\bin\Debug\PU.Model.XML

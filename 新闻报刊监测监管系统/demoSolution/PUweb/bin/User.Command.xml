@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>User.Command</name>
+    </assembly>
+    <members>
+        <member name="T:User.Command.ConfigProvider">
+            <summary>
+            基础数据配置类
+            </summary>
+        </member>
+        <member name="P:User.Command.ConfigProvider.UserDBconn">
+            <summary>
+            用户库数据库链接串
+            </summary>
+        </member>
+        <member name="P:User.Command.ConfigProvider.indxPageUrl">
+            <summary>
+            获取平台首页地址
+            </summary>
+        </member>
+        <member name="P:User.Command.ConfigProvider.LoginOutPageUrl">
+            <summary>
+            获取注销用户页面地址
+            </summary>
+        </member>
+        <member name="P:User.Command.ConfigProvider.LoginPageUrl">
+            <summary>
+            用户登陆页面地址
+            </summary>
+        </member>
+    </members>
+</doc>

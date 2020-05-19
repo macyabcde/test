@@ -1,0 +1,673 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PU.Model</name>
+    </assembly>
+    <members>
+        <member name="T:PU.Model.MDL_PaperObj">
+            <summary>
+            报刊对象
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_PaperObj.aID">
+            <summary>
+            数据ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_PaperObj.name">
+            <summary>
+            数据名称
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_PaperObj.dt">
+            <summary>
+            包含的DataTable
+            </summary>
+        </member>
+        <member name="T:PU.Model.MDL_customerPaperInfoB">
+            <summary>
+            客户报纸信息实体类
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_customerPaperInfoB.customerPaperID">
+            <summary>
+            客户报纸信息ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_customerPaperInfoB.customerID">
+            <summary>
+            客户ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_customerPaperInfoB.paperID">
+            <summary>
+            报纸ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_customerPaperInfoB.updateOverDate">
+            <summary>
+            已更新到日期
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_customerPaperInfoB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:PU.Model.MDL_paperCollectionInfoB">
+            <summary>
+            报纸收藏信息实体类
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_paperCollectionInfoB.paperCollectionInfoID">
+            <summary>
+            报纸收藏信息ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_paperCollectionInfoB.userGUID">
+            <summary>
+            用户GUID "00000000-0000-0000-0000-000000000000"
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_paperCollectionInfoB.paperID">
+            <summary>
+            报纸ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_paperCollectionInfoB.remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_paperCollectionInfoB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:PU.Model.MDL_opusBasisInfoB">
+            <summary>
+            作品基本信息实体类
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_opusBasisInfoB.opusBasisInfoID">
+            <summary>
+            作品基本信息ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_opusBasisInfoB.userGUID">
+            <summary>
+            用户GUID  00000000-0000-0000-0000-000000000000
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_opusBasisInfoB.dataUpdateTime">
+            <summary>
+            数据更新时间
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_opusBasisInfoB.ifAutoCreate">
+            <summary>
+            是否已创建过  0:未自动创建过　1:已自动创建过
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_opusBasisInfoB.remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_opusBasisInfoB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:PU.Model.MDL_pressClippingBasisInfoB">
+            <summary>
+            剪报基本信息实体类
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_pressClippingBasisInfoB.pressClippingBasisInfoID">
+            <summary>
+            剪报基本信息ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_pressClippingBasisInfoB.createUserGUID">
+            <summary>
+            创建人 "00000000-0000-0000-0000-000000000000"
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_pressClippingBasisInfoB.pressClippingName">
+            <summary>
+            剪报名称
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_pressClippingBasisInfoB.customer">
+            <summary>
+            客户
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_pressClippingBasisInfoB.salesman">
+            <summary>
+            销售人员
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_pressClippingBasisInfoB.exportOrder">
+            <summary>
+            输出排序
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_pressClippingBasisInfoB.examineNotion">
+            <summary>
+            审批意见
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_pressClippingBasisInfoB.examineUserGUID">
+            <summary>
+            审批人
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_pressClippingBasisInfoB.state">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_pressClippingBasisInfoB.remark">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_pressClippingBasisInfoB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:PU.Model.MDL_customerBasisInfoB">
+            <summary>
+            客户基本信息实体类
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_customerBasisInfoB.customerID">
+            <summary>
+            客户ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_customerBasisInfoB.password">
+            <summary>
+            客户密码
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_customerBasisInfoB.customerName">
+            <summary>
+            客户名称
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_customerBasisInfoB.linkman">
+            <summary>
+            客户联系人
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_customerBasisInfoB.tel">
+            <summary>
+            联系人电话
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_customerBasisInfoB.email">
+            <summary>
+            联系人Email
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_customerBasisInfoB.qq">
+            <summary>
+            联系人QQ
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_customerBasisInfoB.serviceEndTime">
+            <summary>
+            服务截止日期
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_customerBasisInfoB.requestLimit">
+            <summary>
+            频度限制
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_customerBasisInfoB.dataUpdateTime">
+            <summary>
+            数据更新时间
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_customerBasisInfoB.active">
+            <summary>
+            是否有效 1：代表有效 0：代表无效
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_customerBasisInfoB.SyncMode">
+            <summary>
+            同步模式 1：宽松(如果资源文件同步出错将继续同步)、0：严格(有任何错误将重新同步)
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_customerBasisInfoB.createUserGUID">
+            <summary>
+            创建人 "00000000-0000-0000-0000-000000000000"
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_customerBasisInfoB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:PU.Model.MDL_opusNewsInfoB">
+            <summary>
+            作品报道信息实体类
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_opusNewsInfoB.opusNewsInfoID">
+            <summary>
+            作品报道信息ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_opusNewsInfoB.opusBasisInfoID">
+            <summary>
+            作品基本信息ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_opusNewsInfoB.paperID">
+            <summary>
+            报纸ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_opusNewsInfoB.KID">
+            <summary>
+            文章ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_opusNewsInfoB.BT">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_opusNewsInfoB.ZZ">
+            <summary>
+            作者
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_opusNewsInfoB.MC">
+            <summary>
+            报纸名
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_opusNewsInfoB.RQ">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_opusNewsInfoB.BC">
+            <summary>
+            版次
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_opusNewsInfoB.BM">
+            <summary>
+            版面
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_opusNewsInfoB.PD">
+            <summary>
+            PDF文件名
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_opusNewsInfoB.JP">
+            <summary>
+            JPG文件名
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_opusNewsInfoB.ConfirmState">
+            <summary>
+            确认状态  0已确认、1未确认
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_opusNewsInfoB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:PU.Model.MDL_newsCollectionInfoB">
+            <summary>
+            报道收藏信息实体类
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsCollectionInfoB.newsCollectionInfoID">
+            <summary>
+            报道收藏信息ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsCollectionInfoB.newsCollectionTypeID">
+            <summary>
+            报道收藏类别ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsCollectionInfoB.paperID">
+            <summary>
+            报纸ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsCollectionInfoB.KID">
+            <summary>
+            文章ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsCollectionInfoB.BT">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsCollectionInfoB.ZZ">
+            <summary>
+            作者
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsCollectionInfoB.MC">
+            <summary>
+            报纸名
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsCollectionInfoB.RQ">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsCollectionInfoB.BC">
+            <summary>
+            版次
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsCollectionInfoB.BM">
+            <summary>
+            版面
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsCollectionInfoB.PD">
+            <summary>
+            PDF文件名
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsCollectionInfoB.JP">
+            <summary>
+            JPG文件名
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsCollectionInfoB.userGUID">
+            <summary>
+            用户GUID "00000000-0000-0000-0000-000000000000"
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsCollectionInfoB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:PU.Model.MDL_aliasInfoB">
+            <summary>
+            笔名信息实体类
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_aliasInfoB.aliasInfoID">
+            <summary>
+            笔名信息ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_aliasInfoB.userGUID">
+            <summary>
+            用户GUID  "00000000-0000-0000-0000-000000000000"
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_aliasInfoB.aliasInfo">
+            <summary>
+            笔名信息
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_aliasInfoB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:PU.Model.MDL_editionCollectionInfoB">
+            <summary>
+            版面收藏信息实体类
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_editionCollectionInfoB.editionCollectionInfoID">
+            <summary>
+            版面收藏信息ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_editionCollectionInfoB.userGUID">
+            <summary>
+            用户GUID "00000000-0000-0000-0000-000000000000"
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_editionCollectionInfoB.paperID">
+            <summary>
+            报纸ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_editionCollectionInfoB.MC">
+            <summary>
+            报纸名
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_editionCollectionInfoB.RQ">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_editionCollectionInfoB.BC">
+            <summary>
+            版次
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_editionCollectionInfoB.BM">
+            <summary>
+            版面
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_editionCollectionInfoB.PD">
+            <summary>
+            PDF文件名
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_editionCollectionInfoB.JP">
+            <summary>
+            JPG文件名
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_editionCollectionInfoB.remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_editionCollectionInfoB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:PU.Model.MDL_pressClippingNewsInfoB">
+            <summary>
+            剪报报道信息实体类
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_pressClippingNewsInfoB.pressClippingNewsInfoID">
+            <summary>
+            剪报报道信息ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_pressClippingNewsInfoB.pressClippingBasisInfoID">
+            <summary>
+            剪报基本信息ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_pressClippingNewsInfoB.paperID">
+            <summary>
+            报纸ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_pressClippingNewsInfoB.KID">
+            <summary>
+            文章ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_pressClippingNewsInfoB.BT">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_pressClippingNewsInfoB.ZZ">
+            <summary>
+            作者
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_pressClippingNewsInfoB.MC">
+            <summary>
+            报纸名
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_pressClippingNewsInfoB.RQ">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_pressClippingNewsInfoB.BC">
+            <summary>
+            版次
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_pressClippingNewsInfoB.BM">
+            <summary>
+            版面
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_pressClippingNewsInfoB.PD">
+            <summary>
+            PDF文件名
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_pressClippingNewsInfoB.JP">
+            <summary>
+            JPG文件名
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_pressClippingNewsInfoB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:PU.Model.MDL_newsCollectionTypeB">
+            <summary>
+            报道收藏类别实体类
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsCollectionTypeB.newsCollectionTypeID">
+            <summary>
+            报道收藏类别ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsCollectionTypeB.userGUID">
+            <summary>
+            用户GUID "00000000-0000-0000-0000-000000000000"
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsCollectionTypeB.collectionTypeName">
+            <summary>
+            类别名称
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsCollectionTypeB.xuhao">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsCollectionTypeB.paterNewsCollectionTypeID">
+            <summary>
+            父报道收藏类别ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsCollectionTypeB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:PU.Model.MDL_newsRecommendInfoB">
+            <summary>
+            报道推荐信息实体类
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsRecommendInfoB.newscInfoID">
+            <summary>
+            报道推荐信息ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsRecommendInfoB.sourceUserGUID">
+            <summary>
+            来源用户GUID "00000000-0000-0000-0000-000000000000"
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsRecommendInfoB.objectUserGUID">
+            <summary>
+            目标用户GUID "00000000-0000-0000-0000-000000000000"
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsRecommendInfoB.paperID">
+            <summary>
+            报纸ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsRecommendInfoB.KID">
+            <summary>
+            文章ID
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsRecommendInfoB.BT">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsRecommendInfoB.ZZ">
+            <summary>
+            作者
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsRecommendInfoB.MC">
+            <summary>
+            报纸名
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsRecommendInfoB.RQ">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsRecommendInfoB.BC">
+            <summary>
+            版次
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsRecommendInfoB.BM">
+            <summary>
+            版面
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsRecommendInfoB.PD">
+            <summary>
+            PDF文件名
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsRecommendInfoB.JP">
+            <summary>
+            JPG文件名
+            </summary>
+        </member>
+        <member name="P:PU.Model.MDL_newsRecommendInfoB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+    </members>
+</doc>

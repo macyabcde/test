@@ -1,0 +1,1376 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PM.Model</name>
+    </assembly>
+    <members>
+        <member name="T:PM.Model.search.MDL_SearchGroupCache">
+            <summary>
+            单个检索结果分组缓存对象
+            </summary>
+        </member>
+        <member name="M:PM.Model.search.MDL_SearchGroupCache.#ctor">
+            <summary>
+            构造器
+            </summary>
+        </member>
+        <member name="M:PM.Model.search.MDL_SearchGroupCache.CreaateGroupYearTable">
+            <summary>
+            创建年分组汇总信息表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.Model.search.MDL_SearchGroupCache.CreaateGroupPaperTable">
+            <summary>
+            创建报纸分组汇总信息表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.Model.search.MDL_SearchGroupCache.CreaateGroupYearMonthTable">
+            <summary>
+            创建年月组汇总信息表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:PM.Model.search.MDL_SearchGroupCache.dicYearGroup">
+            <summary>
+            检索结果年份分组缓存列表
+            </summary>
+        </member>
+        <member name="P:PM.Model.search.MDL_SearchGroupCache.dicPaperGroup">
+            <summary>
+            检索结果报纸分组缓存列表
+            </summary>
+        </member>
+        <member name="P:PM.Model.search.MDL_SearchGroupCache.YearTable">
+            <summary>
+            年分组汇总信息表
+            </summary>
+        </member>
+        <member name="P:PM.Model.search.MDL_SearchGroupCache.PaperTable">
+            <summary>
+            报纸分组汇总信息表
+            </summary>
+        </member>
+        <member name="P:PM.Model.search.MDL_SearchGroupCache.YearMonthTable">
+            <summary>
+            年月组汇总信息表
+            </summary>
+        </member>
+        <member name="P:PM.Model.search.MDL_SearchGroupCache.rowArr">
+            <summary>
+            原始行数组(存储用于创建该对象的原始行)
+            </summary>
+        </member>
+        <member name="P:PM.Model.search.MDL_SearchGroupCache.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:PM.Model.MDL_convergeServerB">
+            <summary>
+            实体类 MDL_convergeServerB,抓取服务器表
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_convergeServerB.convergeServerID">
+            <summary>
+            抓取服务器ID
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_convergeServerB.convergeServerName">
+            <summary>
+            抓取服务器名称
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_convergeServerB.convergeServerIP">
+            <summary>
+            抓取服务器IP
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_convergeServerB.remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_convergeServerB.maxThread">
+            <summary>
+            最大线程数
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_convergeServerB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:PM.Model.MDL_taskInfoB">
+            <summary>
+            实体类MDL_taskInfoB,任务信息表
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_taskInfoB.taskInfID">
+            <summary>
+            任务信息ID
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_taskInfoB.paperID">
+            <summary>
+            报纸ID
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_taskInfoB.RQ">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_taskInfoB.fulfillTime">
+            <summary>
+            完成次数
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_taskInfoB.state">
+            <summary>
+            状态 0：等待 1：正在运行 2：完成
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_taskInfoB.resultState">
+            <summary>
+            完成结果 0：未知 1：成功完成 2：失败完成
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_taskInfoB.CookieValue">
+            <summary>
+            Cookie值。在抓取前手工设置
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_taskInfoB.startTime">
+            <summary>
+            开始运行时间
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_taskInfoB.endTime">
+            <summary>
+            结束运行时间
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_taskInfoB.taskType">
+            <summary>
+            任务类型
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_taskInfoB.planGetTime">
+            <summary>
+            计划抓取时间
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_taskInfoB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:PM.Model.MDL_FullRate">
+            <summary>
+            属性完整率实体(属性值以百分比形式)
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_FullRate.BT">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_FullRate.ZZ">
+            <summary>
+            作者
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_FullRate.BJ">
+            <summary>
+            责任编辑
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_FullRate.BC">
+            <summary>
+            版次
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_FullRate.BM">
+            <summary>
+            版名
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_FullRate.PD">
+            <summary>
+            PDF
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_FullRate.JP">
+            <summary>
+            JPG
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_FullRate.ZB">
+            <summary>
+            正文块坐标
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_FullRate.TX">
+            <summary>
+            正文
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_FullRate.MC">
+            <summary>
+            报纸名称
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_FullRate.RQ">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="T:PM.Model.search.MDL_SearchCache">
+            <summary>
+            单个检索结果缓存对象
+            </summary>
+        </member>
+        <member name="P:PM.Model.search.MDL_SearchCache.rowArr">
+            <summary>
+            行数组（单个检索结果）
+            </summary>
+        </member>
+        <member name="P:PM.Model.search.MDL_SearchCache.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:PM.Model.MDL_convergePaperB">
+            <summary>
+            实体类MDL_convergePaperB,抓取报纸信息表
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_convergePaperB.paperID">
+            <summary>
+            报纸ID
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_convergePaperB.paperURL">
+            <summary>
+            抓取地址
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_convergePaperB.convergeServerID">
+            <summary>
+            抓取服务器ID
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_convergePaperB.active">
+            <summary>
+            是否有效  1：代表有效  0：代表无效
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_convergePaperB.convergeTime">
+            <summary>
+            每日时间点
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_convergePaperB.timeInterval">
+            <summary>
+            抓取时间间隔   0无间隔其它的以毫秒为单位
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_convergePaperB.timeOut">
+            <summary>
+            超时时间  以秒为单位
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_convergePaperB.WH">
+            <summary>
+            版面文件宽高。 300*520
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_convergePaperB.paperUser">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_convergePaperB.paperPW">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_convergePaperB.remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_convergePaperB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_convergePaperB.orderID">
+            <summary>
+            抓取权重值（1,2）
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_convergePaperB.AutoNum">
+            <summary>
+            自动抓取标识（1,0）
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_convergePaperB.DelayTime">
+            <summary>
+            报纸抓取延时时间（分钟）
+            </summary>
+        </member>
+        <member name="T:PM.Model.MDL_paperB">
+            <summary>
+            实体类MDL_paperB,报纸信息表
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperB.paperID">
+            <summary>
+            报纸ID
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperB.paperName">
+            <summary>
+            报纸名称
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperB.pinyin">
+            <summary>
+            拼音缩写
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperB.postNO">
+            <summary>
+            邮发代号
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperB.domPublicationNO">
+            <summary>
+            国内刊号
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperB.intPublicationNO">
+            <summary>
+            国际刊号
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperB.groupName">
+            <summary>
+            所属报业集团
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperB.paperCycleType">
+            <summary>
+            刊期类型 0：日报 1：周报 2：月报
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperB.paperCycle">
+            <summary>
+            刊期 周报：以逗号分开的星期几出报，如“1,3,5” 非周报：以逗号分开的出版日期，前两位代表月后两位代表日如“0109,0120,0515”，如果为日报本字段为空
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperB.xuhao">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperB.province">
+            <summary>
+            省份
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperB.paperTypeID">
+            <summary>
+            分类
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperB.remark">
+            <summary>
+            报纸简介
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperB.active">
+            <summary>
+            是否有效 1：代表有效  0：代表无效
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperB.firstYear">
+            <summary>
+            最早的数据年份(有于数字报日历中的年份导航)
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperB.creatUserGUID">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:PM.Model.MDL_ArticleInfoB">
+            <summary>
+            报纸报道信息表实体类
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.KID">
+            <summary>
+            ID, yyyyMMdd四位报纸ID七位当天报纸的流水号
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.ForeignUniqueID">
+            <summary>
+            外部唯一ID
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.KY">
+            <summary>
+            文章ID
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.paperID">
+            <summary>
+            报纸ID
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.MC">
+            <summary>
+            报纸名
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.RQ">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.QS">
+            <summary>
+            总期数
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.NQ">
+            <summary>
+            年期号
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.ZK">
+            <summary>
+            专刊
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.QH">
+            <summary>
+            专刊期号
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.BC">
+            <summary>
+            版次
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.BM">
+            <summary>
+            版面
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.BJ">
+            <summary>
+            责任编辑
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.PD">
+            <summary>
+            PDF文件名
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.PDsize">
+            <summary>
+            PDF文件字节数
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.JP">
+            <summary>
+            JPG文件名
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.JPsize">
+            <summary>
+            JPG文件字节数
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.WH">
+            <summary>
+            版面文件长宽  像素4000*6000
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.BMOther">
+            <summary>
+            版面其它精度资源  格式：JPG文件名,字节数; PDF文件名,
+                              字节数; 版面文件长宽| 
+                              JPG文件名,字节数; PDF文件名,
+                              字节数; 版面文件长宽
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.BMOtherAccuracy">
+            <summary>
+            版面其它精度资源列表
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.BN">
+            <summary>
+            版条
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.LM">
+            <summary>
+            栏目
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.DQ">
+            <summary>
+            地区
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.FL">
+            <summary>
+            分类
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.TC">
+            <summary>
+            体裁
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.RW">
+            <summary>
+            人物
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.LY">
+            <summary>
+            来源
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.GGCP">
+            <summary>
+            广告产品 
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.GGLX">
+            <summary>
+            广告类型
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.GGFL">
+            <summary>
+            广告分类
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.GGSC">
+            <summary>
+            广告色彩
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.GGZ">
+            <summary>
+            广告主
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.GGMJ">
+            <summary>
+            广告面积
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.YT">
+            <summary>
+            引题
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.BT">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.BTZS">
+            <summary>
+            标题字数
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.FB">
+            <summary>
+            副标题
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.ZZ">
+            <summary>
+            作者
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.TX">
+            <summary>
+            正文内容
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.TXZS">
+            <summary>
+            正文字数
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.ZB">
+            <summary>
+            正文块坐标
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.Url">
+            <summary>
+            原数字报URL
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.CT">
+            <summary>
+            插图文件名   多个插图格式：文件名, 字节数!@# 文件名, 字节数
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.CTList">
+            <summary>
+            插图文件列表
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.CTS">
+            <summary>
+            插图文件数
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.TZ">
+            <summary>
+            插图图片作者  多个插图格式：作者!@# 作者
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.TS">
+            <summary>
+            插图图片说明   多个插图格式：说明!@# 说明
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.CTOther">
+            <summary>
+            插图其它精度资源    多个插图格式：文件名, 
+                                字节数; 文件名, 字节数!@# 文件名, 
+                                字节数; 文件名, 字节数
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.NR">
+            <summary>
+            内容    字段合并为全文检索
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.PU">
+            <summary>
+            是否发布
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.BB">
+            <summary>
+            版本说明
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.ZY">
+            <summary>
+            摘要   杂志预留
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.QY">
+            <summary>
+            前言   杂志预留
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.HJ">
+            <summary>
+            后记   杂志预留
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.XB">
+            <summary>
+            小标    杂志预留
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_ArticleInfoB.YM">
+            <summary>
+            PDF页码,杂志预留
+            </summary>
+        </member>
+        <member name="T:PM.Model.get.MDL_BM">
+            <summary>
+            抓取时版面实体对象
+            </summary>
+        </member>
+        <member name="P:PM.Model.get.MDL_BM.Url">
+            <summary>
+            版面URL
+            </summary>
+        </member>
+        <member name="P:PM.Model.get.MDL_BM.BC">
+            <summary>
+            版次
+            </summary>
+        </member>
+        <member name="P:PM.Model.get.MDL_BM.BM">
+            <summary>
+            版面名称
+            </summary>
+        </member>
+        <member name="P:PM.Model.get.MDL_BM.PDF">
+            <summary>
+            版面PDF
+            </summary>
+        </member>
+        <member name="P:PM.Model.get.MDL_BM.JPG">
+            <summary>
+            版面JPG
+            </summary>
+        </member>
+        <member name="T:PM.Model.MDL_paperTypeB">
+             <summary>
+            实体类MDL_paperTypeB,报纸分类表 
+             </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperTypeB.paperTypeID">
+            <summary>
+            报纸分类ID
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperTypeB.collectionTypeName">
+            <summary>
+            类别名称
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperTypeB.xuhao">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperTypeB.paterPaperTypeID">
+            <summary>
+            父报纸分类ID
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperTypeB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:PM.Model.MDL_databaseServerB">
+            <summary>
+            数据库服务器实体类
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_databaseServerB.databaseServerID">
+            <summary>
+            数据库服务器ID
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_databaseServerB.serverName">
+            <summary>
+            服务器名称
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_databaseServerB.serverIP">
+            <summary>
+            服务器IP
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_databaseServerB.sqlUser">
+            <summary>
+            SQL用户名
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_databaseServerB.sqlPW">
+            <summary>
+            SQL密码
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_databaseServerB.remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_databaseServerB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:PM.Model.MDL_CTInfo">
+            <summary>
+            文章插图信息实体
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_CTInfo.fileName">
+            <summary>
+            文件名
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_CTInfo.size">
+            <summary>
+            文件字节数
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_CTInfo.TZ">
+            <summary>
+            插图图片作者
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_CTInfo.TS">
+            <summary>
+            插图图片说明
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_CTInfo.otherAccuracy">
+            <summary>
+            其它精度图片文件
+            </summary>
+        </member>
+        <member name="T:PM.Model.search.MDL_CanUseDB">
+            <summary>
+            当前可用的数据库实体。主要用于检索时得到可检索的数据库
+            </summary>
+        </member>
+        <member name="P:PM.Model.search.MDL_CanUseDB.databaseID">
+            <summary>
+            数据库ID
+            </summary>
+        </member>
+        <member name="P:PM.Model.search.MDL_CanUseDB.databaseName">
+            <summary>
+            数据库名称
+            </summary>
+        </member>
+        <member name="P:PM.Model.search.MDL_CanUseDB.beginTime">
+            <summary>
+            存储的数据的开始时间 格式：yyyyMMdd（20110401）
+            </summary>
+        </member>
+        <member name="P:PM.Model.search.MDL_CanUseDB.endTime">
+            <summary>
+            存储的数据的结束时间 格式：yyyyMMdd（20110630）
+            </summary>
+        </member>
+        <member name="P:PM.Model.search.MDL_CanUseDB.IfmainDB">
+            <summary>
+            是否主库 true：是主库；false：不是主库(备用库)
+            </summary>
+        </member>
+        <member name="P:PM.Model.search.MDL_CanUseDB.allCanUse">
+            <summary>
+            主库，备用库都可用。true：都可用、false：不是都可用
+            </summary>
+        </member>
+        <member name="P:PM.Model.search.MDL_CanUseDB.connStr">
+            <summary>
+            前当用于检索的数据库链接串
+            </summary>
+        </member>
+        <member name="P:PM.Model.search.MDL_CanUseDB.mainDBconnStr">
+            <summary>
+            主库数据库链接串
+            </summary>
+        </member>
+        <member name="P:PM.Model.search.MDL_CanUseDB.spareDBconnStr">
+            <summary>
+            备用库数据库链接串
+            </summary>
+        </member>
+        <member name="P:PM.Model.search.MDL_CanUseDB.resourcesServerIP">
+            <summary>
+            资源存储服务器IP地址  包含段口。如：127.0.0.1：6100
+            </summary>
+        </member>
+        <member name="P:PM.Model.search.MDL_CanUseDB.resourcesPath">
+            <summary>
+            资源路径
+            </summary>
+        </member>
+        <member name="T:PM.Model.MDL_paperInsertInfoB">
+            <summary>
+            报纸入库信息实体类
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperInsertInfoB.paperInsertInfoID">
+            <summary>
+            报纸入库信息ID
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperInsertInfoB.paperID">
+            <summary>
+            报纸ID
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperInsertInfoB.MC">
+            <summary>
+            报纸名
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperInsertInfoB.RQ">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperInsertInfoB.remindErrorType">
+            <summary>
+            预警类型
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperInsertInfoB.trueErrorType">
+            <summary>
+            实际类型
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperInsertInfoB.existPDF">
+            <summary>
+            是否有PDF   1：代表有  0：代表无
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperInsertInfoB.existJPG">
+            <summary>
+            是否有JPG   1：代表有  0：代表无
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperInsertInfoB.url">
+            <summary>
+            原版数字报链接
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperInsertInfoB.remark">
+            <summary>
+            错误描述   缺版 版次,版名; 版次,版名缺文章 标题;标题
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperInsertInfoB.sysremark">
+            <summary>
+            系统备注   由程序写入一些错误描述信息。为以后预留
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperInsertInfoB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:PM.Model.MDL_getOverB">
+            <summary>
+            实体类MDL_getOverB,任务信息表
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_getOverB.orverID">
+            <summary>
+            已抓取ID
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_getOverB.paperID">
+            <summary>
+            报纸ID
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_getOverB.RQ">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_getOverB.startTime">
+            <summary>
+            开始运行时间
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_getOverB.endTime">
+            <summary>
+            结束运行时间
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_getOverB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:PM.Model.MDL_fileInfo">
+            <summary>
+            文件信息实体
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_fileInfo.fileName">
+            <summary>
+            文件名
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_fileInfo.size">
+            <summary>
+            文件字节数
+            </summary>
+        </member>
+        <member name="T:PM.Model.MDL_databaseB">
+            <summary>
+            数据库信息表实体类
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_databaseB.databaseID">
+            <summary>
+            数据库ID
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_databaseB.databaseName">
+            <summary>
+            数据库名称
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_databaseB.mainDBServerID">
+            <summary>
+            主服务器
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_databaseB.spareDBServerID">
+            <summary>
+            备服务器
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_databaseB.beginTime">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_databaseB.endTime">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_databaseB.mainDBState">
+            <summary>
+            主库状态 0：正常 1：手动停止 2：系统停止
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_databaseB.spareDBState">
+            <summary>
+            备库状态 0：正常 1：手动停止 2：系统停止
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_databaseB.remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_databaseB.resourcesServerIP">
+            <summary>
+            资源存储服务器IP地址  包含段口。如：127.0.0.1：6100
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_databaseB.resourcesPath">
+            <summary>
+            资源路径
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_databaseB.creatUserGUID">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_databaseB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:PM.Model.MDL_paperNewBMB">
+            <summary>
+            报纸最新版面信息表实体
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperNewBMB.paperNewBMID">
+            <summary>
+            记录ID
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperNewBMB.paperID">
+            <summary>
+            报纸ID
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperNewBMB.RQ">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperNewBMB.BC">
+            <summary>
+            版次
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperNewBMB.BM">
+            <summary>
+            版面
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperNewBMB.PD">
+            <summary>
+            PDF文件名
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperNewBMB.JP">
+            <summary>
+            JPG文件名
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperNewBMB.WH">
+            <summary>
+            版面文件长宽
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperNewBMB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:PM.Model.MDL_BMResources">
+            <summary>
+            版面其它精度资源实体。版面JPG与PDF
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_BMResources.PD">
+            <summary>
+            PDF文件名
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_BMResources.PDsize">
+            <summary>
+            PDF文件字节数
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_BMResources.JP">
+            <summary>
+            JPG文件名
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_BMResources.JPsize">
+            <summary>
+            JPG文件字节数
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_BMResources.WH">
+            <summary>
+            版面JPG文件长宽 如：4000*6000 (像素单位)
+            </summary>
+        </member>
+        <member name="T:PM.Model.MDL_PropertyB">
+            <summary>
+            实体类MDL_PropertyB,属性特征配置表
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_PropertyB.PropertyID">
+            <summary>
+            属性特征ID
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_PropertyB.paperID">
+            <summary>
+            报纸ID
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_PropertyB.BMList">
+            <summary>
+            版面列表 Xpath
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_PropertyB.BMListReg">
+            <summary>
+            版面列表 正则
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_PropertyB.PDF">
+            <summary>
+            版面PDF Xpath
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_PropertyB.PDFReg">
+            <summary>
+            版面PDF正则
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_PropertyB.JPG">
+            <summary>
+            版面JPG Xpath
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_PropertyB.JPGReg">
+            <summary>
+            版面JPG 正则
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_PropertyB.WZList">
+            <summary>
+            文章列表Xpath
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_PropertyB.WZListReg">
+            <summary>
+            文章列表 正则
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_PropertyB.YT">
+            <summary>
+            引题 Xpath
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_PropertyB.YTReg">
+            <summary>
+            引题 正则
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_PropertyB.BT">
+            <summary>
+            标题 Xpath
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_PropertyB.BTReg">
+            <summary>
+            标题 正则
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_PropertyB.FB">
+            <summary>
+            副标题 Xpath
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_PropertyB.FBReg">
+            <summary>
+            副标题 正则
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_PropertyB.ZZ">
+            <summary>
+            作者 Xpath
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_PropertyB.ZZReg">
+            <summary>
+            作者 正则
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_PropertyB.TX">
+            <summary>
+            正文内容 Xpath
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_PropertyB.TXReg">
+            <summary>
+            正文内容 正则
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_PropertyB.CT">
+            <summary>
+            插图列表 Xpath
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_PropertyB.CTReg">
+            <summary>
+            插图列表 正则
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_PropertyB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:PM.Model.MDL_paperFirstBMB">
+            <summary>
+            报纸首版信息表实体
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperFirstBMB.paperFirstBMID">
+            <summary>
+            记录ID
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperFirstBMB.paperID">
+            <summary>
+            报纸ID
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperFirstBMB.RQ">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperFirstBMB.BC">
+            <summary>
+            版次
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperFirstBMB.BM">
+            <summary>
+            版面
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperFirstBMB.PD">
+            <summary>
+            PDF文件名
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperFirstBMB.JP">
+            <summary>
+            JPG文件名
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperFirstBMB.WH">
+            <summary>
+            版面文件长宽
+            </summary>
+        </member>
+        <member name="P:PM.Model.MDL_paperFirstBMB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:PM.Model.get.MDL_WZ">
+            <summary>
+            抓取时文章实体对象
+            </summary>
+        </member>
+        <member name="P:PM.Model.get.MDL_WZ.Url">
+            <summary>
+            文章URL
+            </summary>
+        </member>
+        <member name="P:PM.Model.get.MDL_WZ.BC">
+            <summary>
+            版次
+            </summary>
+        </member>
+        <member name="P:PM.Model.get.MDL_WZ.BM">
+            <summary>
+            版面名称
+            </summary>
+        </member>
+        <member name="P:PM.Model.get.MDL_WZ.BN">
+            <summary>
+            版条
+            </summary>
+        </member>
+        <member name="P:PM.Model.get.MDL_WZ.PDF">
+            <summary>
+            版面PDF
+            </summary>
+        </member>
+        <member name="P:PM.Model.get.MDL_WZ.JPG">
+            <summary>
+            版面JPG
+            </summary>
+        </member>
+        <member name="P:PM.Model.get.MDL_WZ.ZB">
+            <summary>
+            正文块坐标	
+            </summary>
+        </member>
+    </members>
+</doc>

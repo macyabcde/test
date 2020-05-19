@@ -1,0 +1,507 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{65492239-9A67-42AD-9458-B1E164691955}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>User.Web</RootNamespace>
+    <AssemblyName>User.Web</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\User.Web.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PubControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Document\ref\PubControls.dll</HintPath>
+    </Reference>
+    <Reference Include="PubTool, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Document\ref\PubTool.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Command\dataPost.aspx" />
+    <Content Include="Command\ExchangeData.aspx" />
+    <Content Include="css\SelectUserStyel.css" />
+    <Content Include="css\tabStyle.css" />
+    <Content Include="images\adorn2.jpg" />
+    <Content Include="images\noPower.jpg" />
+    <Content Include="images\pic-tablebg.jpg" />
+    <Content Include="images\pic_menu1.png" />
+    <Content Include="images\pic_menu2.png" />
+    <Content Include="images\show_left2.jpg" />
+    <Content Include="images\show_right2.jpg" />
+    <Content Include="images\tubiao50.gif" />
+    <Content Include="images\tubiao51.gif" />
+    <Content Include="images\tubiao52.gif" />
+    <Content Include="js\client.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="other\index.aspx" />
+    <Content Include="other\NoPower.aspx" />
+    <Content Include="select\HZselectIndex.aspx" />
+    <Content Include="select\HZselectShow.aspx" />
+    <Content Include="select\selectDep.aspx" />
+    <Content Include="select\selectOneUser.aspx" />
+    <Content Include="select\selectOneUserShow.aspx" />
+    <Content Include="select\test.aspx" />
+    <Content Include="UserDepartManage\AddDepartment.aspx" />
+    <Content Include="partManage\Addpart.aspx" />
+    <Content Include="UserDepartManage\AddUser.aspx" />
+    <Content Include="UserDepartManage\AddUser_PartB.aspx" />
+    <Content Include="css\style.css" />
+    <Content Include="images\all_toolbar_tiny.gif" />
+    <Content Include="images\banner_di.jpg" />
+    <Content Include="images\banner_middle.jpg" />
+    <Content Include="images\button001.jpg" />
+    <Content Include="images\button002.jpg" />
+    <Content Include="images\button003.jpg" />
+    <Content Include="images\button004.jpg" />
+    <Content Include="images\button005.jpg" />
+    <Content Include="images\button006.jpg" />
+    <Content Include="images\button007.jpg" />
+    <Content Include="images\button008.jpg" />
+    <Content Include="images\button009.jpg" />
+    <Content Include="images\button01.gif" />
+    <Content Include="images\button010.jpg" />
+    <Content Include="images\button011.jpg" />
+    <Content Include="images\button02.gif" />
+    <Content Include="images\button03.gif" />
+    <Content Include="images\button04.gif" />
+    <Content Include="images\button05.gif" />
+    <Content Include="images\button06.gif" />
+    <Content Include="images\button07.gif" />
+    <Content Include="images\gb.gif" />
+    <Content Include="images\leftdi.jpg" />
+    <Content Include="images\left_button_di_01.jpg" />
+    <Content Include="images\left_di_01.jpg" />
+    <Content Include="images\line.jpg" />
+    <Content Include="images\linedot.jpg" />
+    <Content Include="images\login.jpg" />
+    <Content Include="images\loginbg.jpg" />
+    <Content Include="images\loginlogo.jpg" />
+    <Content Include="images\loginno.jpg" />
+    <Content Include="images\login_c0.jpg" />
+    <Content Include="images\login_c1.jpg" />
+    <Content Include="images\login_c2.jpg" />
+    <Content Include="images\logo.jpg" />
+    <Content Include="images\middledot.jpg" />
+    <Content Include="images\middle_di_01.jpg" />
+    <Content Include="images\pic-btn01.gif" />
+    <Content Include="images\pic01.jpg" />
+    <Content Include="images\rx_2.gif" />
+    <Content Include="images\table_top.jpg" />
+    <Content Include="images\top_01.jpg" />
+    <Content Include="images\top_02.jpg" />
+    <Content Include="images\tubiao01.gif" />
+    <Content Include="images\tubiao02.gif" />
+    <Content Include="images\tubiao03.gif" />
+    <Content Include="images\tubiao04.gif" />
+    <Content Include="images\tubiao05.gif" />
+    <Content Include="images\tubiao06.gif" />
+    <Content Include="images\tubiao07.gif" />
+    <Content Include="images\tubiao08.gif" />
+    <Content Include="images\tubiao09.gif" />
+    <Content Include="images\tubiao10.gif" />
+    <Content Include="images\tubiao100.gif" />
+    <Content Include="images\tubiao11.gif" />
+    <Content Include="images\tubiao12.gif" />
+    <Content Include="images\tubiao13.gif" />
+    <Content Include="images\tubiao14.gif" />
+    <Content Include="images\tubiao15.gif" />
+    <Content Include="images\tubiao16.gif" />
+    <Content Include="images\tubiao17.gif" />
+    <Content Include="images\tubiao18.gif" />
+    <Content Include="images\tubiao19.gif" />
+    <Content Include="images\tubiao20.gif" />
+    <Content Include="images\tubiao21.gif" />
+    <Content Include="images\tubiao22.gif" />
+    <Content Include="images\tubiao23.gif" />
+    <Content Include="images\tubiao24.gif" />
+    <Content Include="images\tubiao25.gif" />
+    <Content Include="images\tubiao26.gif" />
+    <Content Include="images\tubiao27.gif" />
+    <Content Include="images\tubiao28.gif" />
+    <Content Include="images\tubiao29.gif" />
+    <Content Include="images\tubiao30.gif" />
+    <Content Include="images\tubiao31.gif" />
+    <Content Include="images\tubiao32.gif" />
+    <Content Include="images\tubiao33.gif" />
+    <Content Include="images\tubiao34.gif" />
+    <Content Include="images\tubiao35.gif" />
+    <Content Include="images\tubiao36.gif" />
+    <Content Include="images\tubiao37.gif" />
+    <Content Include="images\tubiao38.gif" />
+    <Content Include="images\tubiao39.gif" />
+    <Content Include="images\tubiao40.gif" />
+    <Content Include="images\tubiao41.gif" />
+    <Content Include="images\tubiao42.gif" />
+    <Content Include="images\tubiao43.gif" />
+    <Content Include="images\tubiao44.gif" />
+    <Content Include="images\tubiao45.gif" />
+    <Content Include="images\tubiao46.gif" />
+    <Content Include="images\tubiao47.gif" />
+    <Content Include="images\tubiao48.gif" />
+    <Content Include="images\tubiao49.gif" />
+    <Content Include="UserDepartManage\MoveDepartment.aspx" />
+    <Content Include="UserDepartManage\MoveUserdepart.aspx" />
+    <Content Include="MzTreeView10\book.gif" />
+    <Content Include="MzTreeView10\bookopen.gif" />
+    <Content Include="MzTreeView10\collection.gif" />
+    <Content Include="MzTreeView10\exit.gif" />
+    <Content Include="MzTreeView10\file.gif" />
+    <Content Include="MzTreeView10\folder.gif" />
+    <Content Include="MzTreeView10\folderopen.gif" />
+    <Content Include="MzTreeView10\L0.gif" />
+    <Content Include="MzTreeView10\L1.gif" />
+    <Content Include="MzTreeView10\L2.gif" />
+    <Content Include="MzTreeView10\L3.gif" />
+    <Content Include="MzTreeView10\L4.gif" />
+    <Content Include="MzTreeView10\L5.gif" />
+    <Content Include="MzTreeView10\M0.gif" />
+    <Content Include="MzTreeView10\M1.gif" />
+    <Content Include="MzTreeView10\M2.gif" />
+    <Content Include="MzTreeView10\M3.gif" />
+    <Content Include="MzTreeView10\MzTreeView10.htm" />
+    <Content Include="MzTreeView10\MzTreeView10.js" />
+    <Content Include="MzTreeView10\P0.gif" />
+    <Content Include="MzTreeView10\P1.gif" />
+    <Content Include="MzTreeView10\P2.gif" />
+    <Content Include="MzTreeView10\P3.gif" />
+    <Content Include="MzTreeView10\property.gif" />
+    <Content Include="MzTreeView10\root.gif" />
+    <Content Include="MzTreeView10\tree.mdb">
+    </Content>
+    <Content Include="MzTreeView10\treeview.asp" />
+    <Content Include="partManage\PartBpopdom.aspx" />
+    <Content Include="UserDepartManage\Tree.aspx" />
+    <Content Include="UserDepartManage\Updatepassword.aspx" />
+    <Content Include="UserControl\head.ascx" />
+    <Content Include="js\PubJSLibrary.js" />
+    <Content Include="partManage\partList.aspx" />
+    <Content Include="UserControl\footer.ascx" />
+    <Content Include="UserControl\left.ascx" />
+    <Content Include="UserDepartManage\UserList.aspx" />
+    <Content Include="UserDepartManage\UserManage.aspx" />
+    <Content Include="UserInfoEdit.aspx" />
+    <Content Include="UserLogin\Login.aspx" />
+    <Content Include="UserLogin\loginOut.aspx" />
+    <Content Include="UserPwdEdit.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Command\dataPost.aspx.cs">
+      <DependentUpon>dataPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Command\dataPost.aspx.designer.cs">
+      <DependentUpon>dataPost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Command\ExchangeData.aspx.cs">
+      <DependentUpon>ExchangeData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Command\ExchangeData.aspx.designer.cs">
+      <DependentUpon>ExchangeData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="other\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="other\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="other\NoPower.aspx.cs">
+      <DependentUpon>NoPower.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="other\NoPower.aspx.designer.cs">
+      <DependentUpon>NoPower.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="select\HZselectIndex.aspx.cs">
+      <DependentUpon>HZselectIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="select\HZselectIndex.aspx.designer.cs">
+      <DependentUpon>HZselectIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="select\HZselectShow.aspx.cs">
+      <DependentUpon>HZselectShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="select\HZselectShow.aspx.designer.cs">
+      <DependentUpon>HZselectShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="select\selectDep.aspx.cs">
+      <DependentUpon>selectDep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="select\selectDep.aspx.designer.cs">
+      <DependentUpon>selectDep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="select\selectOneUser.aspx.cs">
+      <DependentUpon>selectOneUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="select\selectOneUser.aspx.designer.cs">
+      <DependentUpon>selectOneUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="select\selectOneUserShow.aspx.cs">
+      <DependentUpon>selectOneUserShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="select\selectOneUserShow.aspx.designer.cs">
+      <DependentUpon>selectOneUserShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="select\test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="select\test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDepartManage\AddDepartment.aspx.cs">
+      <DependentUpon>AddDepartment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDepartManage\AddDepartment.aspx.designer.cs">
+      <DependentUpon>AddDepartment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="partManage\Addpart.aspx.cs">
+      <DependentUpon>Addpart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="partManage\Addpart.aspx.designer.cs">
+      <DependentUpon>Addpart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDepartManage\AddUser.aspx.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDepartManage\AddUser.aspx.designer.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDepartManage\AddUser_PartB.aspx.cs">
+      <DependentUpon>AddUser_PartB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDepartManage\AddUser_PartB.aspx.designer.cs">
+      <DependentUpon>AddUser_PartB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDepartManage\MoveDepartment.aspx.cs">
+      <DependentUpon>MoveDepartment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDepartManage\MoveDepartment.aspx.designer.cs">
+      <DependentUpon>MoveDepartment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDepartManage\MoveUserdepart.aspx.cs">
+      <DependentUpon>MoveUserdepart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDepartManage\MoveUserdepart.aspx.designer.cs">
+      <DependentUpon>MoveUserdepart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="partManage\PartBpopdom.aspx.cs">
+      <DependentUpon>PartBpopdom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="partManage\PartBpopdom.aspx.designer.cs">
+      <DependentUpon>PartBpopdom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDepartManage\Tree.aspx.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDepartManage\Tree.aspx.designer.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDepartManage\Updatepassword.aspx.cs">
+      <DependentUpon>Updatepassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDepartManage\Updatepassword.aspx.designer.cs">
+      <DependentUpon>Updatepassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\head.ascx.cs">
+      <DependentUpon>head.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\head.ascx.designer.cs">
+      <DependentUpon>head.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="partManage\partList.aspx.cs">
+      <DependentUpon>partList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="partManage\partList.aspx.designer.cs">
+      <DependentUpon>partList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl\footer.ascx.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\footer.ascx.designer.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\left.ascx.cs">
+      <DependentUpon>left.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\left.ascx.designer.cs">
+      <DependentUpon>left.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDepartManage\UserList.aspx.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDepartManage\UserList.aspx.designer.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDepartManage\UserManage.aspx.cs">
+      <DependentUpon>UserManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDepartManage\UserManage.aspx.designer.cs">
+      <DependentUpon>UserManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfoEdit.aspx.cs">
+      <DependentUpon>UserInfoEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInfoEdit.aspx.designer.cs">
+      <DependentUpon>UserInfoEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLogin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLogin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLogin\loginOut.aspx.cs">
+      <DependentUpon>loginOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLogin\loginOut.aspx.designer.cs">
+      <DependentUpon>loginOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPwdEdit.aspx.cs">
+      <DependentUpon>UserPwdEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPwdEdit.aspx.designer.cs">
+      <DependentUpon>UserPwdEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PMCommand\PMCommand.csproj">
+      <Project>{F2008454-9C0D-4D87-A40F-8CCDD651E58E}</Project>
+      <Name>PMCommand</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserBLL\UserBLL.csproj">
+      <Project>{C2C3BC3F-DCCC-4B9A-AC47-2A6DC4B5C47D}</Project>
+      <Name>UserBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserCommand\UserCommand.csproj">
+      <Project>{A61D1E26-623E-46F3-8FCC-010A8B278298}</Project>
+      <Name>UserCommand</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserModel\UserModel.csproj">
+      <Project>{D54876BA-25F6-45C1-A9B7-FBED05FB0B95}</Project>
+      <Name>UserModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MzTreeView10\MzTreeView10 开发文档.mht" />
+    <None Include="MzTreeView10\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1687</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

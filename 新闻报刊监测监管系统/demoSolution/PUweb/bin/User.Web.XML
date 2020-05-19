@@ -1,0 +1,2176 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>User.Web</name>
+    </assembly>
+    <members>
+        <member name="F:User.Web.WebForm1.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.Tree.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.Tree.nodeStr">
+            <summary>
+            组织树javascript代码串
+            </summary>
+        </member>
+        <member name="F:User.Web.UserDepartManage.Tree.rootID">
+            <summary>
+            根节点ID
+            </summary>
+        </member>
+        <member name="M:User.Web.UserDepartManage.Tree.treeStr(System.Int32)">
+            <summary>
+            树数据串
+            </summary>
+        </member>
+        <member name="F:User.Web.Command.ExchangeData.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:User.Web.Command.ExchangeData.findUser">
+            <summary>
+            查找用户
+            </summary>
+        </member>
+        <member name="F:User.Web.UserLogin.loginOut.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.partManage.Addpart.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.partManage.Addpart.lbwhatDo">
+            <summary>
+            lbwhatDo 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.partManage.Addpart.lbpartName">
+            <summary>
+            lbpartName 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.partManage.Addpart.tbpartName">
+            <summary>
+            tbpartName 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.partManage.Addpart.tbexplain">
+            <summary>
+            tbexplain 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.partManage.Addpart.lbMsg">
+            <summary>
+            lbMsg 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.partManage.Addpart.btnFinish">
+            <summary>
+            btnFinish 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.partManage.Addpart.btnCancel">
+            <summary>
+            btnCancel 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:User.Web.partManage.Addpart.inItPage">
+            <summary>
+            页面初始化
+            </summary>
+        </member>
+        <member name="M:User.Web.partManage.Addpart.GetData">
+            <summary>
+            页面数据填充
+            </summary>
+        </member>
+        <member name="M:User.Web.partManage.Addpart.GetModel(User.Model.MDL_partB)">
+            <summary>
+            修改实体数据
+            </summary>
+            <param name="model">实体</param>
+            <returns>修改完成后的实体</returns>
+        </member>
+        <member name="F:User.Web.UserControl.left.fileName">
+            <summary>
+            当前访问的页面文件名
+            </summary>
+        </member>
+        <member name="F:User.Web.UserControl.left.fileNameAndQuery">
+            <summary>
+            当前访问的页面文件名及参数
+            </summary>
+        </member>
+        <member name="M:User.Web.UserDepartManage.Updatepassword.inItPage">
+            <summary>
+            页面初始化
+            </summary>
+        </member>
+        <member name="M:User.Web.UserDepartManage.Updatepassword.GetData">
+            <summary>
+            页面数据填充
+            </summary>
+        </member>
+        <member name="M:User.Web.UserDepartManage.Updatepassword.GetModel(User.Model.MDL_User)">
+            <summary>
+            获取页面数据
+            </summary>
+            <param name="model">实体</param>
+            <returns>完成修改后的实体</returns>
+        </member>
+        <member name="M:User.Web.UserDepartManage.Updatepassword.checkInfo">
+            <summary>
+            表单数据验证
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:User.Web.UserDepartManage.Updatepassword.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.Updatepassword.lbwhatDo">
+            <summary>
+            lbwhatDo 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.Updatepassword.lbUserLoginName">
+            <summary>
+            lbUserLoginName 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.Updatepassword.lbUserName">
+            <summary>
+            lbUserName 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.Updatepassword.tbpassword">
+            <summary>
+            tbpassword 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.Updatepassword.lbpassword2">
+            <summary>
+            lbpassword2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.Updatepassword.tbpassword2">
+            <summary>
+            tbpassword2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.Updatepassword.lbMsg">
+            <summary>
+            lbMsg 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.Updatepassword.btnFinish">
+            <summary>
+            btnFinish 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.Updatepassword.btnCancel">
+            <summary>
+            btnCancel 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.other.Nopower.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.other.Nopower.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.other.Nopower.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.other.Nopower.left1">
+            <summary>
+            left1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.other.Nopower.footer1">
+            <summary>
+            footer1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.other.index.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.other.index.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.other.index.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.other.index.left1">
+            <summary>
+            left1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.other.index.footer1">
+            <summary>
+            footer1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserLogin.Login.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserLogin.Login.tbUserID">
+            <summary>
+            tbUserID 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserLogin.Login.tbPwd">
+            <summary>
+            tbPwd 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserLogin.Login.ImgBtnLogin">
+            <summary>
+            ImgBtnLogin 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserLogin.Login.lbMsg">
+            <summary>
+            lbMsg 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserLogin.Login.url">
+            <summary>
+            原来转过来的url
+            </summary>
+        </member>
+        <member name="F:User.Web.partManage.partList.hasUpdate">
+            <summary>
+            是否有修改角色的权限
+            </summary>
+        </member>
+        <member name="F:User.Web.partManage.partList.hasDel">
+            <summary>
+            是否有删除角色的权限
+            </summary>
+        </member>
+        <member name="F:User.Web.partManage.partList.hasSetPopedom">
+            <summary>
+            是否有设置角色原子权限的权限
+            </summary>
+        </member>
+        <member name="M:User.Web.partManage.partList.inItPage">
+            <summary>
+            页面初始化
+            </summary>
+        </member>
+        <member name="M:User.Web.partManage.partList.ListBind">
+            <summary>
+            绑定角色列表
+            </summary>
+        </member>
+        <member name="F:User.Web.partManage.partList.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.partManage.partList.btnRefresh">
+            <summary>
+            btnRefresh 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.partManage.partList.btncomand">
+            <summary>
+            btncomand 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.partManage.partList.HFvalue">
+            <summary>
+            HFvalue 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.partManage.partList.HFcomand">
+            <summary>
+            HFcomand 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.partManage.partList.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.partManage.partList.left1">
+            <summary>
+            left1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.partManage.partList.btnAdd">
+            <summary>
+            btnAdd 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.partManage.partList.rptPaper">
+            <summary>
+            rptPaper 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.partManage.partList.pageControl1">
+            <summary>
+            pageControl1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.partManage.partList.footer1">
+            <summary>
+            footer1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser.userGUID">
+            <summary>
+            用户GUID
+            </summary>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser.whatDo">
+            <summary>
+            操作命令
+            </summary>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser.departID">
+            <summary>
+            组织节点ID
+            </summary>
+        </member>
+        <member name="M:User.Web.UserDepartManage.AddUser.inItPage">
+            <summary>
+            页面初始化
+            </summary>
+        </member>
+        <member name="M:User.Web.UserDepartManage.AddUser.GetData">
+            <summary>
+            页面数据填充
+            </summary>
+        </member>
+        <member name="M:User.Web.UserDepartManage.AddUser.GetModel(User.Model.MDL_User)">
+            <summary>
+            获取页面数据
+            </summary>
+            <param name="model">实体</param>
+            <returns>完成修改后的实体</returns>
+        </member>
+        <member name="M:User.Web.UserDepartManage.AddUser.checkInfo">
+            <summary>
+            表单数据验证
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser.lbwhatDo">
+            <summary>
+            lbwhatDo 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser.lbdepartName">
+            <summary>
+            lbdepartName 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser.lbDepartStr">
+            <summary>
+            lbDepartStr 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser.tbuserLoginName">
+            <summary>
+            tbuserLoginName 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser.lbuserName">
+            <summary>
+            lbuserName 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser.tbuserName">
+            <summary>
+            tbuserName 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser.trPwd">
+            <summary>
+            trPwd 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser.tbpassword">
+            <summary>
+            tbpassword 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser.lbpassword2">
+            <summary>
+            lbpassword2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser.tbpassword2">
+            <summary>
+            tbpassword2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser.lbemail">
+            <summary>
+            lbemail 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser.tbemail">
+            <summary>
+            tbemail 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser.lbtel">
+            <summary>
+            lbtel 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser.tbtel">
+            <summary>
+            tbtel 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser.lbmobile">
+            <summary>
+            lbmobile 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser.tbmobile">
+            <summary>
+            tbmobile 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser.tbxuhao">
+            <summary>
+            tbxuhao 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser.tbexplain">
+            <summary>
+            tbexplain 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser.trMsg">
+            <summary>
+            trMsg 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser.lbMsg">
+            <summary>
+            lbMsg 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser.btnFinish">
+            <summary>
+            btnFinish 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser.btnCancel">
+            <summary>
+            btnCancel 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser.HDwhatDO">
+            <summary>
+            HDwhatDO 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.Command.dataPost.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserControl.footer.LbLK">
+            <summary>
+            LbLK 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.partManage.PartBpopdom.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.partManage.PartBpopdom.lbwhatDo">
+            <summary>
+            lbwhatDo 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.partManage.PartBpopdom.rptmodule">
+            <summary>
+            rptmodule 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.partManage.PartBpopdom.btnFinish">
+            <summary>
+            btnFinish 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.partManage.PartBpopdom.btnCancel">
+            <summary>
+            btnCancel 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.partManage.PartBpopdom.HFpopedomCodeStr">
+            <summary>
+            HFpopedomCodeStr 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.partManage.PartBpopdom.partID">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="F:User.Web.partManage.PartBpopdom.partPopdomList">
+            <summary>
+            角色已有的原子权限代码集合
+            </summary>
+        </member>
+        <member name="M:User.Web.partManage.PartBpopdom.Bindmodule">
+            <summary>
+            绑定业务系统模块列表
+            </summary>
+        </member>
+        <member name="M:User.Web.partManage.PartBpopdom.Bindpopedom(System.Int32,System.Web.UI.WebControls.Repeater)">
+            <summary>
+            绑定模块原子权限列表
+            </summary>
+            <param name="moduleID">模块ID</param>
+            <param name="rptpopdom">原子权限repeater</param>
+        </member>
+        <member name="M:User.Web.UserDepartManage.AddUser_PartB.inItPage">
+            <summary>
+            页面初始化
+            </summary>
+        </member>
+        <member name="M:User.Web.UserDepartManage.AddUser_PartB.cbListBind">
+            <summary>
+            绑定角色列表
+            </summary>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser_PartB.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser_PartB.lbwhatDo">
+            <summary>
+            lbwhatDo 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser_PartB.cbUserPartList">
+            <summary>
+            cbUserPartList 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser_PartB.btnFinish">
+            <summary>
+            btnFinish 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddUser_PartB.btnCancel">
+            <summary>
+            btnCancel 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.select.test.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.select.test.tbUserGUID">
+            <summary>
+            tbUserGUID 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.select.test.tbUserName">
+            <summary>
+            tbUserName 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.select.test.btnSelMoreUser">
+            <summary>
+            btnSelMoreUser 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.select.test.tbDepartID">
+            <summary>
+            tbDepartID 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.select.test.tbDepartName">
+            <summary>
+            tbDepartName 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.select.test.btnSelDepart">
+            <summary>
+            btnSelDepart 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.select.test.tbUserOneGUID">
+            <summary>
+            tbUserOneGUID 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.select.test.tbUserOneName">
+            <summary>
+            tbUserOneName 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.select.test.btnSelOneUser">
+            <summary>
+            btnSelOneUser 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.select.selectDep.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.select.selectDep.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.select.selectDep.nodeStr">
+            <summary>
+            组织树javascript代码串
+            </summary>
+        </member>
+        <member name="F:User.Web.select.selectDep.selDepartID">
+            <summary>
+            选择的部门ID
+            </summary>
+        </member>
+        <member name="F:User.Web.select.selectDep.selDepartName">
+            <summary>
+            选择的部门名称
+            </summary>
+        </member>
+        <member name="M:User.Web.select.selectDep.treeStr">
+            <summary>
+            树数据串
+            </summary>
+        </member>
+        <member name="F:User.Web.select.HZselectShow.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.select.HZselectShow.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.select.HZselectShow.ListBoxShow">
+            <summary>
+            ListBoxShow 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:User.Web.select.HZselectShow.depUserbind">
+            <summary>
+            绑定部门人员
+            </summary>
+        </member>
+        <member name="F:User.Web.select.selectOneUser.nodeStr">
+            <summary>
+            组织树javascript代码串
+            </summary>
+        </member>
+        <member name="F:User.Web.select.selectOneUser.focusID">
+            <summary>
+            交点ID，默认选种的节点ID
+            </summary>
+        </member>
+        <member name="F:User.Web.select.selectOneUser.UserGUID">
+            <summary>
+            已选择的用户GUID
+            </summary>
+        </member>
+        <member name="F:User.Web.select.selectOneUser.UserName">
+            <summary>
+            已选择的用户姓名
+            </summary>
+        </member>
+        <member name="M:User.Web.select.selectOneUser.LoadTreeStr">
+            <summary>
+            树数据串
+            </summary>
+        </member>
+        <member name="F:User.Web.select.selectOneUser.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.select.selectOneUser.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.select.selectOneUser.HidFieldDataKey">
+            <summary>
+            HidFieldDataKey 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserPwdEdit.userGUID">
+            <summary>
+            用户GUID
+            </summary>
+        </member>
+        <member name="M:User.Web.UserPwdEdit.inItPage">
+            <summary>
+            页面初始化
+            </summary>
+        </member>
+        <member name="M:User.Web.UserPwdEdit.GetData">
+            <summary>
+            页面数据填充
+            </summary>
+        </member>
+        <member name="M:User.Web.UserPwdEdit.GetModel(User.Model.MDL_User)">
+            <summary>
+            获取页面数据
+            </summary>
+            <param name="model">实体</param>
+            <returns>完成修改后的实体</returns>
+        </member>
+        <member name="M:User.Web.UserPwdEdit.checkInfo">
+            <summary>
+            表单数据验证
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:User.Web.UserPwdEdit.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserPwdEdit.form2">
+            <summary>
+            form2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserPwdEdit.PanelControl1">
+            <summary>
+            PanelControl1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserPwdEdit.tbUserLoginName">
+            <summary>
+            tbUserLoginName 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserPwdEdit.tbUserName">
+            <summary>
+            tbUserName 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserPwdEdit.tbpassword">
+            <summary>
+            tbpassword 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserPwdEdit.tbnewpwd">
+            <summary>
+            tbnewpwd 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserPwdEdit.tbnewpwd2">
+            <summary>
+            tbnewpwd2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserPwdEdit.lbMsg">
+            <summary>
+            lbMsg 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserPwdEdit.btnadd">
+            <summary>
+            btnadd 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserPwdEdit.btncancel">
+            <summary>
+            btncancel 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserPwdEdit.HDwhatDO">
+            <summary>
+            HDwhatDO 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserList.departID">
+            <summary>
+            组织ID
+            </summary>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserList.fatherID">
+            <summary>
+            父组织ID
+            </summary>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserList.hasUpdateDepart">
+            <summary>
+            是否有修改组织架构的权限
+            </summary>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserList.hasUpdatUser">
+            <summary>
+            是否有修改用户的权限
+            </summary>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserList.hasDelUser">
+            <summary>
+            是否有删除用户的权限
+            </summary>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserList.hasDelDepart">
+            <summary>
+            是否有删除部门的权限
+            </summary>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserList.hasStateManage">
+            <summary>
+            是否有用户状态管理的权限
+            </summary>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserList.hasSetPwd">
+            <summary>
+            是否有用户密码重置的权限
+            </summary>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserList.hasMoveUser">
+            <summary>
+            是否有用户调动的权限
+            </summary>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserList.hasPartManage">
+            <summary>
+            是否有角色维护的权限
+            </summary>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserList.hasLookPart">
+            <summary>
+            是否有用户角色查看的权限
+            </summary>
+        </member>
+        <member name="M:User.Web.UserDepartManage.UserList.inItPage">
+            <summary>
+            页面初始化
+            </summary>
+        </member>
+        <member name="M:User.Web.UserDepartManage.UserList.ListBind">
+            <summary>
+            绑定用户列表
+            </summary>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserList.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserList.btnRefresh">
+            <summary>
+            btnRefresh 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserList.btncomand">
+            <summary>
+            btncomand 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserList.HFvalue">
+            <summary>
+            HFvalue 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserList.HFcomand">
+            <summary>
+            HFcomand 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserList.btnAddDepartment">
+            <summary>
+            btnAddDepartment 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserList.btnUpdateDepartment">
+            <summary>
+            btnUpdateDepartment 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserList.btnDeleteDepartment">
+            <summary>
+            btnDeleteDepartment 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserList.btnMoveDepartment">
+            <summary>
+            btnMoveDepartment 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserList.btnAddUser">
+            <summary>
+            btnAddUser 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserList.rptPaper">
+            <summary>
+            rptPaper 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserList.pageControl1">
+            <summary>
+            pageControl1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddDepartment.fatherID">
+            <summary>
+            父组织ID
+            </summary>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddDepartment.whatDo">
+            <summary>
+            操作命令
+            </summary>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddDepartment.departID">
+            <summary>
+            组织ID
+            </summary>
+        </member>
+        <member name="M:User.Web.UserDepartManage.AddDepartment.GetData">
+            <summary>
+            页面数据填充
+            </summary>
+        </member>
+        <member name="M:User.Web.UserDepartManage.AddDepartment.GetModel(User.Model.MDL_Department)">
+            <summary>
+            获取页面数据
+            </summary>
+            <param name="model">实体</param>
+            <returns>完成修改后的实体</returns>
+        </member>
+        <member name="M:User.Web.UserDepartManage.AddDepartment.CheckInfo">
+            <summary>
+            检测输入数据的合法性
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddDepartment.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddDepartment.lbwhatDo">
+            <summary>
+            lbwhatDo 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddDepartment.lbfather">
+            <summary>
+            lbfather 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddDepartment.lbFarther">
+            <summary>
+            lbFarther 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddDepartment.lbdepartName">
+            <summary>
+            lbdepartName 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddDepartment.tbdepartName">
+            <summary>
+            tbdepartName 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddDepartment.lbxuhao">
+            <summary>
+            lbxuhao 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddDepartment.tbxuhao">
+            <summary>
+            tbxuhao 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddDepartment.tbdepartShort">
+            <summary>
+            tbdepartShort 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddDepartment.lbdepartPinyin">
+            <summary>
+            lbdepartPinyin 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddDepartment.tbdepartPinyin">
+            <summary>
+            tbdepartPinyin 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddDepartment.lbMsg">
+            <summary>
+            lbMsg 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddDepartment.btnFinish">
+            <summary>
+            btnFinish 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.AddDepartment.btnCancel">
+            <summary>
+            btnCancel 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.head.lbUserInfo">
+            <summary>
+            lbUserInfo 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.head.hylinkLoginOut">
+            <summary>
+            hylinkLoginOut 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:User.Web.head.GetTimeExplain(System.DateTime)">
+            <summary>
+            获取时间的时段描述，如：早上、晚上等
+            </summary>
+            <param name="time"></param>
+            <returns></returns>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserManage.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserManage.btnRefresh">
+            <summary>
+            btnRefresh 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserManage.btncomand">
+            <summary>
+            btncomand 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserManage.HFvalue">
+            <summary>
+            HFvalue 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserManage.HFcomand">
+            <summary>
+            HFcomand 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserManage.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserManage.left1">
+            <summary>
+            left1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.UserManage.footer1">
+            <summary>
+            footer1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.MoveUserdepart.nodeStr">
+            <summary>
+            树字符串
+            </summary>
+        </member>
+        <member name="F:User.Web.UserDepartManage.MoveUserdepart.userGUID">
+            <summary>
+            用户GUID
+            </summary>
+        </member>
+        <member name="F:User.Web.UserDepartManage.MoveUserdepart.departID">
+            <summary>
+            组织ID
+            </summary>
+        </member>
+        <member name="M:User.Web.UserDepartManage.MoveUserdepart.Bind">
+            <summary>
+            绑定组织树。去掉要移动部门的下属部门
+            </summary>
+        </member>
+        <member name="F:User.Web.UserDepartManage.MoveUserdepart.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.MoveUserdepart.lbwhatDo">
+            <summary>
+            lbwhatDo 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.MoveUserdepart.btnFinish">
+            <summary>
+            btnFinish 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.MoveUserdepart.btnCancel">
+            <summary>
+            btnCancel 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.MoveUserdepart.HFfatherID">
+            <summary>
+            HFfatherID 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.MoveUserdepart.HFdepartID">
+            <summary>
+            HFdepartID 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.MoveUserdepart.HFmoveToDeaprtID">
+            <summary>
+            HFmoveToDeaprtID 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.MoveDepartment.nodeStr">
+            <summary>
+            树字符串
+            </summary>
+        </member>
+        <member name="F:User.Web.UserDepartManage.MoveDepartment.departID">
+            <summary>
+            组织ID
+            </summary>
+        </member>
+        <member name="M:User.Web.UserDepartManage.MoveDepartment.Bind(System.Int32)">
+            <summary>
+            绑定组织树。去掉要移动部门的下属部门
+            </summary>
+            <param name="moveDepart">要移动的组织ID</param>
+        </member>
+        <member name="F:User.Web.UserDepartManage.MoveDepartment.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.MoveDepartment.lbwhatDo">
+            <summary>
+            lbwhatDo 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.MoveDepartment.btnFinish">
+            <summary>
+            btnFinish 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.MoveDepartment.btnCancel">
+            <summary>
+            btnCancel 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.MoveDepartment.HFfatherID">
+            <summary>
+            HFfatherID 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.MoveDepartment.HFdepartID">
+            <summary>
+            HFdepartID 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserDepartManage.MoveDepartment.HFmoveToDeaprtID">
+            <summary>
+            HFmoveToDeaprtID 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.select.HZselectIndex.nodeStr">
+            <summary>
+            组织树javascript代码串
+            </summary>
+        </member>
+        <member name="F:User.Web.select.HZselectIndex.tempDataKey">
+            <summary>
+            临时交换数据键。如果为空说明没用传过来。如果不为空则取出临时数据用以初始化页面（已选的数据），将用户选好的数据再次以本键存储以供其它程序获取
+            </summary>
+        </member>
+        <member name="F:User.Web.select.HZselectIndex.focusID">
+            <summary>
+            交点ID，默认选种的节点ID
+            </summary>
+        </member>
+        <member name="M:User.Web.select.HZselectIndex.intItSelectData(System.String)">
+            <summary>
+            页面初始化已选数据
+            </summary>
+            <param name="DataKey">临时交换数据键</param>
+        </member>
+        <member name="M:User.Web.select.HZselectIndex.LoadTreeStr">
+            <summary>
+            树数据串
+            </summary>
+        </member>
+        <member name="F:User.Web.select.HZselectIndex.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.select.HZselectIndex.ListBoxSelect">
+            <summary>
+            ListBoxSelect 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserInfoEdit.form2">
+            <summary>
+            form2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserInfoEdit.PanelControl1">
+            <summary>
+            PanelControl1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserInfoEdit.lbdepartName">
+            <summary>
+            lbdepartName 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserInfoEdit.lbDepartStr">
+            <summary>
+            lbDepartStr 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserInfoEdit.tbuserLoginName">
+            <summary>
+            tbuserLoginName 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserInfoEdit.lbuserName">
+            <summary>
+            lbuserName 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserInfoEdit.tbuserName">
+            <summary>
+            tbuserName 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserInfoEdit.lbemail">
+            <summary>
+            lbemail 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserInfoEdit.tbemail">
+            <summary>
+            tbemail 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserInfoEdit.lbtel">
+            <summary>
+            lbtel 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserInfoEdit.tbtel">
+            <summary>
+            tbtel 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserInfoEdit.lbmobile">
+            <summary>
+            lbmobile 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserInfoEdit.tbmobile">
+            <summary>
+            tbmobile 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserInfoEdit.tbxuhao">
+            <summary>
+            tbxuhao 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserInfoEdit.tbexplain">
+            <summary>
+            tbexplain 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserInfoEdit.trMsg">
+            <summary>
+            trMsg 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserInfoEdit.lbMsg">
+            <summary>
+            lbMsg 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserInfoEdit.btnFinish">
+            <summary>
+            btnFinish 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserInfoEdit.btnCancel">
+            <summary>
+            btnCancel 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserInfoEdit.HDwhatDO">
+            <summary>
+            HDwhatDO 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.UserInfoEdit.userGUID">
+            <summary>
+            用户GUID
+            </summary>
+        </member>
+        <member name="F:User.Web.UserInfoEdit.departID">
+            <summary>
+            组织节点ID
+            </summary>
+        </member>
+        <member name="M:User.Web.UserInfoEdit.inItPage">
+            <summary>
+            页面初始化
+            </summary>
+        </member>
+        <member name="M:User.Web.UserInfoEdit.GetData">
+            <summary>
+            页面数据填充
+            </summary>
+        </member>
+        <member name="M:User.Web.UserInfoEdit.GetModel(User.Model.MDL_User)">
+            <summary>
+            获取页面数据
+            </summary>
+            <param name="model">实体</param>
+            <returns>完成修改后的实体</returns>
+        </member>
+        <member name="M:User.Web.UserInfoEdit.checkInfo">
+            <summary>
+            表单数据验证
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:User.Web.select.selectOneUserShow.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.select.selectOneUserShow.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:User.Web.select.selectOneUserShow.ListBoxShow">
+            <summary>
+            ListBoxShow 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:User.Web.select.selectOneUserShow.intItSelectData">
+            <summary>
+            页面初始化已选数据
+            </summary>
+        </member>
+        <member name="M:User.Web.select.selectOneUserShow.depUserbind">
+            <summary>
+            绑定部门人员
+            </summary>
+        </member>
+    </members>
+</doc>

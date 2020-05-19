@@ -1,0 +1,525 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>User.BLL</name>
+    </assembly>
+    <members>
+        <member name="T:User.BLL.BLL_User_PartB">
+            <summary>
+            用户角色信息数据处理
+            </summary>
+        </member>
+        <member name="M:User.BLL.BLL_User_PartB.#ctor">
+            <summary>
+            用户角色信息数据处理
+            </summary>
+        </member>
+        <member name="M:User.BLL.BLL_User_PartB.GetModel(System.Int32)">
+            <summary>
+            获取一个用户角色信息实体
+            </summary>
+            <param name="user_PartB_ID">用户角色ID</param>
+            <returns>用户信息实体</returns>
+        </member>
+        <member name="M:User.BLL.BLL_User_PartB.Add(User.Model.MDL_User_PartB)">
+            <summary>
+            添加用角色户信息,返回所影响的行数
+            </summary>
+            <param name="model">用户角色信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.BLL.BLL_User_PartB.Update(User.Model.MDL_User_PartB)">
+            <summary>
+            修改用户角色信息,返回所影响的行数
+            </summary>
+            <param name="model">用户角色信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.BLL.BLL_User_PartB.Delete(System.Int32)">
+            <summary>
+            删除用户角色信息,返回所影响的行数
+            </summary>
+            <param name="user_PartB_ID">用户角色信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.BLL.BLL_User_PartB.CountConsionPeople(System.Int32)">
+            <summary>
+            统计角色使用的人数
+            </summary>
+            <param name="partID">角色编号</param>
+            <returns>统计角色使用的人数</returns>
+        </member>
+        <member name="M:User.BLL.BLL_User_PartB.DeleteUserPart(System.String)">
+            <summary>
+            删除用户角色信息,返回所影响的行数
+            </summary>
+            <param name="userGUID">用户GUID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.BLL.BLL_User_PartB.HasPart(System.String,System.Int32)">
+            <summary>
+            检测用户是否有该角色
+            </summary>
+            <param name="userGUID">用户GUID</param>
+            <param name="partID">角色ID</param>
+            <returns>true有,false没有</returns>
+        </member>
+        <member name="M:User.BLL.BLL_User_PartB.Add(System.String,System.Int32)">
+            <summary>
+            检测用户是否有该角色
+            </summary>
+            <param name="userGUID">用户GUID</param>
+            <param name="partID">角色ID</param>
+            <returns>true有,false没有</returns>
+        </member>
+        <member name="M:User.BLL.BLL_User_PartB.GetUserPartList(System.String)">
+            <summary>
+            获取用户角色列表
+            详细字段：UserGUID(用户GUID)、partID(角色ID)、partName(角色名称)
+            </summary>
+            <param name="UserGUID">用户GUID</param>
+            <returns>用户角色列表</returns>
+        </member>
+        <member name="M:User.BLL.BLL_User_PartB.GetUserPartIDList(System.String)">
+            <summary>
+            获取用户角色ID集合
+            </summary>
+            <param name="UserGUID">用户GUID</param>
+            <returns>用户角色ID集合</returns>
+        </member>
+        <member name="T:User.BLL.power">
+            <summary>
+            用户权限类
+            </summary>
+        </member>
+        <member name="M:User.BLL.power.ifUserHavePower(System.String,System.Int32)">
+            <summary>
+            判断用户是否有该权限
+            </summary>
+            <param name="UserGUID">用户GUID</param>
+            <param name="popedomCode">原子权限代码</param>
+            <returns>true:有权限，false:无权限</returns>
+        </member>
+        <member name="T:User.BLL.BLL_Department">
+            <summary>
+            组织信息数据处理
+            </summary>
+        </member>
+        <member name="M:User.BLL.BLL_Department.#ctor">
+            <summary>
+            组织信息数据处理
+            </summary>
+        </member>
+        <member name="M:User.BLL.BLL_Department.GetModel(System.Int32)">
+            <summary>
+            获取一个组织信息实体
+            </summary>
+            <param name="departID">组织结构ID</param>
+            <returns>组织信息实体</returns>
+        </member>
+        <member name="M:User.BLL.BLL_Department.GetTopModel">
+            <summary>
+            根组织实体信息
+            </summary>
+            <returns>根组织实体信息</returns>
+        </member>
+        <member name="M:User.BLL.BLL_Department.Add(User.Model.MDL_Department)">
+            <summary>
+            添加组织信息,返回所影响的行数
+            </summary>
+            <param name="model">组织信息类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.BLL.BLL_Department.Update(User.Model.MDL_Department)">
+            <summary>
+            修改组织信息,返回所影响的行数
+            </summary>
+            <param name="model">组织信息类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.BLL.BLL_Department.Delete(System.Int32)">
+            <summary>
+            删除组织信息,返回所影响的行数
+            </summary>
+            <param name="departID">组织结构ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.BLL.BLL_Department.father(System.Int32)">
+            <summary>
+            获取当前组织路径
+            </summary>
+            <param name="fatherID">上级组织ID</param>
+            <returns>当前组织路径</returns>
+        </member>
+        <member name="M:User.BLL.BLL_Department.MoveDepartment(System.Int32,System.Int32)">
+            <summary>
+            移动组织
+            </summary>
+            <param name="departID">要移动的组织ID</param>
+            <param name="fatherID">将组织移动到的目标组织ID</param>
+            <returns>返回ReturnMsg，
+                     aID：影响的行数
+                     Succeed： true 说明成功，false说明失败；
+                     Msg：消息；
+                     state： -1 要移到的目标组织下已存在相同的名称，-2不能移到自己的直接上级，-3自己不能移到自己的自己的下面，-4自己不能移到自己的下级；-5AD操作失败；-6未知异常；0正常
+                     Msg2：异常的具体信息
+                     IfError：true 内部有未知的异常，false 内部无未知的异常
+            </returns>
+        </member>
+        <member name="M:User.BLL.BLL_Department.BitDeptContain(System.Int32,System.Int32)">
+            <summary>
+            判断B部门是否所属与A部门。true是,false否
+            </summary>
+            <param name="B_departID">部门B(下级部门)</param>
+            <param name="A_departID">部门A(上级部门)</param>
+            <returns>返回true属于  false不属于</returns>
+        </member>
+        <member name="M:User.BLL.BLL_Department.HasDepart(System.Int32)">
+            <summary>
+            检测该组织是否有下级组织
+            </summary>
+            <param name="departID">组织结构ID</param>
+            <returns>true存在,false不存在</returns>
+        </member>
+        <member name="M:User.BLL.BLL_Department.HasUser(System.Int32)">
+            <summary>
+            检测该组织是否有用户
+            </summary>
+            <param name="departID">组织结构ID</param>
+            <returns>true存在,false不存在</returns>
+        </member>
+        <member name="M:User.BLL.BLL_Department.HasDepartName(System.String,System.Int32,System.Int32)">
+            <summary>
+            检测组织名称同级节点中是否存在
+            </summary>
+            <param name="departName">组织名称</param>
+            <param name="fatherID">父节点ID</param>
+            <param name="departID">组织ID</param>
+            <returns>true存在,false不存在</returns>
+        </member>
+        <member name="T:User.BLL.BLL_moduleB">
+            <summary>
+            系统模块数据处理
+            </summary>
+        </member>
+        <member name="M:User.BLL.BLL_moduleB.#ctor">
+            <summary>
+            系统模块数据处理
+            </summary>
+        </member>
+        <member name="M:User.BLL.BLL_moduleB.GetModel(System.Int32)">
+            <summary>
+            获取一个系统模块表实体
+            </summary>
+            <param name="moduleID">模块ID</param>
+            <returns>系统模块表实体</returns>
+        </member>
+        <member name="M:User.BLL.BLL_moduleB.Add(User.Model.MDL_moduleB)">
+            <summary>
+            添加系统模块,返回所影响的行数
+            </summary>
+            <param name="model">系统模块类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.BLL.BLL_moduleB.Update(User.Model.MDL_moduleB)">
+            <summary>
+            修改系统模块,返回所影响的行数
+            </summary>
+            <param name="model">系统模块类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.BLL.BLL_moduleB.Delete(System.Int32)">
+            <summary>
+            删除系统模块,返回所影响的行数
+            </summary>
+            <param name="moduleID">模块ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.BLL.BLL_moduleB.GetList(System.String)">
+            <summary>
+            获取系统模块列表
+            </summary>
+            <param name="strWhere">筛选条件。若为"",查询所有</param>
+            <returns>系统模块列表</returns>
+        </member>
+        <member name="T:User.BLL.BLL_popedomB">
+            <summary>
+            原子权限信息数据处理
+            </summary>
+        </member>
+        <member name="M:User.BLL.BLL_popedomB.#ctor">
+            <summary>
+            原子权限信息数据处理
+            </summary>
+        </member>
+        <member name="M:User.BLL.BLL_popedomB.GetModel(System.Int32)">
+            <summary>
+            获取一个原子权限信息实体
+            </summary>
+            <param name="popedomCode">原子权限代码</param>
+            <returns>原子权限信息实体</returns>
+        </member>
+        <member name="M:User.BLL.BLL_popedomB.Add(User.Model.MDL_popedomB)">
+            <summary>
+            添加原子权限信息,返回所影响的行数
+            </summary>
+            <param name="model">原子权限信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.BLL.BLL_popedomB.Update(User.Model.MDL_popedomB)">
+            <summary>
+            修改原子权限信息,返回所影响的行数
+            </summary>
+            <param name="model">原子权限信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.BLL.BLL_popedomB.Delete(System.Int32)">
+            <summary>
+            删除原子权限信息,返回所影响的行数
+            </summary>
+            <param name="popedomCode">原子权限代码</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.BLL.BLL_popedomB.GetPopedom(System.Int32)">
+            <summary>
+            获取原子权限列表
+            </summary>
+            <param name="moduleID">业务系统模块ID，不需要此参数请传入-1</param>
+            <returns>返回原子权限列表</returns>
+        </member>
+        <member name="T:User.BLL.BLL_partB">
+            <summary>
+            角色信息数据处理
+            </summary>
+        </member>
+        <member name="M:User.BLL.BLL_partB.#ctor">
+            <summary>
+            角色信息数据处理
+            </summary>
+        </member>
+        <member name="M:User.BLL.BLL_partB.GetModel(System.Int32)">
+            <summary>
+            获取一个角色信息实体
+            </summary>
+            <param name="partID">角色ID</param>
+            <returns>角色信息实体</returns>
+        </member>
+        <member name="M:User.BLL.BLL_partB.Add(User.Model.MDL_partB)">
+            <summary>
+            添加角色信息,返回所影响的行数
+            </summary>
+            <param name="model">角色信息类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.BLL.BLL_partB.Update(User.Model.MDL_partB)">
+            <summary>
+            修改角色信息,返回所影响的行数
+            </summary>
+            <param name="model">角色信息类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.BLL.BLL_partB.Delete(System.Int32)">
+            <summary>
+            删除角色信息,返回所影响的行数
+            </summary>
+            <param name="partID">角色ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.BLL.BLL_partB.GetPaperPageList(System.Int32,System.Int32)">
+            <summary>
+            获取角色信息列表
+            </summary>
+            <param name="pageSize">每页面行数</param>
+            <param name="goPage">要跳转到的页码</param>
+            <returns>分页信息返回数据结构</returns>
+        </member>
+        <member name="M:User.BLL.BLL_partB.PoedomDefine(System.Collections.Generic.List{System.Int32},System.Int32)">
+             <summary>
+             给角色定义原子权限
+             </summary>
+            <param name="popedom">原子权限ID集合</param>
+            <param name="partID">角色ID</param>
+             <returns>返回是否定义成功,true成功,false失败</returns>
+        </member>
+        <member name="M:User.BLL.BLL_partB.GetPartPeodom(System.Int32)">
+            <summary>
+            获取角色已有的原子权限代码集合
+            </summary>
+            <param name="partID">角色ID</param>
+            <returns>返回角色的原子权限代码号集合</returns>
+        </member>
+        <member name="M:User.BLL.BLL_partB.GetList">
+            <summary>
+            获取角色信息
+            </summary>
+            <returns>角色信息</returns>
+        </member>
+        <member name="M:User.BLL.BLL_partB.HaspartName(System.String,System.Int32)">
+            <summary>
+            检测角色名称是否已存在
+            </summary>
+            <param name="partName">角色名称</param>
+            <param name="partID">角色ID</param>
+            <returns>true存在,false不存在</returns>
+        </member>
+        <member name="T:User.BLL.BLL_User">
+            <summary>
+            用户信息数据处理
+            </summary>
+        </member>
+        <member name="M:User.BLL.BLL_User.#ctor">
+            <summary>
+            用户信息数据处理
+            </summary>
+        </member>
+        <member name="M:User.BLL.BLL_User.GetModel(System.String)">
+            <summary>
+            获取一个用户信息实体
+            </summary>
+            <param name="userGUID">用户GUID</param>
+            <returns>用户信息实体</returns>
+        </member>
+        <member name="M:User.BLL.BLL_User.GetModelForUserLoginName(System.String)">
+            <summary>
+            获取一个用户信息实体
+            </summary>
+            <param name="userGUID">用户GUID</param>
+            <returns>用户信息实体</returns>
+        </member>
+        <member name="M:User.BLL.BLL_User.Add(User.Model.MDL_User)">
+            <summary>
+            添加用户信息,返回所影响的行数
+            </summary>
+            <param name="model">用户信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.BLL.BLL_User.Update(User.Model.MDL_User)">
+            <summary>
+            修改用户信息,返回所影响的行数
+            </summary>
+            <param name="model">用户信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.BLL.BLL_User.Update(System.String,System.Int32)">
+            <summary>
+            修改用户信息,返回所影响的行数
+            </summary>
+            <param name="userGUID">用户GUID</param>
+            <param name="departID">所在部门</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.BLL.BLL_User.Delete(System.String)">
+            <summary>
+            删除用户信息,返回所影响的行数
+            </summary>
+            <param name="userGUID">用户GUID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.BLL.BLL_User.HasuserLoginName(System.String,System.String)">
+            <summary>
+            检测登录名是否存在
+            </summary>
+            <param name="userLoginName">用户登录名</param>
+            <param name="userGUID">用户GUID,传入空表示忽略此参数</param>
+            <returns>true存在,false不存在</returns>
+        </member>
+        <member name="M:User.BLL.BLL_User.getUserDepartTreeList">
+            <summary>
+            获取用户组织树列表数据
+            </summary>
+            <returns>
+            用户组织树列表数据。具体字段：departID, fatherID, departName, xuhao
+            </returns>
+        </member>
+        <member name="M:User.BLL.BLL_User.GetUserPageList(System.String,System.Int32,System.Int32)">
+            <summary>
+            获取用户列表(分页)
+            </summary>
+            <param name="departID">部门ID</param>
+            <param name="pageSize">每页面行数</param>
+            <param name="goPage">要跳转到的页码</param>
+            <returns>分页信息返回数据结构</returns>
+        </member>
+        <member name="M:User.BLL.BLL_User.GetUserList(System.Int32)">
+            <summary>
+            获取用户列表
+            </summary>
+            <param name="departID">部门ID，传入-1表示忽略此参数</param>
+            <returns>用户列表</returns>
+        </member>
+        <member name="M:User.BLL.BLL_User.findUser(System.String)">
+            <summary>
+            查找用户
+            </summary>
+            <param name="keyWord">查询关键字(查询字段：userLoginName(用户登录名)、userName(用户姓名)、)</param>
+            <returns>查找用户</returns>
+        </member>
+        <member name="M:User.BLL.BLL_User.CheckUser(System.String,System.String)">
+            <summary>
+            检测用户名密码是否正确
+            </summary>
+            <param name="userLoginName">用户登录名</param>
+            <param name="pwd">密码</param>
+            <returns></returns>
+        </member>
+        <member name="M:User.BLL.BLL_User.Updateactive(System.Int32,System.String)">
+            <summary>
+            启用或禁用用户
+            </summary>
+            <param name="active">是否有效  1：代表有效   0：代表无效</param>
+            <param name="userGUID">用户GUID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.BLL.BLL_User.getUserDepartTreeList(System.Int32[],System.Boolean)">
+            <summary>
+            获取用户组织树列表数据
+            数据表的第0行（最开始的行）为根节点
+            如果没有根节点则会生成虚拟的根节点，ID为：-100
+            </summary>
+            <param name="delNodeIDArr">不要的节点ID数组(只要节点本身，它的子节点会自己计算)，返回的列表将去除这些节点的所有下级子节点</param>
+            <param name="selfNdoe">是否要去掉传的节点数组本身，true去掉（返回的列表将不包含传的节点及它们的所有子节点），false不去掉</param>
+            <returns>
+            用户组织树列表数据。具体字段：DepartID, Fatherid, DepartName, Xuhao,HighLook
+            </returns>
+        </member>
+        <member name="T:User.BLL.WebUser">
+            <summary>
+            用户登录类
+            控制当前未登录的用户转到登录页面。获取当前用户信息。
+            </summary>
+        </member>
+        <member name="M:User.BLL.WebUser.login">
+            <summary> 
+            用户登录
+            如果当前用户未登录，则自动转到统一认证登录页面，如果已登录则修改认证信息中的用户最后使用时间。
+            每个页面的 Page_Load 方法中必须先调用本方法，才可调用本类的其它属性，否则值不正确。
+            </summary>
+        </member>
+        <member name="M:User.BLL.WebUser.iflogin">
+            <summary>
+            判断用户是否已登录
+            </summary>
+            <returns>true：已登录；false：未登录</returns>
+        </member>
+        <member name="P:User.BLL.WebUser.UserGUID">
+            <summary>
+            当前用户GUID
+            </summary>
+        </member>
+        <member name="P:User.BLL.WebUser.UserLoginName">
+            <summary>
+            当前用户ID
+            </summary>
+        </member>
+        <member name="P:User.BLL.WebUser.UserName">
+            <summary>
+            用户姓名
+            </summary>
+        </member>
+        <member name="P:User.BLL.WebUser.DefaultDepart">
+            <summary>
+            默认所在部门
+            </summary>
+        </member>
+    </members>
+</doc>

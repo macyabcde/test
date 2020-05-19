@@ -1,0 +1,368 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>User.DAL</name>
+    </assembly>
+    <members>
+        <member name="T:User.DAL.DAL_popedomB">
+            <summary>
+            原子权限信息表数据访问类
+            </summary>
+        </member>
+        <member name="M:User.DAL.DAL_popedomB.#ctor">
+            <summary>
+            原子权限信息表数据访问类
+            </summary>
+        </member>
+        <member name="M:User.DAL.DAL_popedomB.GetModel(System.Int32)">
+            <summary>
+            获取一个原子权限信息实体
+            </summary>
+            <param name="popedomCode">原子权限代码</param>
+            <returns>原子权限信息实体</returns>
+        </member>
+        <member name="M:User.DAL.DAL_popedomB.Add(User.Model.MDL_popedomB)">
+            <summary>
+            添加原子权限信息,返回所影响的行数
+            </summary>
+            <param name="model">原子权限信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.DAL.DAL_popedomB.Update(User.Model.MDL_popedomB)">
+            <summary>
+            修改原子权限信息,返回所影响的行数
+            </summary>
+            <param name="model">原子权限信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.DAL.DAL_popedomB.Delete(System.Int32)">
+            <summary>
+            删除原子权限信息,返回所影响的行数
+            </summary>
+            <param name="popedomCode">原子权限代码</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.DAL.DAL_popedomB.GetPopedom(System.String)">
+             <summary>
+             获取原子权限列表(返回信息：原子权限代码(popedomCode),原子权限名称(popedomName)，原子权限备注(explain),模块编号(moduleID)，模块名称(moduleName))
+             </summary>
+            <param name="strWhere">查询条件。若为"",则查询所有</param>
+             <returns>
+                     返回原子权限列表,返回信息:
+                     原子权限代码(popedomCode)
+                     原子权限名称(popedomName)
+                     原子权限备注(explain)
+                     模块编号(moduleID)
+                     模块名称(moduleName))
+             </returns>
+        </member>
+        <member name="T:User.DAL.DAL_User_PartB">
+            <summary>
+            用户角色信息数据访问类
+            </summary>
+        </member>
+        <member name="M:User.DAL.DAL_User_PartB.#ctor">
+            <summary>
+            用户角色信息数据访问类
+            </summary>
+        </member>
+        <member name="M:User.DAL.DAL_User_PartB.GetModel(System.Int32)">
+            <summary>
+            获取一个用户角色信息实体
+            </summary>
+            <param name="user_PartB_ID">用户角色ID</param>
+            <returns>用户信息实体</returns>
+        </member>
+        <member name="M:User.DAL.DAL_User_PartB.Add(User.Model.MDL_User_PartB)">
+            <summary>
+            添加用角色户信息,返回所影响的行数
+            </summary>
+            <param name="model">用户角色信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.DAL.DAL_User_PartB.Update(User.Model.MDL_User_PartB)">
+            <summary>
+            修改用户角色信息,返回所影响的行数
+            </summary>
+            <param name="model">用户角色信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.DAL.DAL_User_PartB.Delete(System.Int32)">
+            <summary>
+            删除用户角色信息,返回所影响的行数
+            </summary>
+            <param name="user_PartB_ID">用户角色信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.DAL.DAL_User_PartB.DeleteUserPart(System.String)">
+            <summary>
+            删除用户角色信息,返回所影响的行数
+            </summary>
+            <param name="userGUID">用户GUID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.DAL.DAL_User_PartB.CountConsionPeople(System.Int32)">
+            <summary>
+            统计角色使用的人数
+            </summary>
+            <param name="partID">角色编号</param>
+            <returns>统计角色使用的人数</returns>
+        </member>
+        <member name="M:User.DAL.DAL_User_PartB.HasPart(System.String,System.Int32)">
+            <summary>
+            检测用户是否有该角色
+            </summary>
+            <param name="userGUID">用户GUID</param>
+            <param name="partID">角色ID</param>
+            <returns>true有,false没有</returns>
+        </member>
+        <member name="M:User.DAL.DAL_User_PartB.GetUserPartList(System.String)">
+            <summary>
+            获取用户角色列表
+            详细字段：UserGUID(用户GUID)、partID(角色ID)、partName(角色名称)
+            </summary>
+            <param name="UserGUID">用户GUID</param>
+            <returns>用户角色列表</returns>
+        </member>
+        <member name="T:User.DAL.DAL_User">
+            <summary>
+            用户信息数据访问类
+            </summary>
+        </member>
+        <member name="M:User.DAL.DAL_User.#ctor">
+            <summary>
+            用户信息数据访问类
+            </summary>
+        </member>
+        <member name="M:User.DAL.DAL_User.GetModel(System.String)">
+            <summary>
+            获取一个用户信息实体
+            </summary>
+            <param name="userGUID">用户GUID</param>
+            <returns>用户信息实体</returns>
+        </member>
+        <member name="M:User.DAL.DAL_User.GetModelForUserLoginName(System.String)">
+            <summary>
+            获取一个用户信息实体
+            </summary>
+            <param name="userGUID">用户GUID</param>
+            <returns>用户信息实体</returns>
+        </member>
+        <member name="M:User.DAL.DAL_User.Add(User.Model.MDL_User)">
+            <summary>
+            添加用户信息,返回所影响的行数
+            </summary>
+            <param name="model">用户信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.DAL.DAL_User.Update(User.Model.MDL_User)">
+            <summary>
+            修改用户信息,返回所影响的行数
+            </summary>
+            <param name="model">用户信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.DAL.DAL_User.Delete(System.String)">
+            <summary>
+            删除用户信息,返回所影响的行数
+            </summary>
+            <param name="userGUID">用户GUID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.DAL.DAL_User.Updateactive(System.Int32,System.String)">
+            <summary>
+            启用或禁用用户
+            </summary>
+            <param name="active">是否有效  1：代表有效   0：代表无效</param>
+            <param name="userGUID">用户GUID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.DAL.DAL_User.HasuserLoginName(System.String,System.String)">
+            <summary>
+            检测登录名是否存在
+            </summary>
+            <param name="userLoginName">用户登录名</param>
+            <param name="userGUID">用户GUID,传入空表示忽略此参数</param>
+            <returns>true存在,false不存在</returns>
+        </member>
+        <member name="T:User.DAL.DAL_Department">
+            <summary>
+            组织信息数据访问类
+            </summary>
+        </member>
+        <member name="M:User.DAL.DAL_Department.#ctor">
+            <summary>
+            组织信息数据访问类
+            </summary>
+        </member>
+        <member name="M:User.DAL.DAL_Department.GetModel(System.Int32)">
+            <summary>
+            获取一个组织信息实体
+            </summary>
+            <param name="departID">组织结构ID</param>
+            <returns>组织信息实体</returns>
+        </member>
+        <member name="M:User.DAL.DAL_Department.Add(User.Model.MDL_Department)">
+            <summary>
+            添加组织信息,返回所影响的行数
+            </summary>
+            <param name="model">组织信息类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.DAL.DAL_Department.Update(User.Model.MDL_Department)">
+            <summary>
+            修改组织信息,返回所影响的行数
+            </summary>
+            <param name="model">组织信息类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.DAL.DAL_Department.MoveDepartment(System.Int32,System.Int32)">
+            <summary>
+            移动组织
+            </summary>
+            <param name="model">组织信息类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.DAL.DAL_Department.GetTopModel">
+            <summary>
+            根组织实体信息
+            </summary>
+            <returns>根组织实体信息</returns>
+        </member>
+        <member name="M:User.DAL.DAL_Department.Delete(System.Int32)">
+            <summary>
+            删除组织信息,返回所影响的行数
+            </summary>
+            <param name="departID">组织结构ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.DAL.DAL_Department.HasDepartName(System.String,System.Int32,System.Int32)">
+            <summary>
+            检测组织名称同级节点中是否存在
+            </summary>
+            <param name="departName">组织名称</param>
+            <param name="fatherID">父节点ID</param>
+            <param name="departID">组织ID</param>
+            <returns>true存在,false不存在</returns>
+        </member>
+        <member name="M:User.DAL.DAL_Department.HasDepart(System.Int32)">
+            <summary>
+            检测该组织是否有下级组织
+            </summary>
+            <param name="departID">组织结构ID</param>
+            <returns>true存在,false不存在</returns>
+        </member>
+        <member name="M:User.DAL.DAL_Department.HasUser(System.Int32)">
+            <summary>
+            检测该组织是否有用户
+            </summary>
+            <param name="departID">组织结构ID</param>
+            <returns>true存在,false不存在</returns>
+        </member>
+        <member name="T:User.DAL.DAL_partB">
+            <summary>
+            角色信息数据访问类
+            </summary>
+        </member>
+        <member name="M:User.DAL.DAL_partB.#ctor">
+            <summary>
+            角色信息数据访问类
+            </summary>
+        </member>
+        <member name="M:User.DAL.DAL_partB.GetModel(System.Int32)">
+            <summary>
+            获取一个角色信息实体
+            </summary>
+            <param name="partID">角色ID</param>
+            <returns>角色信息实体</returns>
+        </member>
+        <member name="M:User.DAL.DAL_partB.Add(User.Model.MDL_partB)">
+            <summary>
+            添加角色信息,返回所影响的行数
+            </summary>
+            <param name="model">角色信息类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.DAL.DAL_partB.Update(User.Model.MDL_partB)">
+            <summary>
+            修改角色信息,返回所影响的行数
+            </summary>
+            <param name="model">角色信息类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.DAL.DAL_partB.Delete(System.Int32)">
+            <summary>
+            删除角色信息,返回所影响的行数
+            </summary>
+            <param name="partID">角色ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.DAL.DAL_partB.UpdateRolePoedom(System.Int32,System.Byte[])">
+            <summary>
+            修改角色原子权限
+            </summary>
+            <param name="partID">角色编号</param>
+            <param name="popedom">原子权限</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.DAL.DAL_partB.GetList">
+            <summary>
+            获取角色信息
+            </summary>
+            <returns>角色信息</returns>
+        </member>
+        <member name="M:User.DAL.DAL_partB.HaspartName(System.String,System.Int32)">
+            <summary>
+            检测角色名称是否已存在
+            </summary>
+            <param name="partName">角色名称</param>
+            <param name="partID">角色ID</param>
+            <returns>true存在,false不存在</returns>
+        </member>
+        <member name="T:User.DAL.DAL_moduleB">
+            <summary>
+            系统模块表数据访问类
+            </summary>
+        </member>
+        <member name="M:User.DAL.DAL_moduleB.#ctor">
+            <summary>
+            系统模块表数据访问类
+            </summary>
+        </member>
+        <member name="M:User.DAL.DAL_moduleB.GetModel(System.Int32)">
+            <summary>
+            获取一个系统模块表实体
+            </summary>
+            <param name="moduleID">模块ID</param>
+            <returns>系统模块表实体</returns>
+        </member>
+        <member name="M:User.DAL.DAL_moduleB.Add(User.Model.MDL_moduleB)">
+            <summary>
+            添加系统模块,返回所影响的行数
+            </summary>
+            <param name="model">系统模块类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.DAL.DAL_moduleB.Update(User.Model.MDL_moduleB)">
+            <summary>
+            修改系统模块,返回所影响的行数
+            </summary>
+            <param name="model">系统模块类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.DAL.DAL_moduleB.Delete(System.Int32)">
+            <summary>
+            删除系统模块,返回所影响的行数
+            </summary>
+            <param name="moduleID">模块ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:User.DAL.DAL_moduleB.GetList(System.String)">
+            <summary>
+            获取系统模块列表
+            </summary>
+            <param name="strWhere">筛选条件。若为"",查询所有</param>
+            <returns>系统模块列表</returns>
+        </member>
+    </members>
+</doc>

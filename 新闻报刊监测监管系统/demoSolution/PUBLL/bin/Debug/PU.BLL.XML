@@ -1,0 +1,840 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PU.BLL</name>
+    </assembly>
+    <members>
+        <member name="T:PU.BLL.BLL_paperCollectionInfoB">
+            <summary>
+            报纸收藏信息数据处理类
+            </summary>
+        </member>
+        <member name="M:PU.BLL.BLL_paperCollectionInfoB.#ctor">
+            <summary>
+            报纸收藏信息数据处理类
+            </summary>
+        </member>
+        <member name="M:PU.BLL.BLL_paperCollectionInfoB.getUserCollectionPaperList">
+            <summary>
+            获取当前用户收藏的所有报刊列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PU.BLL.BLL_paperCollectionInfoB.GetModel(System.Int32)">
+            <summary>
+            获取一个报纸收藏信息实体
+            </summary>
+            <param name="paperCollectionInfoID">报纸收藏信息ID</param>
+            <returns>报纸收藏信息实体</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_paperCollectionInfoB.Add(PU.Model.MDL_paperCollectionInfoB)">
+            <summary>
+            添加报纸收藏信息,返回当前添加信息的ID
+            </summary>
+            <param name="model">报纸收藏信息实体类</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.BLL.BLL_paperCollectionInfoB.Update(PU.Model.MDL_paperCollectionInfoB)">
+            <summary>
+            修改报纸收藏信息,返回所影响的行数
+            </summary>
+            <param name="model">报纸收藏信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_paperCollectionInfoB.Delete(System.Int32)">
+            <summary>
+            删除报纸收藏信息,返回所影响的行数
+            </summary>
+            <param name="paperCollectionInfoID">报纸收藏信息ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_paperCollectionInfoB.Delete(System.Int32,System.String)">
+            <summary>
+            删除报纸收藏信息
+            </summary>
+            <param name="paperID">报纸ID</param>
+            <param name="userGUID">用户GUID</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.BLL.BLL_paperCollectionInfoB.ifHave(System.Int32,System.String)">
+            <summary>
+            判断用户报纸是否已收藏
+            </summary>
+            <param name="paperID">报纸ID</param>
+            <param name="UserGUID">用户GUID</param>
+            <returns>true：已收藏、false：未收藏</returns>
+        </member>
+        <member name="T:PU.BLL.BLL_customerPaperInfoB">
+            <summary>
+            客户报纸信息数据处理类
+            </summary>
+        </member>
+        <member name="M:PU.BLL.BLL_customerPaperInfoB.#ctor">
+            <summary>
+            客户报纸信息数据处理类
+            </summary>
+        </member>
+        <member name="M:PU.BLL.BLL_customerPaperInfoB.GetModel(System.Int32)">
+            <summary>
+            获取一个客户报纸信息实体
+            </summary>
+            <param name="customerPaperID">客户报纸信息ID</param>
+            <returns>客户报纸信息实体</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_customerPaperInfoB.GetModelForPaperID(System.Int32,System.String)">
+            <summary>
+            获取一个客户报纸信息实体
+            </summary>
+            <param name="paperID">报纸信息ID</param>
+            <param name="customerID">客户信息ID</param>
+            <returns>客户报纸信息实体</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_customerPaperInfoB.Delete(System.Int32)">
+            <summary>
+            删除客户报纸信息,返回所影响的行数
+            </summary>
+            <param name="customerPaperID">客户报纸信息ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <!-- 对于成员“M:PU.BLL.BLL_customerPaperInfoB.Add(System.String[],System.String,System.String[])”忽略有格式错误的 XML 注释 -->
+        <member name="M:PU.BLL.BLL_customerPaperInfoB.Add(System.String,System.Int32,System.String)">
+            <summary>
+            添加客户报纸信息,返回所影响的行数
+            </summary>
+            <param name="customerID">客户信息ID</param>
+            <param name="paperID">报纸信息ID</param>
+            <param name="updateOverDate">已更新到日期</param>
+            <returns>返回-1，表示客户已有此报纸；大于0 添加成功！
+            </returns>
+        </member>
+        <member name="M:PU.BLL.BLL_customerPaperInfoB.GetCustomerPaperList(System.String)">
+            <summary>
+            获取客户报纸信息列表
+            </summary>
+            <param name="customerID">客户ID</param>
+            <returns>客户报纸信息列表</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_customerPaperInfoB.EditupdateOverDate(System.String,System.Int32,System.DateTime)">
+            <summary>
+            修改已更新到日期
+            </summary>
+            <param name="customerID">客户信息ID</param>
+            <param name="paperID">报纸信息ID</param>
+            <param name="updateOverDate">已更新到日期</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_customerPaperInfoB.getupdateOverDate(System.String,System.Int32)">
+            <summary>
+            获取已更新到日期(返回3000-01-01 说明该客户没有该报纸)
+            </summary>
+            <param name="customerID">客户信息ID</param>
+            <param name="paperID">报纸信息ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.BLL.BLL_customerPaperInfoB.GetCustomerPaperIDArr(System.String)">
+            <summary>
+            获取客户报纸信息ID集合
+            </summary>
+            <param name="customerID">客户ID</param>
+            <returns>客户报纸信息ID集合</returns>
+        </member>
+        <member name="T:PU.BLL.BLL_customerBasisInfoB">
+            <summary>
+            客户基本信息数据处理类
+            </summary>
+        </member>
+        <member name="M:PU.BLL.BLL_customerBasisInfoB.#ctor">
+            <summary>
+            客户基本信息数据处理类
+            </summary>
+        </member>
+        <member name="M:PU.BLL.BLL_customerBasisInfoB.GetModel(System.String)">
+            <summary>
+            获取一个客户基本信息实体
+            </summary>
+            <param name="customerID">客户基本信息ID</param>
+            <returns>客户基本信息实体</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_customerBasisInfoB.Add(PU.Model.MDL_customerBasisInfoB)">
+            <summary>
+            添加客户基本信息,返回所影响的行数
+            </summary>
+            <param name="model">客户基本信息实体类</param>
+            <returns>返回PubTool.ReturnMsg信息，
+                    Succeed：是否执行成功，true成功，false失败；
+                    state：0 客户ID已存在，不允许再添加！；1 客户信息添加成功！
+                    Msg：提示信息
+            </returns>
+        </member>
+        <member name="M:PU.BLL.BLL_customerBasisInfoB.Update(PU.Model.MDL_customerBasisInfoB)">
+            <summary>
+            修改客户基本信息,返回所影响的行数
+            </summary>
+            <param name="model">客户基本信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_customerBasisInfoB.Delete(System.String)">
+            <summary>
+            删除客户基本信息,返回所影响的行数
+            </summary>
+            <param name="customerID">客户基本信息ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_customerBasisInfoB.GetCustomerBasisInfoList(System.Int32,System.Int32)">
+            <summary>
+            获取客户基本信息列表(分页)
+            </summary>
+            <param name="pageSize">每页面行数</param>
+            <param name="goPage">要跳转到的页码</param>
+            <returns>分页信息返回数据结构</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_customerBasisInfoB.SetCustomerActive(System.String,System.Int32)">
+            <summary>
+            设置客户有效状态
+            </summary>
+            <param name="customerID">客户ID</param>
+            <param name="active">有效状态：1启用；0 禁用</param>
+            <returns>返回所影响的行数</returns>
+        </member>
+        <member name="T:PU.BLL.BLL_opusBasisInfoB">
+            <summary>
+            品基本信息数据处理类
+            </summary>
+        </member>
+        <member name="M:PU.BLL.BLL_opusBasisInfoB.#ctor">
+            <summary>
+            品基本信息数据处理类
+            </summary>
+        </member>
+        <member name="M:PU.BLL.BLL_opusBasisInfoB.getOpusBasisInfoID">
+            <summary>
+            获取当前用户的作品基本信息ID(如果没有会自动创建)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PU.BLL.BLL_opusBasisInfoB.GetModel(System.Int32)">
+            <summary>
+            获取一个作品基本信息实体
+            </summary>
+            <param name="opusBasisInfoID">作品基本信息ID</param>
+            <returns>作品基本信息实体</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_opusBasisInfoB.Add(PU.Model.MDL_opusBasisInfoB)">
+            <summary>
+            添加作品基本信息,返回当前添加信息的ID
+            </summary>
+            <param name="model">作品基本信息实体类</param>
+            <returns>当前添加信息的ID</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_opusBasisInfoB.Update(PU.Model.MDL_opusBasisInfoB)">
+            <summary>
+            修改作品基本信息,返回所影响的行数
+            </summary>
+            <param name="model">作品基本信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_opusBasisInfoB.Delete(System.Int32)">
+            <summary>
+            删除作品基本信息,返回所影响的行数
+            </summary>
+            <param name="opusBasisInfoID">作品基本信息ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="T:PU.BLL.BLL_editionCollectionInfoB">
+            <summary>
+            版面收藏信息数据处理类
+            </summary>
+        </member>
+        <member name="M:PU.BLL.BLL_editionCollectionInfoB.#ctor">
+            <summary>
+            版面收藏信息数据处理类
+            </summary>
+        </member>
+        <member name="M:PU.BLL.BLL_editionCollectionInfoB.getUserCollectionEditionList">
+            <summary>
+            获取当前用户收藏的所有版面列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PU.BLL.BLL_editionCollectionInfoB.GetModel(System.Int32)">
+            <summary>
+            获取一个版面收藏信息实体
+            </summary>
+            <param name="editionCollectionInfoID">版面收藏信息ID</param>
+            <returns>版面收藏信息实体</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_editionCollectionInfoB.Add(PU.Model.MDL_editionCollectionInfoB)">
+            <summary>
+            添加版面收藏信息,返回当前添加信息的ID
+            </summary>
+            <param name="model">版面收藏信息实体类</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.BLL.BLL_editionCollectionInfoB.Update(PU.Model.MDL_editionCollectionInfoB)">
+            <summary>
+            修改版面收藏信息,返回所影响的行数
+            </summary>
+            <param name="model">作品报道信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_editionCollectionInfoB.Delete(System.Int32)">
+            <summary>
+            删除版面收藏信息,返回所影响的行数
+            </summary>
+            <param name="editionCollectionInfoID">版面收藏信息ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_editionCollectionInfoB.ifHave(System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            判断用户版面是否已收藏
+            </summary>
+            <param name="paperID">报纸ID</param>
+            <param name="RQ">日期</param>
+            <param name="BC">版次</param>
+            <param name="UserGUID">用户GUID</param>
+            <returns>true：已收藏、false：未收藏</returns>
+        </member>
+        <member name="T:PU.BLL.BLL_pressClippingNewsInfoB">
+            <summary>
+            剪报报道信息数据处理类
+            </summary>
+        </member>
+        <member name="M:PU.BLL.BLL_pressClippingNewsInfoB.#ctor">
+            <summary>
+            剪报报道信息数据处理类
+            </summary>
+        </member>
+        <member name="M:PU.BLL.BLL_pressClippingNewsInfoB.GetModel(System.Int32)">
+            <summary>
+            获取一个剪报报道信息实体
+            </summary>
+            <param name="pressClippingNewsInfoID">剪报报道信息ID</param>
+            <returns>剪报报道信息实体</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_pressClippingNewsInfoB.GetPressClippingNewsInfoList(System.Int32)">
+            <summary>
+            获取剪报报道列表
+            </summary>
+            <param name="pressClippingBasisInfoID">剪报基本信息ID</param>
+            <returns>剪报报道列表</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_pressClippingNewsInfoB.Add(System.Int64,System.Int32)">
+            <summary>
+            添加剪报报道信息
+            </summary>
+            <param name="KID">文章KID</param>
+            <param name="pressClippingBasisInfoID">剪报基本信息ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.BLL.BLL_pressClippingNewsInfoB.Add(PU.Model.MDL_pressClippingNewsInfoB)">
+            <summary>
+            添加剪报报道信息,返回当前添加信息的ID
+            </summary>
+            <param name="model">剪报报道信息实体类</param>
+            <returns>当前添加信息的ID</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_pressClippingNewsInfoB.Update(PU.Model.MDL_pressClippingNewsInfoB)">
+            <summary>
+            修改剪报报道信息,返回所影响的行数
+            </summary>
+            <param name="model">剪报报道信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_pressClippingNewsInfoB.Delete(System.Int32)">
+            <summary>
+            删除剪报报道信息,返回所影响的行数
+            </summary>
+            <param name="pressClippingNewsInfoID">剪报报道信息ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_pressClippingNewsInfoB.addClippingNewes(System.String,System.Int32,System.Int32@)">
+            <summary>
+            添加剪报报道信息
+            </summary>
+            <param name="KIDStr">文章KID串。多个以“,”隔开</param>
+            <param name="pressClippingBasisInfoID">剪报基本信息ID</param>
+            <param name="delsl">被删除的数量</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.BLL.BLL_pressClippingNewsInfoB.ifHave(System.Int64,System.Int32)">
+            <summary>
+            判断文章是否已在剪报中
+            </summary>
+            <param name="KID">文章KID</param>
+            <param name="pressClippingBasisInfoID">剪报基本信息ID</param>
+            <returns>true：已存在、false：未存在</returns>	
+        </member>
+        <member name="T:PU.BLL.BLL_newsCollectionInfoB">
+            <summary>
+            报道收藏信息数据处理类
+            </summary>
+        </member>
+        <member name="M:PU.BLL.BLL_newsCollectionInfoB.#ctor">
+            <summary>
+            报道收藏信息数据处理类
+            </summary>
+        </member>
+        <member name="M:PU.BLL.BLL_newsCollectionInfoB.getUserNewsCollectionList(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            获取当前用户报道收藏列表(分页)
+            </summary>
+            <param name="newsCollectionTypeID">报道收藏类别ID。如果为-1则列出所有收藏的文章</param>
+            <param name="pageSize">每页面行数</param>
+            <param name="goPage">要跳转到的页码</param>
+            <returns>分页信息返回数据结构</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_newsCollectionInfoB.GetModel(System.Int32)">
+            <summary>
+            获取一个报道收藏信息实体
+            </summary>
+            <param name="newsCollectionInfoID">报道收藏信息ID</param>
+            <returns>报道收藏信息实体</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_newsCollectionInfoB.Add(System.String,System.Int32,System.Int32@)">
+            <summary>
+            添加报道收藏信息
+            </summary>
+            <param name="KIDStr">文章KID串。多个以“,”隔开</param>
+            <param name="newsCollectionTypeID">报道收藏类别ID</param>
+            <param name="delsl">被删除的数量</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.BLL.BLL_newsCollectionInfoB.Update(PU.Model.MDL_newsCollectionInfoB)">
+            <summary>
+            修改报道收藏信息,返回所影响的行数
+            </summary>
+            <param name="model">报道收藏信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_newsCollectionInfoB.Delete(System.Int32)">
+            <summary>
+            删除报道收藏信息,返回所影响的行数
+            </summary>
+            <param name="newsCollectionInfoID">报道收藏信息ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_newsCollectionInfoB.ifHave(System.Int64,System.String)">
+            <summary>
+            判断用户文章是否已收藏
+            </summary>
+            <param name="KID">文章KID</param>
+            <param name="UserGUID">用户GUID</param>
+            <returns>true：已收藏、false：未收藏</returns>
+        </member>
+        <member name="T:PU.BLL.BLL_pressClippingBasisInfoB">
+            <summary>
+            剪报基本信息数据处理类
+            </summary>
+        </member>
+        <member name="M:PU.BLL.BLL_pressClippingBasisInfoB.#ctor">
+            <summary>
+            剪报基本信息数据处理类
+            </summary>
+        </member>
+        <member name="M:PU.BLL.BLL_pressClippingBasisInfoB.getUserPressClippingList(System.Int32,System.Int32)">
+            <summary>
+            获取当前用户剪报列表(分页)
+            </summary>
+            <param name="pageSize">每页面行数</param>
+            <param name="goPage">要跳转到的页码</param>
+            <returns>分页信息返回数据结构</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_pressClippingBasisInfoB.getPressClippingList(System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            获取剪报列表(分页)
+            </summary>
+            <param name="pressClippingName">剪报名称</param>
+            <param name="state">状态。0表示全部</param>
+            <param name="pageSize">每页面行数</param>
+            <param name="goPage">要跳转到的页码</param>
+            <returns>分页信息返回数据结构</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_pressClippingBasisInfoB.getPressClippingList(System.Int32)">
+            <summary>
+            获取前当用户的剪报列表
+            </summary>
+            <param name="state">状态。0：全部；47：选编、48：审批中、49：审批通过、50：文件生成、51：排版中、52：制作完成、53：销售完成</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.BLL.BLL_pressClippingBasisInfoB.GetModel(System.Int32)">
+            <summary>
+            获取一个剪报基本信息实体
+            </summary>
+            <param name="pressClippingBasisInfoID">剪报基本信息ID</param>
+            <returns>剪报基本信息实体</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_pressClippingBasisInfoB.tjsp(System.Int32)">
+            <summary>
+            提交审批
+            </summary>
+            <param name="pressClippingBasisInfoID">剪报基本信息ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.BLL.BLL_pressClippingBasisInfoB.Add(PU.Model.MDL_pressClippingBasisInfoB)">
+            <summary>
+            添加剪报基本信息,返回当前添加信息的ID
+            </summary>
+            <param name="model">剪报基本信息实体类</param>
+            <returns>当前添加信息的ID</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_pressClippingBasisInfoB.Update(PU.Model.MDL_pressClippingBasisInfoB)">
+            <summary>
+            修改剪报基本信息,返回所影响的行数
+            </summary>
+            <param name="model">剪报基本信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_pressClippingBasisInfoB.Delete(System.Int32)">
+            <summary>
+            删除修改剪报基本,返回所影响的行数
+            </summary>
+            <param name="pressClippingBasisInfoID">修改剪报基本ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="T:PU.BLL.BLL_paperB">
+            <summary>
+            报纸信息类
+            </summary>
+        </member>
+        <member name="M:PU.BLL.BLL_paperB.getPaperName(System.Int32)">
+            <summary>
+            获取报名称
+            </summary>
+            <param name="paperID">报纸ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.BLL.BLL_paperB.ifHavePaper(System.Int32)">
+            <summary>
+            判断报纸是否存在(true：存在)
+            </summary>
+            <param name="paperID">报纸ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.BLL.BLL_paperB.inItdicPaper">
+            <summary>
+            初始化报名称字典列表
+            </summary>
+        </member>
+        <member name="M:PU.BLL.BLL_paperB.getPaperList">
+            <summary>
+            获取所有报刊列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PU.BLL.BLL_paperB.getAllPaperList">
+            <summary>
+            获取所有报刊列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PU.BLL.BLL_paperB.getGroupPaperList(System.String)">
+            <summary>
+            获取集团报刊列表
+            </summary>
+            <param name="groupName">所属报业集团</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.BLL.BLL_paperB.getProvincePaperList(System.Int32)">
+            <summary>
+             获取某一省份报刊列表
+            </summary>
+            <param name="province">省份</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.BLL.BLL_paperB.getTypePaperList(System.Int32)">
+            <summary>
+            获取某一类别报刊列表
+            </summary>
+            <param name="paperTypeID">分类</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.BLL.BLL_paperB.getSearchPaperList(System.String)">
+            <summary>
+            查询报刊列表
+            </summary>
+            <param name="key">关节词</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.BLL.BLL_paperB.getProvincePaperObj">
+            <summary>
+            获取有报纸的省份报刊对象列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PU.BLL.BLL_paperB.getTypePaperObj">
+            <summary>
+            获取有报纸的类别报刊对象列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PU.BLL.BLL_aliasInfoB">
+            <summary>
+            笔名信息数据处理类
+            </summary>
+        </member>
+        <member name="M:PU.BLL.BLL_aliasInfoB.#ctor">
+            <summary>
+             笔名信息数据处理类 
+            </summary>
+        </member>
+        <member name="M:PU.BLL.BLL_aliasInfoB.getUserAliasInfoList">
+            <summary>
+            获取当前用户笔名列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PU.BLL.BLL_aliasInfoB.GetModel(System.Int32)">
+            <summary>
+            获取一个笔名信息实体
+            </summary>
+            <param name="aliasInfoID">笔名信息ID</param>
+            <returns>笔名信息实体</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_aliasInfoB.Add(PU.Model.MDL_aliasInfoB)">
+            <summary>
+            添加笔名信息,返回当前添加信息的ID
+            </summary>
+            <param name="model">笔名信息实体类</param>
+            <returns>当前添加信息的ID</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_aliasInfoB.Update(PU.Model.MDL_aliasInfoB)">
+            <summary>
+            修改笔名信息,返回所影响的行数
+            </summary>
+            <param name="model">笔名信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_aliasInfoB.Delete(System.Int32)">
+            <summary>
+            删除笔名信息,返回所影响的行数
+            </summary>
+            <param name="aliasInfoID">笔名信息ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_aliasInfoB.ifHave(System.String,System.String)">
+            <summary>
+            判断笔名是否已存在
+            </summary>
+            <param name="aliasInfo">笔名</param>
+            <param name="UserGUID">用户GUID</param>
+            <returns>true：已存在、false：不存在</returns>
+        </member>
+        <member name="T:PU.BLL.BLL_opusNewsInfoB">
+            <summary>
+            作品报道信息数据处理类
+            </summary>
+        </member>
+        <member name="M:PU.BLL.BLL_opusNewsInfoB.#ctor">
+            <summary>
+            作品报道信息数据处理类
+            </summary>
+        </member>
+        <member name="M:PU.BLL.BLL_opusNewsInfoB.getUserOpusNewsList(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            获取当前用户作品列表(分页)
+            </summary>
+            <param name="ConfirmState">确认状态</param>
+            <param name="pageSize">每页面行数</param>
+            <param name="goPage">要跳转到的页码</param>
+            <returns>分页信息返回数据结构</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_opusNewsInfoB.setConfirmState(System.Int32,System.String)">
+            <summary>
+            设置当前用户作品的确认状态
+            </summary>
+            <param name="ConfirmState">确认状态。0：已确认、1：未确认</param>
+            <param name="opusNewsInfoIDStr">作品报道信息ID。多个间以“,”隔开</param>
+        </member>
+        <member name="M:PU.BLL.BLL_opusNewsInfoB.getUserNewOpusList">
+            <summary>
+            获取当前用户新的作品的KID列表
+            </summary>
+        </member>
+        <member name="M:PU.BLL.BLL_opusNewsInfoB.getUserNewsCollectionList">
+            <summary>
+            获取当前用户已有的作品KID字典
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PU.BLL.BLL_opusNewsInfoB.addOpusNewsForKIDStr(System.String,System.Int32,System.Int32@)">
+            <summary>
+            将KID串文章加入当前用户的作品报道信息表中
+            </summary>
+            <param name="KIDStr">文章KID串。多个以“,”隔开</param>
+            <param name="ConfirmState">确认状态。0：已确认、1：未确认</param>
+            <param name="delsl">被删除的数量</param>
+            <returns>返回成功数量，不成功的说明文章已在我的作品中</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_opusNewsInfoB.GetModel(System.Int32)">
+            <summary>
+            获取一个作品报道信息实体
+            </summary>
+            <param name="opusNewsInfoID">作品报道信息ID</param>
+            <returns>作品报道信息实体</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_opusNewsInfoB.Add(PU.Model.MDL_opusNewsInfoB)">
+            <summary>
+            添加作品报道信息,返回当前添加信息的ID
+            </summary>
+            <param name="model">作品报道信息实体类</param>
+            <returns>当前添加信息的ID</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_opusNewsInfoB.Update(PU.Model.MDL_opusNewsInfoB)">
+            <summary>
+            修改作品报道信息,返回所影响的行数
+            </summary>
+            <param name="model">作品报道信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_opusNewsInfoB.Delete(System.Int32)">
+            <summary>
+            删除作品报道信息,返回所影响的行数
+            </summary>
+            <param name="opusNewsInfoID">作品报道信息ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="T:PU.BLL.BLL_newsCollectionTypeB">
+            <summary>
+            报道收藏类别数据处理类
+            </summary>
+        </member>
+        <member name="M:PU.BLL.BLL_newsCollectionTypeB.#ctor">
+            <summary>
+            报道收藏类别数据处理类
+            </summary>
+        </member>
+        <member name="M:PU.BLL.BLL_newsCollectionTypeB.getUserCollectionTypeList">
+            <summary>
+            获取当前用户报道收藏类别列表(只获取第二层)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PU.BLL.BLL_newsCollectionTypeB.getUserCollectionTypeRootID">
+            <summary>
+             获取当前用户报道收藏类别根节点ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PU.BLL.BLL_newsCollectionTypeB.CreateUserCollectionType">
+            <summary>
+             为当前用户自动创建报道收藏类别
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PU.BLL.BLL_newsCollectionTypeB.GetModel(System.Int32)">
+            <summary>
+            获取一个报道收藏类别实体
+            </summary>
+            <param name="newsCollectionTypeID">报道收藏类别ID</param>
+            <returns>报道收藏类别实体</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_newsCollectionTypeB.Add(PU.Model.MDL_newsCollectionTypeB)">
+            <summary>
+            添加报道收藏类别,返回当前添加信息的ID
+            </summary>
+            <param name="model">报道收藏类别实体类</param>
+            <returns>当前添加信息的ID</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_newsCollectionTypeB.Update(PU.Model.MDL_newsCollectionTypeB)">
+            <summary>
+            修改报道收藏类别,返回所影响的行数
+            </summary>
+            <param name="model">作品报道信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_newsCollectionTypeB.Delete(System.Int32)">
+            <summary>
+            删除报道收藏类别,返回所影响的行数
+            </summary>
+            <param name="newsCollectionTypeID">报道收藏类别ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_newsCollectionTypeB.ifHaveTypeName(System.Int32,System.Int32,System.String)">
+            <summary>
+            判断同级类别名称是否存在
+            </summary>
+            <param name="newsCollectionTypeID">排除的报道收藏类别ID</param>
+            <param name="paterNewsCollectionTypeID">父报道收藏类别ID</param>
+            <param name="collectionTypeName">类别名称</param>
+            <returns>true：有、false：没有</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_newsCollectionTypeB.ifHaveSub(System.Int32)">
+            <summary>
+            判断类别下是否有子类别
+            </summary>
+            <param name="newsCollectionTypeID">报道收藏类别ID</param>
+            <returns>true：有、false：没有</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_newsCollectionTypeB.ifHaveArticle(System.Int32)">
+            <summary>
+            判断类别下是有文章
+            </summary>
+            <param name="newsCollectionTypeID">报道收藏类别ID</param>
+            <returns>true：有、false：没有</returns>
+        </member>
+        <member name="T:PU.BLL.BLL_newsRecommendInfoB">
+            <summary>
+            报道推荐信息数据处理类
+            </summary>
+        </member>
+        <member name="M:PU.BLL.BLL_newsRecommendInfoB.#ctor">
+            <summary>
+            报道推荐信息数据处理类
+            </summary>
+        </member>
+        <member name="M:PU.BLL.BLL_newsRecommendInfoB.getUserNewsRecommendInfoBList(System.Int32,System.Int32)">
+            <summary>
+            获取当前用户报道推荐列表(分页)
+            </summary>
+            <param name="pageSize">每页面行数</param>
+            <param name="goPage">要跳转到的页码</param>
+            <returns>分页信息返回数据结构</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_newsRecommendInfoB.GetModel(System.Int32)">
+            <summary>
+            获取一个报道推荐信息实体
+            </summary>
+            <param name="newscInfoID">报道推荐信息ID</param>
+            <returns>报道推荐信息实体</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_newsRecommendInfoB.Add(System.String,System.String,System.Int32@)">
+            <summary>
+            添加报道推荐信息
+            </summary>
+            <param name="KIDStr">文章KID串。多个以“,”隔开</param>
+            <param name="objectUserGUIDs">目标用户GUID，多个以“,”隔开</param>
+            <param name="delsl">被删除的数量</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.BLL.BLL_newsRecommendInfoB.Add(PU.Model.MDL_newsRecommendInfoB)">
+            <summary>
+            添加报道推荐信息,返回当前添加信息的ID
+            </summary>
+            <param name="model">报道推荐信息实体类</param>
+            <returns>当前添加信息的ID</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_newsRecommendInfoB.Update(PU.Model.MDL_newsRecommendInfoB)">
+            <summary>
+            修改报道推荐信息,返回所影响的行数
+            </summary>
+            <param name="model">报道推荐信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_newsRecommendInfoB.Delete(System.Int32)">
+            <summary>
+            删除报道推荐信息,返回所影响的行数
+            </summary>
+            <param name="newscInfoID">报道推荐信息ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.BLL.BLL_newsRecommendInfoB.Delete(System.String,System.String,System.Int64)">
+            <summary>
+            删除报道推荐信息
+            </summary>
+            <param name="sourceUserGUID">来源用户GUID</param>
+            <param name="objectUserGUID">目标用户GUID</param>
+            <param name="KID">文章ID</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

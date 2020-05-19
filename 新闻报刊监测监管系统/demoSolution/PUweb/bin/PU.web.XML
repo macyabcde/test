@@ -1,0 +1,5983 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PU.web</name>
+    </assembly>
+    <members>
+        <member name="T:PU.web.Search.FxInput">
+            <summary>
+            分项检索
+            </summary>
+        </member>
+        <member name="F:PU.web.Search.FxInput.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.FxInput.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.FxInput.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.FxInput.left2">
+            <summary>
+            left2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.FxInput.txtYT">
+            <summary>
+            txtYT 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.FxInput.txtBT">
+            <summary>
+            txtBT 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.FxInput.txtFB">
+            <summary>
+            txtFB 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.FxInput.txtZZ">
+            <summary>
+            txtZZ 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.FxInput.txtLM">
+            <summary>
+            txtLM 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.FxInput.txtTX">
+            <summary>
+            txtTX 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.FxInput.txtGGZ">
+            <summary>
+            txtGGZ 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.FxInput.txtGGCP">
+            <summary>
+            txtGGCP 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.FxInput.txtstartDate">
+            <summary>
+            txtstartDate 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.FxInput.txtendDate">
+            <summary>
+            txtendDate 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.FxInput.DPListsearchRetOrder">
+            <summary>
+            DPListsearchRetOrder 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.FxInput.BtSearch">
+            <summary>
+            BtSearch 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.FxInput.PaperSelect1">
+            <summary>
+            PaperSelect1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.FxInput.footer2">
+            <summary>
+            footer2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="T:PU.web.Resource.showJPGWH">
+            <summary>
+            显示JPG图片，按宽高进行缩放
+            </summary>
+        </member>
+        <member name="F:PU.web.Resource.showJPGWH.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:PU.web.Resource.showJPGWH.BytesToImage(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            对图片流文件进行操作
+            </summary>
+            <param name="streamByte"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.web.Resource.showJPGWH.ImageToBytes(System.Drawing.Image)">
+             <summary > 
+            将Image对象转化成二进制流 
+             </summary > 
+             <param name="image" > </param > 
+             <returns > </returns > 
+        </member>
+        <member name="T:PU.web.pressClipping.pressClippingNews">
+            <summary>
+            报道信息
+            </summary>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingNews.pressClippingBasisInfoID">
+            <summary>
+            剪报基本信息ID
+            </summary>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingNews.spPower">
+            <summary>
+            137	剪报审批
+            </summary>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingNews.searchPower">
+            <summary>
+            138	剪报查询
+            </summary>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingNews.wfOtherInfoListPower">
+            <summary>
+            141	维护它人剪报报道信息
+            </summary>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingNews.whatDo">
+            <summary>
+            操作命令
+            </summary>
+        </member>
+        <member name="M:PU.web.pressClipping.pressClippingNews.inItPage">
+            <summary>
+            页面初始化
+            </summary>
+        </member>
+        <member name="M:PU.web.pressClipping.pressClippingNews.ListBind">
+            <summary>
+            绑定报道列表
+            </summary>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingNews.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingNews.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingNews.lbwhatDo">
+            <summary>
+            lbwhatDo 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingNews.btnRemove">
+            <summary>
+            btnRemove 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingNews.rptPressClippingNewsInfo">
+            <summary>
+            rptPressClippingNewsInfo 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingNews.lbtnQX">
+            <summary>
+            lbtnQX 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingNews.lbtnFX">
+            <summary>
+            lbtnFX 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingNews.HFpressClippingNewsInfoIDStr">
+            <summary>
+            HFpressClippingNewsInfoIDStr 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="T:PU.web.Paper.titleIndex">
+            <summary>
+            版面概览
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.titleIndex.paperID">
+            <summary>
+            报纸ID
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.titleIndex.RQ">
+            <summary>
+            出版日期
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.titleIndex.BM_dt">
+            <summary>
+            版面数据表
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.titleIndex.Article_dt">
+            <summary>
+            文章数据表
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.titleIndex.ArticleHaveBT_dt">
+            <summary>
+            有标题的文章数据表
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.titleIndex.PreRQ">
+            <summary>
+            上一期
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.titleIndex.NetRQ">
+            <summary>
+            下一期
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.titleIndex.dateHtml">
+            <summary>
+            日历天html(几号)
+            </summary>
+        </member>
+        <member name="M:PU.web.Paper.titleIndex.getArticleList(System.String)">
+            <summary>
+            根据版次获取文章列表
+            </summary>
+            <param name="BC">版次</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.web.Paper.titleIndex.DateListInit">
+            <summary>
+            日期下拉列表初始化
+            </summary>
+        </member>
+        <member name="M:PU.web.Paper.titleIndex.SetPagControl">
+            <summary>
+            页面控件赋值
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.titleIndex.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.titleIndex.LbRQ">
+            <summary>
+            LbRQ 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.titleIndex.txtKeyWord">
+            <summary>
+            txtKeyWord 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.titleIndex.HLinkPreRQ">
+            <summary>
+            HLinkPreRQ 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.titleIndex.HLinkNetRQ">
+            <summary>
+            HLinkNetRQ 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.titleIndex.DpListYear">
+            <summary>
+            DpListYear 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.titleIndex.DpListMonth">
+            <summary>
+            DpListMonth 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.titleIndex.footer1">
+            <summary>
+            footer1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.titleIndex.rptBMShowList">
+            <summary>
+            rptBMShowList 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="T:PU.web.Paper.calendarPage">
+            <summary>
+            日历页面
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.calendarPage.paperID">
+            <summary>
+            报纸ID
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.calendarPage.year">
+            <summary>
+            年份
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.calendarPage.month">
+            <summary>
+            月份
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.calendarPage.RQ">
+            <summary>
+            当前版面日期
+            </summary>
+        </member>
+        <member name="M:PU.web.Paper.calendarPage.calendarDateHtml(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            生成日历天html
+            </summary>
+            <param name="paperID">报纸ID</param>
+            <param name="year">年份</param>
+            <param name="month">月份</param>
+            <param name="RQ">当前版面日期</param>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper6.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper6.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper6.left2">
+            <summary>
+            left2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper6.footer2">
+            <summary>
+            footer2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper6.list">
+            <summary>
+            显示的每个报纸html列表
+            </summary>
+        </member>
+        <member name="M:PU.web.PaperLook.groupPaper6.getHtmlList">
+            <summary>
+            生成要显示的html列表（每一个报纸为一个元素）
+            </summary>
+            <param name="dt">报纸数据</param>
+            <returns></returns>
+        </member>
+        <member name="F:PU.web.PaperLook.typePaper.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.typePaper.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.typePaper.left2">
+            <summary>
+            left2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.typePaper.footer2">
+            <summary>
+            footer2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.typePaper.list">
+            <summary>
+            显示的每个报纸html列表
+            </summary>
+        </member>
+        <member name="F:PU.web.PaperLook.typePaper.dt_type">
+            <summary>
+            报刊分类数据表
+            </summary>
+        </member>
+        <member name="M:PU.web.PaperLook.typePaper.getHtmlList">
+            <summary>
+            生成要显示的html列表（每一个报纸为一个元素）
+            </summary>
+            <param name="dt">报纸数据</param>
+            <returns></returns>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionTypeAdd.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionTypeAdd.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionTypeAdd.lbwhatDo">
+            <summary>
+            lbwhatDo 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionTypeAdd.tbcollectionTypeName">
+            <summary>
+            tbcollectionTypeName 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionTypeAdd.tbxuhao">
+            <summary>
+            tbxuhao 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionTypeAdd.btnFinish">
+            <summary>
+            btnFinish 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionTypeAdd.btnCancel">
+            <summary>
+            btnCancel 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionTypeAdd.whatDo">
+            <summary>
+            做什么
+            </summary>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionTypeAdd.newsCollectionTypeID">
+            <summary>
+            报道收藏类别ID
+            </summary>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionTypeAdd.addTypePower">
+            <summary>
+            124	添加报道收藏类别
+            </summary>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionTypeAdd.editTypePower">
+            <summary>
+            125	修改报道收藏类别
+            </summary>
+        </member>
+        <member name="M:PU.web.MyInformation.newsCollectionTypeAdd.inItPage">
+            <summary>
+            页面初始化
+            </summary>
+        </member>
+        <member name="M:PU.web.MyInformation.newsCollectionTypeAdd.inItAdd">
+            <summary>
+            为添初始化
+            </summary>
+        </member>
+        <member name="M:PU.web.MyInformation.newsCollectionTypeAdd.inItUpdate">
+            <summary>
+            为修改始化
+            </summary>
+        </member>
+        <member name="M:PU.web.MyInformation.newsCollectionTypeAdd.inItSelect">
+            <summary>
+            为查看始化
+            </summary>
+        </member>
+        <member name="M:PU.web.MyInformation.newsCollectionTypeAdd.WriteDataToPage">
+            <summary>
+            将数据写到页面
+            </summary>
+        </member>
+        <member name="M:PU.web.MyInformation.newsCollectionTypeAdd.GetModel(PU.Model.MDL_newsCollectionTypeB)">
+            <summary>
+            获取页面数据
+            </summary>
+            <param name="model">实体</param>
+            <returns>完成修改后的实体</returns>
+        </member>
+        <member name="M:PU.web.UserControl.head.GetTimeExplain(System.DateTime)">
+            <summary>
+            获取时间的时段描述，如：早上、晚上等
+            </summary>
+            <param name="time"></param>
+            <returns></returns>
+        </member>
+        <member name="F:PU.web.UserControl.head.lbUserInfo">
+            <summary>
+            lbUserInfo 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.UserControl.head.hylinkLoginOut">
+            <summary>
+            hylinkLoginOut 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.pubSearchList.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.pubSearchList.tbKeyWord">
+            <summary>
+            tbKeyWord 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.pubSearchList.btnSearch">
+            <summary>
+            btnSearch 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.pubSearchList.lbKewWord">
+            <summary>
+            lbKewWord 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.pubSearchList.rptData">
+            <summary>
+            rptData 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.pubSearchList.PageControl1">
+            <summary>
+            PageControl1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.pubSearchList.keyWord">
+            <summary>
+            搜索关键字
+            </summary>
+        </member>
+        <member name="F:PU.web.Search.pubSearchList.paperIDStr">
+            <summary>
+            文章ID
+            </summary>
+        </member>
+        <member name="M:PU.web.Search.pubSearchList.dataBind">
+            <summary>
+            数据绑定
+            </summary>
+        </member>
+        <member name="M:PU.web.Search.pubSearchList.getKeyWord(System.String)">
+            <summary>
+            处理关键词(把空格换成“,”)
+            </summary>
+            <param name="KeyWord">关键词串</param>
+            <returns></returns>
+        </member>
+        <member name="F:PU.web.Search.PaperSelect.list_prv">
+            <summary>
+            省份报纸对象列表
+            </summary>
+        </member>
+        <member name="F:PU.web.Search.PaperSelect.list_type">
+            <summary>
+            类别报纸对象列表
+            </summary>
+        </member>
+        <member name="F:PU.web.Search.PaperSelect.dt_group">
+            <summary>
+            集团报纸列表
+            </summary>
+        </member>
+        <member name="F:PU.web.Search.PaperSelect.dt_SC">
+            <summary>
+            报刊收藏列表
+            </summary>
+        </member>
+        <member name="M:PU.web.Search.PaperSelect.getCKboxHtml(System.Data.DataRow,System.String)">
+            <summary>
+            生成报纸复选框html代码
+            </summary>
+            <param name="row">报纸数据行</param>
+            <param name="name">复选框起始名称</param>
+            <returns></returns>
+        </member>
+        <member name="T:PU.web.pressClipping.pressClippingSearchList">
+            <summary>
+            剪报查询
+            </summary>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSearchList.editPower">
+            <summary>
+             139	修改它人剪报
+            </summary>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSearchList.delPower">
+            <summary>
+            140	删除它人剪报
+            </summary>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSearchList.QzReturnPower">
+            <summary>
+            142	强制退回
+            </summary>
+        </member>
+        <member name="M:PU.web.pressClipping.pressClippingSearchList.inIt">
+            <summary>
+            页面初始化
+            </summary>
+        </member>
+        <member name="M:PU.web.pressClipping.pressClippingSearchList.search">
+            <summary>
+            检索(转到第一页)
+            </summary>
+        </member>
+        <member name="M:PU.web.pressClipping.pressClippingSearchList.dataBind">
+            <summary>
+            数据绑定
+            </summary>
+        </member>
+        <member name="M:PU.web.pressClipping.pressClippingSearchList.del">
+            <summary>
+            删除剪报
+            </summary>
+        </member>
+        <member name="M:PU.web.pressClipping.pressClippingSearchList.QzReturn">
+            <summary>
+            强制退回
+            </summary>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSearchList.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSearchList.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSearchList.BtRef">
+            <summary>
+            BtRef 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSearchList.HidValue">
+            <summary>
+            HidValue 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSearchList.HidCommand">
+            <summary>
+            HidCommand 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSearchList.BtCommand">
+            <summary>
+            BtCommand 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSearchList.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSearchList.left2">
+            <summary>
+            left2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSearchList.txtpressClippingName">
+            <summary>
+            txtpressClippingName 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSearchList.DPListstate">
+            <summary>
+            DPListstate 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSearchList.BtSearch">
+            <summary>
+            BtSearch 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSearchList.rptRetList">
+            <summary>
+            rptRetList 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSearchList.pageControl1">
+            <summary>
+            pageControl1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSearchList.footer2">
+            <summary>
+            footer2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper2.list">
+            <summary>
+            显示的每个报纸html列表
+            </summary>
+        </member>
+        <member name="M:PU.web.PaperLook.groupPaper2.getHtmlList">
+            <summary>
+            生成要显示的html列表（每一个报纸为一个元素）
+            </summary>
+            <param name="dt">报纸数据</param>
+            <returns></returns>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper2.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper2.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper2.left2">
+            <summary>
+            left2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper2.footer2">
+            <summary>
+            footer2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper7.list">
+            <summary>
+            显示的每个报纸html列表
+            </summary>
+        </member>
+        <member name="M:PU.web.PaperLook.groupPaper7.getHtmlList">
+            <summary>
+            生成要显示的html列表（每一个报纸为一个元素）
+            </summary>
+            <param name="dt">报纸数据</param>
+            <returns></returns>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper7.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper7.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper7.left2">
+            <summary>
+            left2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper7.footer2">
+            <summary>
+            footer2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.provincePaper.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.provincePaper.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.provincePaper.left2">
+            <summary>
+            left2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.provincePaper.footer2">
+            <summary>
+            footer2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.provincePaper.list">
+            <summary>
+            显示的每个报纸html列表
+            </summary>
+        </member>
+        <member name="F:PU.web.PaperLook.provincePaper.dt_province">
+            <summary>
+            省份数据表
+            </summary>
+        </member>
+        <member name="M:PU.web.PaperLook.provincePaper.getHtmlList">
+            <summary>
+            生成要显示的html列表（每一个报纸为一个元素）
+            </summary>
+            <param name="dt">报纸数据</param>
+            <returns></returns>
+        </member>
+        <member name="F:PU.web.PaperLook.ex.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.ex.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.ex.left2">
+            <summary>
+            left2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.ex.footer2">
+            <summary>
+            footer2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.paperCollectionList.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.paperCollectionList.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.paperCollectionList.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.paperCollectionList.left2">
+            <summary>
+            left2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.paperCollectionList.footer2">
+            <summary>
+            footer2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.paperCollectionList.list">
+            <summary>
+            显示的每个报纸html列表
+            </summary>
+        </member>
+        <member name="M:PU.web.MyInformation.paperCollectionList.getHtmlList">
+            <summary>
+            生成要显示的html列表（每一个报纸为一个元素）
+            </summary>
+            <param name="dt">报纸数据</param>
+            <returns></returns>
+        </member>
+        <member name="T:PU.web.MyInformation.newsCollectionTypeSelect">
+            <summary>
+            报道收藏类别选择
+            </summary>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionTypeSelect.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionTypeSelect.lbwhatDo">
+            <summary>
+            lbwhatDo 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionTypeSelect.rbl_type">
+            <summary>
+            rbl_type 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionTypeSelect.btnFinish">
+            <summary>
+            btnFinish 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionTypeSelect.btnCancel">
+            <summary>
+            btnCancel 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:PU.web.MyInformation.newsCollectionTypeSelect.Bind">
+            <summary>
+            绑定收藏类别选择
+            </summary>
+        </member>
+        <member name="F:PU.web.ArticlePingFenPingLun.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="T:PU.web.pressClipping.pressClippingSelect">
+            <summary>
+            剪报选择
+            </summary>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSelect.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSelect.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSelect.lbwhatDo">
+            <summary>
+            lbwhatDo 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSelect.rbl_type">
+            <summary>
+            rbl_type 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSelect.btnFinish">
+            <summary>
+            btnFinish 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSelect.btnCancel">
+            <summary>
+            btnCancel 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:PU.web.pressClipping.pressClippingSelect.Bind">
+            <summary>
+            绑定剪报选择
+            </summary>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper1.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper1.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper1.left2">
+            <summary>
+            left2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper1.footer2">
+            <summary>
+            footer2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper1.list">
+            <summary>
+            显示的每个报纸html列表
+            </summary>
+        </member>
+        <member name="M:PU.web.PaperLook.groupPaper1.getHtmlList">
+            <summary>
+            生成要显示的html列表（每一个报纸为一个元素）
+            </summary>
+            <param name="dt">报纸数据</param>
+            <returns></returns>
+        </member>
+        <member name="T:PU.web.outgiving.CustomerBasisInfoList">
+            <summary>
+            客户管理
+            </summary>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoList.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoList.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoList.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoList.left2">
+            <summary>
+            left2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoList.BtnAdd">
+            <summary>
+            BtnAdd 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoList.BtnDel">
+            <summary>
+            BtnDel 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoList.rptCustomerList">
+            <summary>
+            rptCustomerList 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoList.pageControl1">
+            <summary>
+            pageControl1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoList.footer2">
+            <summary>
+            footer2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoList.btnRefresh">
+            <summary>
+            btnRefresh 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoList.HFcomand">
+            <summary>
+            HFcomand 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoList.HFvalue">
+            <summary>
+            HFvalue 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoList.HFactive">
+            <summary>
+            HFactive 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoList.btncomand">
+            <summary>
+            btncomand 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoList.addPower">
+            <summary>
+            144	添加客户
+            </summary>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoList.editPower">
+            <summary>
+            145	修改客户
+            </summary>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoList.delPower">
+            <summary>
+            146	删除客户
+            </summary>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoList.activePower">
+            <summary>
+            147	客户状态管理
+            </summary>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoList.fwPower">
+            <summary>
+            148	客户报纸范围管理
+            </summary>
+        </member>
+        <member name="M:PU.web.outgiving.CustomerBasisInfoList.inItPage">
+            <summary>
+            页面初始化
+            </summary>
+        </member>
+        <member name="M:PU.web.outgiving.CustomerBasisInfoList.ListBind">
+            <summary>
+            绑定客户信息
+            </summary>
+        </member>
+        <member name="T:PU.web.MyOpus.aliasInfoList">
+            <summary>
+            笔名设置
+            </summary>
+        </member>
+        <member name="F:PU.web.MyOpus.aliasInfoList.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.aliasInfoList.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.aliasInfoList.HidValue">
+            <summary>
+            HidValue 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.aliasInfoList.HidCommand">
+            <summary>
+            HidCommand 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.aliasInfoList.BtCommand">
+            <summary>
+            BtCommand 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.aliasInfoList.lbwhatDo">
+            <summary>
+            lbwhatDo 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.aliasInfoList.txtaliasInfo">
+            <summary>
+            txtaliasInfo 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.aliasInfoList.BtAdd">
+            <summary>
+            BtAdd 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.aliasInfoList.rptRetList">
+            <summary>
+            rptRetList 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.aliasInfoList.btnCancel">
+            <summary>
+            btnCancel 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:PU.web.MyOpus.aliasInfoList.dataBind">
+            <summary>
+            数据绑定
+            </summary>
+        </member>
+        <member name="F:PU.web.articlepinglun.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.articlepinglun.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.articlepinglun.BtRef">
+            <summary>
+            BtRef 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.articlepinglun.HidValue">
+            <summary>
+            HidValue 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.articlepinglun.HidCommand">
+            <summary>
+            HidCommand 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.articlepinglun.BtCommand">
+            <summary>
+            BtCommand 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.articlepinglun.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.articlepinglun.left2">
+            <summary>
+            left2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.articlepinglun.BtdelSelect">
+            <summary>
+            BtdelSelect 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.articlepinglun.BtFavorites">
+            <summary>
+            BtFavorites 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.articlepinglun.BtClippingSend">
+            <summary>
+            BtClippingSend 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.articlepinglun.BtMyOpus">
+            <summary>
+            BtMyOpus 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.articlepinglun.pageControl1">
+            <summary>
+            pageControl1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.articlepinglun.footer2">
+            <summary>
+            footer2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.UserControl.footer.LbLK">
+            <summary>
+            LbLK 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="T:PU.web.Search.orInput">
+            <summary>
+            而且检索
+            </summary>
+        </member>
+        <member name="F:PU.web.Search.orInput.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.orInput.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.orInput.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.orInput.left2">
+            <summary>
+            left2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.orInput.txtKeyWord">
+            <summary>
+            txtKeyWord 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.orInput.txtnotInKeyWord">
+            <summary>
+            txtnotInKeyWord 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.orInput.txtstartDate">
+            <summary>
+            txtstartDate 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.orInput.txtendDate">
+            <summary>
+            txtendDate 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.orInput.DPListsearchRetOrder">
+            <summary>
+            DPListsearchRetOrder 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.orInput.BtSearch">
+            <summary>
+            BtSearch 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.orInput.PaperSelect1">
+            <summary>
+            PaperSelect1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.orInput.footer2">
+            <summary>
+            footer2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="T:PU.web.pressClipping.pressClippingAdd">
+            <summary>
+            剪报基本信息
+            </summary>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.addPower">
+            <summary>
+            133	添加剪报
+            </summary>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.editPower">
+            <summary>
+            134	修改剪报
+            </summary>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.spPower">
+            <summary>
+            137	剪报审批
+            </summary>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.searchPower">
+            <summary>
+            138	剪报查询
+            </summary>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.editOtherPower">
+            <summary>
+            139	修改它人剪报
+            </summary>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.whatDo">
+            <summary>
+            操作命令
+            </summary>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.pressClippingBasisInfoID">
+            <summary>
+            剪报基本信息ID
+            </summary>
+        </member>
+        <member name="M:PU.web.pressClipping.pressClippingAdd.inItPage">
+            <summary>
+            页面初始化
+            </summary>
+        </member>
+        <member name="M:PU.web.pressClipping.pressClippingAdd.ddlBind">
+            <summary>
+            下拉列表绑定
+            </summary>
+        </member>
+        <member name="M:PU.web.pressClipping.pressClippingAdd.inItAdd">
+            <summary>
+            为添加初始化
+            </summary>
+        </member>
+        <member name="M:PU.web.pressClipping.pressClippingAdd.inItUpdate">
+            <summary>
+            为修改初始化
+            </summary>
+        </member>
+        <member name="M:PU.web.pressClipping.pressClippingAdd.inItPriview">
+            <summary>
+            为查看初始化
+            </summary>
+        </member>
+        <member name="M:PU.web.pressClipping.pressClippingAdd.inItSP">
+            <summary>
+            为审批初始化
+            </summary>
+        </member>
+        <member name="M:PU.web.pressClipping.pressClippingAdd.PageToObj">
+            <summary>
+            将表单信息存入剪报基本信息中
+            </summary>
+        </member>
+        <member name="M:PU.web.pressClipping.pressClippingAdd.ObjToPage">
+            <summary>
+            将剪报基本显示到表单信息中
+            </summary>
+        </member>
+        <member name="M:PU.web.pressClipping.pressClippingAdd.checkInfo">
+            <summary>
+            检查数据合法性
+            </summary>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.lbwhatDo">
+            <summary>
+            lbwhatDo 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.tbPressClippingName">
+            <summary>
+            tbPressClippingName 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.tbcustomer">
+            <summary>
+            tbcustomer 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.trPwd">
+            <summary>
+            trPwd 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.tbSalesman">
+            <summary>
+            tbSalesman 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.ddlExportOrder">
+            <summary>
+            ddlExportOrder 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.trState">
+            <summary>
+            trState 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.ddlState">
+            <summary>
+            ddlState 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.lbpressClippingBasisInfoID">
+            <summary>
+            lbpressClippingBasisInfoID 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.tbpressClippingBasisInfoID">
+            <summary>
+            tbpressClippingBasisInfoID 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.tbRemark">
+            <summary>
+            tbRemark 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.trSP">
+            <summary>
+            trSP 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.tbExamineNotion">
+            <summary>
+            tbExamineNotion 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.trMsg">
+            <summary>
+            trMsg 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.lbMsg">
+            <summary>
+            lbMsg 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.btnSPTG">
+            <summary>
+            btnSPTG 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.btnJXXB">
+            <summary>
+            btnJXXB 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.btnFinish">
+            <summary>
+            btnFinish 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.btnCancel">
+            <summary>
+            btnCancel 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingAdd.HDwhatDO">
+            <summary>
+            HDwhatDO 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="T:PU.web.Paper.Components.BMmodel">
+            <summary>
+            版面信息实体对象
+            </summary>
+        </member>
+        <member name="P:PU.web.Paper.Components.BMmodel.paperID">
+            <summary>
+            报纸ID
+            </summary>
+        </member>
+        <member name="P:PU.web.Paper.Components.BMmodel.RQ">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="P:PU.web.Paper.Components.BMmodel.BC">
+            <summary>
+            版次
+            </summary>
+        </member>
+        <member name="P:PU.web.Paper.Components.BMmodel.BM">
+            <summary>
+            版面
+            </summary>
+        </member>
+        <member name="P:PU.web.Paper.Components.BMmodel.PD">
+            <summary>
+            PDF文件名
+            </summary>
+        </member>
+        <member name="P:PU.web.Paper.Components.BMmodel.JP">
+            <summary>
+            JPG文件名
+            </summary>
+        </member>
+        <member name="P:PU.web.Paper.Components.BMmodel.w">
+            <summary>
+            版面文件宽
+            </summary>
+        </member>
+        <member name="P:PU.web.Paper.Components.BMmodel.h">
+            <summary>
+            版面文件高
+            </summary>
+        </member>
+        <member name="P:PU.web.Paper.Components.BMmodel.PreBC">
+            <summary>
+            得到上一版版次(返回空说明已是第一版)
+            </summary>
+        </member>
+        <member name="P:PU.web.Paper.Components.BMmodel.NetBC">
+            <summary>
+            得到下一版版次(返回空说明已是最后一版)
+            </summary>
+        </member>
+        <member name="P:PU.web.Paper.Components.BMmodel.PreRQ">
+            <summary>
+            得到上一期的报纸出版日期(返回-1说明没有上一期)
+            </summary>
+        </member>
+        <member name="P:PU.web.Paper.Components.BMmodel.NetRQ">
+            <summary>
+            得到下一期的报纸出版日期(返回-1说明没有下一期)
+            </summary>
+        </member>
+        <member name="M:PU.web.MyOpus.opusNewsQR.dataBind">
+            <summary>
+            数据绑定
+            </summary>
+        </member>
+        <member name="F:PU.web.MyOpus.opusNewsQR.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.opusNewsQR.HidValue">
+            <summary>
+            HidValue 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.opusNewsQR.HidValueNot">
+            <summary>
+            HidValueNot 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.opusNewsQR.HidCommand">
+            <summary>
+            HidCommand 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.opusNewsQR.rptRetList">
+            <summary>
+            rptRetList 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.opusNewsQR.BtQR0">
+            <summary>
+            BtQR0 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.opusNewsQR.BtFavorites0">
+            <summary>
+            BtFavorites0 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.WebForm1.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="T:PU.web.Search.andInput">
+            <summary>
+            而且检索
+            </summary>
+        </member>
+        <member name="F:PU.web.Search.andInput.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.andInput.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.andInput.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.andInput.left2">
+            <summary>
+            left2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.andInput.txtKeyWord">
+            <summary>
+            txtKeyWord 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.andInput.txtnotInKeyWord">
+            <summary>
+            txtnotInKeyWord 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.andInput.txtstartDate">
+            <summary>
+            txtstartDate 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.andInput.txtendDate">
+            <summary>
+            txtendDate 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.andInput.DPListsearchRetOrder">
+            <summary>
+            DPListsearchRetOrder 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.andInput.BtSearch">
+            <summary>
+            BtSearch 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.andInput.PaperSelect1">
+            <summary>
+            PaperSelect1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.andInput.footer2">
+            <summary>
+            footer2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="T:PU.web.Search.scriptureInput">
+            <summary>
+            经典检索
+            </summary>
+        </member>
+        <member name="F:PU.web.Search.scriptureInput.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.scriptureInput.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.scriptureInput.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.scriptureInput.left2">
+            <summary>
+            left2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.scriptureInput.txtKeyWord">
+            <summary>
+            txtKeyWord 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.scriptureInput.txtstartDate">
+            <summary>
+            txtstartDate 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.scriptureInput.txtendDate">
+            <summary>
+            txtendDate 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.scriptureInput.DPListsearchRetOrder">
+            <summary>
+            DPListsearchRetOrder 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.scriptureInput.BtSearch">
+            <summary>
+            BtSearch 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.scriptureInput.PaperSelect1">
+            <summary>
+            PaperSelect1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.scriptureInput.footer2">
+            <summary>
+            footer2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="T:PU.web.Paper.ArticlePage">
+            <summary>
+            文章页面
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.LbBC">
+            <summary>
+            LbBC 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.LbBM">
+            <summary>
+            LbBM 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.HLinkPreBC">
+            <summary>
+            HLinkPreBC 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.HLinkNetBC">
+            <summary>
+            HLinkNetBC 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.HLinkSC">
+            <summary>
+            HLinkSC 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.HLinkPDFDown">
+            <summary>
+            HLinkPDFDown 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.rptTitleList">
+            <summary>
+            rptTitleList 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.LbRQ">
+            <summary>
+            LbRQ 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.txtKeyWord">
+            <summary>
+            txtKeyWord 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.HLinkPreRQ">
+            <summary>
+            HLinkPreRQ 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.HLinkNetRQ">
+            <summary>
+            HLinkNetRQ 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.HLinkPreArticle">
+            <summary>
+            HLinkPreArticle 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.HLinkNextArticle">
+            <summary>
+            HLinkNextArticle 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.HLinkArticleSC">
+            <summary>
+            HLinkArticleSC 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.HLinkTJ">
+            <summary>
+            HLinkTJ 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.HLinkTJB">
+            <summary>
+            HLinkTJB 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.HLinkMyOpus">
+            <summary>
+            HLinkMyOpus 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.LbYT">
+            <summary>
+            LbYT 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.LbBT">
+            <summary>
+            LbBT 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.LbFB">
+            <summary>
+            LbFB 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.LbZZ">
+            <summary>
+            LbZZ 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.LbTX">
+            <summary>
+            LbTX 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.HLinkPreArticle2">
+            <summary>
+            HLinkPreArticle2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.HLinkNextArticle2">
+            <summary>
+            HLinkNextArticle2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.HLinkArticleSC2">
+            <summary>
+            HLinkArticleSC2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.HLinkTJ2">
+            <summary>
+            HLinkTJ2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.HLinkTJB2">
+            <summary>
+            HLinkTJB2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.HLinkMyOpus2">
+            <summary>
+            HLinkMyOpus2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.footer1">
+            <summary>
+            footer1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.rptBMShowList">
+            <summary>
+            rptBMShowList 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.rptTitleShowList">
+            <summary>
+            rptTitleShowList 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.KID">
+            <summary>
+            文章KID
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.bmModel">
+            <summary>
+            版面实体对象
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.zblist">
+            <summary>
+            文章坐标列表
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.BM_dt">
+            <summary>
+            版面数据表
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.Article_dt">
+            <summary>
+            文章数据表
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.ArticleHaveBT_dt">
+            <summary>
+            有标题的文章数据表
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.jpgUrl">
+            <summary>
+            JPG版面图Url
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.PreArticleKID">
+            <summary>
+            上一篇文章KID(返回-1说明已是本版的第一篇)
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.NextArticleKID">
+            <summary>
+            下一篇文章KID(返回-1说明已是本版的最后一篇)
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.ArticleModel">
+            <summary>
+            文章实体对象
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.bmSCPower">
+            <summary>
+            107	版面收藏
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.SCPower">
+            <summary>
+            108	报道收藏
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.tjPower">
+            <summary>
+            109	报道推荐
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.zpPower">
+            <summary>
+            110	作品报道选编
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.ArticlePage.jbPower">
+            <summary>
+            111	剪报报道选编
+            </summary>
+        </member>
+        <member name="M:PU.web.Paper.ArticlePage.createZBList">
+            <summary>
+            生成文章坐标列表
+            </summary>
+        </member>
+        <member name="M:PU.web.Paper.ArticlePage.SetPagControl">
+            <summary>
+            页面控件赋值
+            </summary>
+        </member>
+        <member name="M:PU.web.Paper.ArticlePage.WriteArticleToPage">
+            <summary>
+            文章数据写到页面
+            </summary>
+        </member>
+        <member name="F:PU.web.Search.searchRetList.GroupType">
+            <summary>
+            分组类型。year：年、paper：报纸、PT：不分组（全部显示）
+            </summary>
+        </member>
+        <member name="F:PU.web.Search.searchRetList.year_dt">
+            <summary>
+            年份分组表
+            </summary>
+        </member>
+        <member name="F:PU.web.Search.searchRetList.paper_dt">
+            <summary>
+            报纸分组表
+            </summary>
+        </member>
+        <member name="F:PU.web.Search.searchRetList.yearMonth_dt">
+            <summary>
+            年月分组表
+            </summary>
+        </member>
+        <member name="F:PU.web.Search.searchRetList.totalRowSL">
+            <summary>
+            结果总行数
+            </summary>
+        </member>
+        <member name="F:PU.web.Search.searchRetList.keypar">
+            <summary>
+            检索的关键词参数。用于传到内容页面标出关键
+            </summary>
+        </member>
+        <member name="M:PU.web.Search.searchRetList.inIt">
+            <summary>
+            页面初始化
+            </summary>
+        </member>
+        <member name="M:PU.web.Search.searchRetList.search">
+            <summary>
+            检索(转到第一页)
+            </summary>
+        </member>
+        <member name="M:PU.web.Search.searchRetList.dataBind">
+            <summary>
+            数据绑定
+            </summary>
+        </member>
+        <member name="M:PU.web.Search.searchRetList.getYearMonthInfoList(System.Int32)">
+            <summary>
+            根据年份获取月份数据信息列表
+            </summary>
+            <param name="year">年份</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.web.Search.searchRetList.Percen(System.Int32)">
+            <summary>
+            百分比计算
+            </summary>
+            <param name="value">值</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.web.Search.searchRetList.PercenShow(System.Int32)">
+            <summary>
+            百分比计算
+            </summary>
+            <param name="value">值</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.web.Search.searchRetList.getPaperName(System.Int32)">
+            <summary>
+            获取报名称
+            </summary>
+            <param name="paperID">报纸ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.web.Search.searchRetList.delSamePaperID(System.String)">
+            <summary>
+            去除重复的报纸ID
+            </summary>
+            <param name="paperIDStr">报纸串</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.web.Search.searchRetList.getKeyWord(System.String)">
+            <summary>
+            处理关键词(把空格换成“,”)
+            </summary>
+            <param name="KeyWord">关键词串</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.web.Search.searchRetList.getFXKeyWord(System.String)">
+            <summary>
+            获取分项检索XML中的关键词
+            </summary>
+            <param name="xml">检索XML</param>
+            <returns></returns>
+        </member>
+        <member name="F:PU.web.Search.searchRetList.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.searchRetList.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.searchRetList.BtRef">
+            <summary>
+            BtRef 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.searchRetList.BtRefGoFirst">
+            <summary>
+            BtRefGoFirst 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.searchRetList.HidTJ">
+            <summary>
+            HidTJ 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.searchRetList.HidGroupType">
+            <summary>
+            HidGroupType 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.searchRetList.HidGroupValue">
+            <summary>
+            HidGroupValue 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.searchRetList.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.searchRetList.left2">
+            <summary>
+            left2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.searchRetList.LbRetTotalSL">
+            <summary>
+            LbRetTotalSL 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.searchRetList.LbKeyWord">
+            <summary>
+            LbKeyWord 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.searchRetList.DPListsearchRetOrder">
+            <summary>
+            DPListsearchRetOrder 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.searchRetList.BtFavorites">
+            <summary>
+            BtFavorites 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.searchRetList.BtRecommend">
+            <summary>
+            BtRecommend 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.searchRetList.BtClippingSend">
+            <summary>
+            BtClippingSend 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.searchRetList.BtMyOpus">
+            <summary>
+            BtMyOpus 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.searchRetList.rptRetList">
+            <summary>
+            rptRetList 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.searchRetList.pageControl1">
+            <summary>
+            pageControl1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.searchRetList.footer2">
+            <summary>
+            footer2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Resource.getResource.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="T:PU.web.Paper.BMList">
+            <summary>
+            版面列表页面
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.BMList.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.BMList.LbBC">
+            <summary>
+            LbBC 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.BMList.LbBM">
+            <summary>
+            LbBM 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.BMList.HLinkPreBC">
+            <summary>
+            HLinkPreBC 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.BMList.HLinkNetBC">
+            <summary>
+            HLinkNetBC 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.BMList.HLinkSC">
+            <summary>
+            HLinkSC 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.BMList.HLinkPDFDown">
+            <summary>
+            HLinkPDFDown 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.BMList.rptTitleList">
+            <summary>
+            rptTitleList 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.BMList.LbRQ">
+            <summary>
+            LbRQ 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.BMList.txtKeyWord">
+            <summary>
+            txtKeyWord 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.BMList.HLinkPreRQ">
+            <summary>
+            HLinkPreRQ 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.BMList.HLinkNetRQ">
+            <summary>
+            HLinkNetRQ 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.BMList.rptBMList">
+            <summary>
+            rptBMList 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.BMList.DpListYear">
+            <summary>
+            DpListYear 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.BMList.DpListMonth">
+            <summary>
+            DpListMonth 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.BMList.footer1">
+            <summary>
+            footer1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.BMList.rptBMShowList">
+            <summary>
+            rptBMShowList 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.BMList.rptTitleShowList">
+            <summary>
+            rptTitleShowList 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.BMList.paperID">
+            <summary>
+            报纸ID
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.BMList.RQ">
+            <summary>
+            出版日期
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.BMList.BC">
+            <summary>
+            版次
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.BMList.bmModel">
+            <summary>
+            版面实体对象
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.BMList.zblist">
+            <summary>
+            文章坐标列表
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.BMList.BM_dt">
+            <summary>
+            版面数据表
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.BMList.Article_dt">
+            <summary>
+            文章数据表
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.BMList.jpgUrl">
+            <summary>
+            JPG版面图Url
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.BMList.bmSCPower">
+            <summary>
+            107	版面收藏
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.BMList.timeLong">
+            <summary>
+            运行时长
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.BMList.dateHtml">
+            <summary>
+            日历天html(几号)
+            </summary>
+        </member>
+        <member name="M:PU.web.Paper.BMList.DateListInit">
+            <summary>
+            日期下拉列表初始化
+            </summary>
+        </member>
+        <member name="M:PU.web.Paper.BMList.createZBList">
+            <summary>
+            生成文章坐标列表
+            </summary>
+        </member>
+        <member name="M:PU.web.Paper.BMList.SetPagControl">
+            <summary>
+            页面控件赋值
+            </summary>
+        </member>
+        <member name="F:PU.web.PaperLook.allPaper.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.allPaper.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.allPaper.left2">
+            <summary>
+            left2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.allPaper.txtKey">
+            <summary>
+            txtKey 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.allPaper.BtSearch">
+            <summary>
+            BtSearch 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.allPaper.footer2">
+            <summary>
+            footer2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.allPaper.list">
+            <summary>
+            显示的每个报纸html列表
+            </summary>
+        </member>
+        <member name="M:PU.web.PaperLook.allPaper.getHtmlList">
+            <summary>
+            生成要显示的html列表（每一个报纸为一个元素）
+            </summary>
+            <param name="dt">报纸数据</param>
+            <returns></returns>
+        </member>
+        <member name="T:PU.web.outgiving.CustomerPaperFW">
+            <summary>
+            客户报纸范围
+            </summary>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerPaperFW.customerID">
+            <summary>
+            客户ID
+            </summary>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerPaperFW.customerPaperList">
+            <summary>
+            客户已有报纸信息ID集合
+            </summary>
+        </member>
+        <member name="M:PU.web.outgiving.CustomerPaperFW.inItPage">
+            <summary>
+            页面初始化
+            </summary>
+        </member>
+        <member name="M:PU.web.outgiving.CustomerPaperFW.ListBind">
+            <summary>
+            绑定报纸信息列表
+            </summary>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerPaperFW.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerPaperFW.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerPaperFW.lbwhatDo">
+            <summary>
+            lbwhatDo 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerPaperFW.tbPaperID">
+            <summary>
+            tbPaperID 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerPaperFW.tbupdateOverDate">
+            <summary>
+            tbupdateOverDate 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerPaperFW.btnAddMore">
+            <summary>
+            btnAddMore 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerPaperFW.btnLook">
+            <summary>
+            btnLook 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerPaperFW.rptCustomerPaper">
+            <summary>
+            rptCustomerPaper 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerPaperFW.lbMsg">
+            <summary>
+            lbMsg 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerPaperFW.btnFinish">
+            <summary>
+            btnFinish 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerPaperFW.btnCancel">
+            <summary>
+            btnCancel 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerPaperFW.HFcustomerPaperStr">
+            <summary>
+            HFcustomerPaperStr 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerPaperFW.HFupdateOverDateStr">
+            <summary>
+            HFupdateOverDateStr 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.other.paperSelect.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.other.index.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.other.index.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.other.index.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.other.index.left1">
+            <summary>
+            left1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.other.index.footer1">
+            <summary>
+            footer1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.UserControl.left.scType_dt">
+            <summary>
+            报道收藏类别
+            </summary>
+        </member>
+        <member name="F:PU.web.UserControl.left.fileName">
+            <summary>
+            当前访问的页面文件名
+            </summary>
+        </member>
+        <member name="F:PU.web.UserControl.left.fileNameAndQuery">
+            <summary>
+            当前访问的页面文件名及参数
+            </summary>
+        </member>
+        <member name="T:PU.web.Search.LookArticle">
+            <summary>
+            文章信息显示页面
+            </summary>
+        </member>
+        <member name="F:PU.web.Search.LookArticle.ArticleJG">
+            <summary>
+            文章实体
+            </summary>
+        </member>
+        <member name="F:PU.web.Search.LookArticle.jpgUrl">
+            <summary>
+            版面JPG图url
+            </summary>
+        </member>
+        <member name="F:PU.web.Search.LookArticle.bmOtherInfo">
+            <summary>
+            版面其它信息
+            </summary>
+        </member>
+        <member name="F:PU.web.Search.LookArticle.KID">
+            <summary>
+            文章KID
+            </summary>
+        </member>
+        <member name="F:PU.web.Search.LookArticle.keypar">
+            <summary>
+            检索的关键词参数。用于传到内容页面标出关键
+            </summary>
+        </member>
+        <member name="M:PU.web.Search.LookArticle.inItPage">
+            <summary>
+            页面初始化
+            </summary>
+        </member>
+        <member name="M:PU.web.Search.LookArticle.WriteDataToPage">
+            <summary>
+            将文章信息写到页面
+            </summary>
+        </member>
+        <member name="M:PU.web.Search.LookArticle.MarkKey(System.String)">
+            <summary>
+            标注关键词
+            </summary>
+            <param name="txt">待标注的文本</param>
+        </member>
+        <member name="F:PU.web.Search.LookArticle.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.LookArticle.lbwhatDo">
+            <summary>
+            lbwhatDo 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.LookArticle.BtFavorites">
+            <summary>
+            BtFavorites 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.LookArticle.BtRecommend">
+            <summary>
+            BtRecommend 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.LookArticle.BtClippingSend">
+            <summary>
+            BtClippingSend 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.LookArticle.BtMyOpus">
+            <summary>
+            BtMyOpus 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.LookArticle.BtEPaper">
+            <summary>
+            BtEPaper 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.LookArticle.BtFDFDown">
+            <summary>
+            BtFDFDown 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.LookArticle.BtEdit">
+            <summary>
+            BtEdit 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.LookArticle.BtClose">
+            <summary>
+            BtClose 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper.left2">
+            <summary>
+            left2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper.footer2">
+            <summary>
+            footer2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper.list">
+            <summary>
+            显示的每个报纸html列表
+            </summary>
+        </member>
+        <member name="M:PU.web.PaperLook.groupPaper.getHtmlList">
+            <summary>
+            生成要显示的html列表（每一个报纸为一个元素）
+            </summary>
+            <param name="dt">报纸数据</param>
+            <returns></returns>
+        </member>
+        <member name="T:PU.web.Command.ExchangeData">
+            <summary>
+            为JS存储或获取临时数据页面
+            </summary>
+        </member>
+        <member name="F:PU.web.Command.ExchangeData.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="T:PU.web.outgiving.CustomerBasisInfoAdd">
+            <summary>
+            添加、修改客户信息
+            </summary>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoAdd.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoAdd.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoAdd.lbwhatDo">
+            <summary>
+            lbwhatDo 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoAdd.tbCustomerID">
+            <summary>
+            tbCustomerID 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoAdd.tbCustomerName">
+            <summary>
+            tbCustomerName 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoAdd.tbPassword">
+            <summary>
+            tbPassword 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoAdd.tbLinkman">
+            <summary>
+            tbLinkman 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoAdd.tbTel">
+            <summary>
+            tbTel 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoAdd.tbEmail">
+            <summary>
+            tbEmail 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoAdd.tbQQ">
+            <summary>
+            tbQQ 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoAdd.tbRequestLimit">
+            <summary>
+            tbRequestLimit 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoAdd.tbServiceEndTime">
+            <summary>
+            tbServiceEndTime 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoAdd.ddlSyncMode">
+            <summary>
+            ddlSyncMode 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoAdd.tbDataUpdateTime">
+            <summary>
+            tbDataUpdateTime 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoAdd.lbMsg">
+            <summary>
+            lbMsg 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoAdd.btnFinish">
+            <summary>
+            btnFinish 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoAdd.btnCancel">
+            <summary>
+            btnCancel 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoAdd.whatDo">
+            <summary>
+            操作命令
+            </summary>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoAdd.customerID">
+            <summary>
+            客户ID
+            </summary>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoAdd.addPower">
+            <summary>
+            144	添加客户
+            </summary>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerBasisInfoAdd.editPower">
+            <summary>
+            145	修改客户
+            </summary>
+        </member>
+        <member name="M:PU.web.outgiving.CustomerBasisInfoAdd.inItAdd">
+            <summary>
+            为添加初始化
+            </summary>
+        </member>
+        <member name="M:PU.web.outgiving.CustomerBasisInfoAdd.inItUpdate">
+            <summary>
+            为修改初始化
+            </summary>
+        </member>
+        <member name="M:PU.web.outgiving.CustomerBasisInfoAdd.ObjToPage">
+            <summary>
+            将客户基本信息显示到页面中
+            </summary>
+        </member>
+        <member name="M:PU.web.outgiving.CustomerBasisInfoAdd.PageToObj">
+            <summary>
+            将页面客户基本信息加载在实体中
+            </summary>
+        </member>
+        <member name="M:PU.web.outgiving.CustomerBasisInfoAdd.checkInfo">
+            <summary>
+            检测输入数据的合法性
+            </summary>
+        </member>
+        <member name="F:PU.web.Paper.footer.LbLK">
+            <summary>
+            LbLK 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper5.list">
+            <summary>
+            显示的每个报纸html列表
+            </summary>
+        </member>
+        <member name="M:PU.web.PaperLook.groupPaper5.getHtmlList">
+            <summary>
+            生成要显示的html列表（每一个报纸为一个元素）
+            </summary>
+            <param name="dt">报纸数据</param>
+            <returns></returns>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper5.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper5.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper5.left2">
+            <summary>
+            left2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper5.footer2">
+            <summary>
+            footer2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper3.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper3.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper3.left2">
+            <summary>
+            left2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper3.footer2">
+            <summary>
+            footer2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper3.list">
+            <summary>
+            显示的每个报纸html列表
+            </summary>
+        </member>
+        <member name="M:PU.web.PaperLook.groupPaper3.getHtmlList">
+            <summary>
+            生成要显示的html列表（每一个报纸为一个元素）
+            </summary>
+            <param name="dt">报纸数据</param>
+            <returns></returns>
+        </member>
+        <member name="T:PU.web.MyOpus.opusNewsList">
+            <summary>
+            我的作品
+            </summary>
+        </member>
+        <member name="F:PU.web.MyOpus.opusNewsList.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.opusNewsList.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.opusNewsList.BtRef">
+            <summary>
+            BtRef 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.opusNewsList.HidValue">
+            <summary>
+            HidValue 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.opusNewsList.HidCommand">
+            <summary>
+            HidCommand 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.opusNewsList.BtCommand">
+            <summary>
+            BtCommand 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.opusNewsList.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.opusNewsList.left2">
+            <summary>
+            left2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.opusNewsList.DpListConfirmState">
+            <summary>
+            DpListConfirmState 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.opusNewsList.BtNotQR">
+            <summary>
+            BtNotQR 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.opusNewsList.BtQR">
+            <summary>
+            BtQR 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.opusNewsList.BtFavorites">
+            <summary>
+            BtFavorites 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.opusNewsList.BtRecommend">
+            <summary>
+            BtRecommend 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.opusNewsList.BtClippingSend">
+            <summary>
+            BtClippingSend 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.opusNewsList.BtSetaliasInfo">
+            <summary>
+            BtSetaliasInfo 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.opusNewsList.rptRetList">
+            <summary>
+            rptRetList 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.opusNewsList.pageControl1">
+            <summary>
+            pageControl1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.opusNewsList.footer2">
+            <summary>
+            footer2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyOpus.opusNewsList.exfunction">
+            <summary>
+            要执行的javascript函数
+            </summary>
+        </member>
+        <member name="M:PU.web.MyOpus.opusNewsList.inIt">
+            <summary>
+            页面初始化
+            </summary>
+        </member>
+        <member name="M:PU.web.MyOpus.opusNewsList.createUserOpus">
+            <summary>
+            生成当前用户的作品列表(只有用户第一次使用才会运行)
+            </summary>
+        </member>
+        <member name="M:PU.web.MyOpus.opusNewsList.search">
+            <summary>
+            检索(转到第一页)
+            </summary>
+        </member>
+        <member name="M:PU.web.MyOpus.opusNewsList.dataBind">
+            <summary>
+            数据绑定
+            </summary>
+        </member>
+        <member name="F:PU.web.MyInformation.BMCollectionList.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.BMCollectionList.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.BMCollectionList.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.BMCollectionList.left2">
+            <summary>
+            left2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.BMCollectionList.footer2">
+            <summary>
+            footer2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.BMCollectionList.list">
+            <summary>
+            显示的每个报纸html列表
+            </summary>
+        </member>
+        <member name="M:PU.web.MyInformation.BMCollectionList.getHtmlList">
+            <summary>
+            生成要显示的html列表（每一个版面为一个元素）
+            </summary>
+            <param name="dt">报纸数据</param>
+            <returns></returns>
+        </member>
+        <member name="T:PU.web.MyInformation.newsCollectionInex">
+            <summary>
+            报道收藏信息
+            </summary>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionInex.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionInex.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionInex.BtRef">
+            <summary>
+            BtRef 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionInex.HidValue">
+            <summary>
+            HidValue 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionInex.HidCommand">
+            <summary>
+            HidCommand 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionInex.BtCommand">
+            <summary>
+            BtCommand 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionInex.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionInex.left2">
+            <summary>
+            left2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionInex.LbTypeName">
+            <summary>
+            LbTypeName 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionInex.BtAddType">
+            <summary>
+            BtAddType 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionInex.BtEditType">
+            <summary>
+            BtEditType 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionInex.BtDelType">
+            <summary>
+            BtDelType 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionInex.BtdelSelect">
+            <summary>
+            BtdelSelect 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionInex.BtRecommend">
+            <summary>
+            BtRecommend 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionInex.BtClippingSend">
+            <summary>
+            BtClippingSend 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionInex.BtMyOpus">
+            <summary>
+            BtMyOpus 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionInex.rptRetList">
+            <summary>
+            rptRetList 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionInex.pageControl1">
+            <summary>
+            pageControl1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionInex.footer2">
+            <summary>
+            footer2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionInex.newsCollectionTypeID">
+            <summary>
+            报道收藏类别ID
+            </summary>
+        </member>
+        <member name="F:PU.web.MyInformation.newsCollectionInex.delTypePower">
+            <summary>
+            126	删除报道收藏类别
+            </summary>
+        </member>
+        <member name="M:PU.web.MyInformation.newsCollectionInex.inIt">
+            <summary>
+            页面初始化
+            </summary>
+        </member>
+        <member name="M:PU.web.MyInformation.newsCollectionInex.search">
+            <summary>
+            检索(转到第一页)
+            </summary>
+        </member>
+        <member name="M:PU.web.MyInformation.newsCollectionInex.dataBind">
+            <summary>
+            数据绑定
+            </summary>
+        </member>
+        <member name="T:PU.web.Command.dataPost">
+            <summary>
+            处理post提交的数据
+            </summary>
+        </member>
+        <member name="F:PU.web.Command.dataPost.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:PU.web.Command.dataPost.addPaperCollection">
+            <summary>
+            添加报纸收藏
+            </summary>
+        </member>
+        <member name="M:PU.web.Command.dataPost.delPaperCollection">
+            <summary>
+            删除报纸收藏
+            </summary>
+        </member>
+        <member name="M:PU.web.Command.dataPost.addEditionCollection">
+            <summary>
+            添加版面收藏信息
+            </summary>
+        </member>
+        <member name="M:PU.web.Command.dataPost.delEditionCollection">
+            <summary>
+            删版面收藏信息
+            </summary>
+        </member>
+        <member name="M:PU.web.Command.dataPost.addNewsCollection">
+            <summary>
+            添加报道收藏(多篇)
+            </summary>
+        </member>
+        <member name="M:PU.web.Command.dataPost.addNewsRecommend">
+            <summary>
+            添加报道推荐信息(多篇多人)
+            </summary>
+        </member>
+        <member name="M:PU.web.Command.dataPost.addClippingNewes">
+            <summary>
+            添加剪报报道信息(多篇)
+            </summary>
+        </member>
+        <member name="M:PU.web.Command.dataPost.addOpusNewsInfo">
+            <summary>
+            添加我的作品(多篇)
+            </summary>
+        </member>
+        <member name="M:PU.web.Command.dataPost.getUserNewOpusList">
+            <summary>
+            获取当前用户新的作品的KID列表
+            </summary>
+        </member>
+        <member name="F:PU.web.Search.pubSearchIndex.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.pubSearchIndex.tbKeyWard">
+            <summary>
+            tbKeyWard 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.pubSearchIndex.btnSearch">
+            <summary>
+            btnSearch 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.pubSearchIndex.lbFooter">
+            <summary>
+            lbFooter 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="T:PU.web.Search.ArticleEdit">
+            <summary>
+            报道修改
+            </summary>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.KID">
+            <summary>
+            文章KID
+            </summary>
+        </member>
+        <member name="M:PU.web.Search.ArticleEdit.WriteDataToPage">
+            <summary>
+            将文章信息写到页面
+            </summary>
+        </member>
+        <member name="M:PU.web.Search.ArticleEdit.readDataToModel">
+            <summary>
+            读取页面数据到结构
+            </summary>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.lbwhatDo">
+            <summary>
+            lbwhatDo 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.txtMC">
+            <summary>
+            txtMC 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.CKBoxPU">
+            <summary>
+            CKBoxPU 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.BtDel">
+            <summary>
+            BtDel 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.txtYT">
+            <summary>
+            txtYT 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.txtBT">
+            <summary>
+            txtBT 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.txtFB">
+            <summary>
+            txtFB 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.txtZZ">
+            <summary>
+            txtZZ 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.txtBM">
+            <summary>
+            txtBM 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.txtBC">
+            <summary>
+            txtBC 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.txtBN">
+            <summary>
+            txtBN 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.txtBJ">
+            <summary>
+            txtBJ 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.txtLM">
+            <summary>
+            txtLM 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.txtFL">
+            <summary>
+            txtFL 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.txtDQ">
+            <summary>
+            txtDQ 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.txtTC">
+            <summary>
+            txtTC 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.txtRW">
+            <summary>
+            txtRW 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.txtLY">
+            <summary>
+            txtLY 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.txtGGCP">
+            <summary>
+            txtGGCP 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.txtGGLX">
+            <summary>
+            txtGGLX 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.txtGGFL">
+            <summary>
+            txtGGFL 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.txtGGSC">
+            <summary>
+            txtGGSC 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.txtGGMJ">
+            <summary>
+            txtGGMJ 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.txtGGZ">
+            <summary>
+            txtGGZ 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.txtZB">
+            <summary>
+            txtZB 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.txtTX">
+            <summary>
+            txtTX 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.BtOK">
+            <summary>
+            BtOK 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Search.ArticleEdit.btnCancel">
+            <summary>
+            btnCancel 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.NoData.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.Paper.NoData.LbMsg">
+            <summary>
+            LbMsg 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="T:PU.web.pressClipping.pressClippingList">
+            <summary>
+            剪报制作
+            </summary>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingList.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingList.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingList.BtRef">
+            <summary>
+            BtRef 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingList.HidValue">
+            <summary>
+            HidValue 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingList.HidCommand">
+            <summary>
+            HidCommand 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingList.BtCommand">
+            <summary>
+            BtCommand 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingList.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingList.left2">
+            <summary>
+            left2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingList.BtAdd">
+            <summary>
+            BtAdd 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingList.rptRetList">
+            <summary>
+            rptRetList 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingList.pageControl1">
+            <summary>
+            pageControl1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingList.footer2">
+            <summary>
+            footer2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingList.addPower">
+            <summary>
+            133	添加剪报
+            </summary>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingList.editPower">
+            <summary>
+            134	修改剪报
+            </summary>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingList.delPower">
+            <summary>
+            135	删除剪报
+            </summary>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingList.tjspPower">
+            <summary>
+            136	剪报提交审批
+            </summary>
+        </member>
+        <member name="M:PU.web.pressClipping.pressClippingList.inIt">
+            <summary>
+            页面初始化
+            </summary>
+        </member>
+        <member name="M:PU.web.pressClipping.pressClippingList.search">
+            <summary>
+            检索(转到第一页)
+            </summary>
+        </member>
+        <member name="M:PU.web.pressClipping.pressClippingList.dataBind">
+            <summary>
+            数据绑定
+            </summary>
+        </member>
+        <member name="M:PU.web.pressClipping.pressClippingList.del">
+            <summary>
+            删除剪报
+            </summary>
+        </member>
+        <member name="M:PU.web.pressClipping.pressClippingList.tjsp">
+            <summary>
+            提交审批
+            </summary>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper4.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper4.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper4.left2">
+            <summary>
+            left2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper4.footer2">
+            <summary>
+            footer2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.PaperLook.groupPaper4.list">
+            <summary>
+            显示的每个报纸html列表
+            </summary>
+        </member>
+        <member name="M:PU.web.PaperLook.groupPaper4.getHtmlList">
+            <summary>
+            生成要显示的html列表（每一个报纸为一个元素）
+            </summary>
+            <param name="dt">报纸数据</param>
+            <returns></returns>
+        </member>
+        <member name="F:PU.web.other.NoPower.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.other.NoPower.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.other.NoPower.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.other.NoPower.left1">
+            <summary>
+            left1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.other.NoPower.footer1">
+            <summary>
+            footer1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="T:PU.web.Command.Tool">
+            <summary>
+            页面工具类
+            </summary>
+        </member>
+        <member name="M:PU.web.Command.Tool.createHtmlList(System.Data.DataTable)">
+            <summary>
+            生成要显示的html列表（每一个报纸为一个元素）
+            </summary>
+            <param name="dt">报纸数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.web.Command.Tool.createHtmlListForSCPaper(System.Data.DataTable)">
+            <summary>
+            生成要显示的html列表(收藏的报纸)（每一个报纸为一个元素）
+            </summary>
+            <param name="dt">收藏的报纸数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.web.Command.Tool.createHtmlListForSCBM(System.Data.DataTable)">
+            <summary>
+            生成要显示的html列表(收藏的版面)（每一个版面为一个元素）
+            </summary>
+            <param name="dt">收藏的版面数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.web.Command.Tool.getJPGurl(System.Int32,System.Int32,System.String,System.String,System.Int32)">
+            <summary>
+             获取JPGUrl
+            </summary>
+            <param name="paperID">报纸ID</param>
+            <param name="RQ">出版日期</param>
+            <param name="BC">版次</param>
+            <param name="fileName">文件名</param>
+            <param name="h">高度</param>
+            <returns></returns>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerHavePaper.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerHavePaper.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerHavePaper.lbwhatDo">
+            <summary>
+            lbwhatDo 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerHavePaper.rptCustomerPaper">
+            <summary>
+            rptCustomerPaper 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerHavePaper.btnCancel">
+            <summary>
+            btnCancel 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerHavePaper.HFcustomerPaperStr">
+            <summary>
+            HFcustomerPaperStr 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.outgiving.CustomerHavePaper.customerID">
+            <summary>
+            客户ID
+            </summary>
+        </member>
+        <member name="M:PU.web.outgiving.CustomerHavePaper.inItPage">
+            <summary>
+            页面初始化
+            </summary>
+        </member>
+        <member name="M:PU.web.outgiving.CustomerHavePaper.ListBind">
+            <summary>
+            绑定报纸信息列表
+            </summary>
+        </member>
+        <member name="T:PU.web.Resource.showJPG">
+            <summary>
+            显示JPG图片
+            </summary>
+        </member>
+        <member name="F:PU.web.Resource.showJPG.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="T:PU.web.Paper.Components.DataOP">
+            <summary>
+            报纸数据处理
+            </summary>
+        </member>
+        <member name="M:PU.web.Paper.Components.DataOP.getBCmodel(System.Data.DataTable,System.String)">
+            <summary>
+            得到版次数据行(返回null说明找不到该版次)
+            </summary>
+            <param name="BMList_dt">某一天的版面列表</param>
+            <param name="BC">要获取版次</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.web.Paper.Components.DataOP.getPreBC(System.Data.DataTable,System.String)">
+            <summary>
+            得到上一版版次(返回空说明已是第一版)
+            </summary>
+            <param name="BMList_dt">某一天的版面列表</param>
+            <param name="BC">当前版次</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.web.Paper.Components.DataOP.getNextBC(System.Data.DataTable,System.String)">
+            <summary>
+            得到下一版版次(返回空说明已是最后一版)
+            </summary>
+            <param name="BMList_dt">某一天的版面列表</param>
+            <param name="BC">当前版次</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.web.Paper.Components.DataOP.getFirstBC(System.Data.DataTable)">
+            <summary>
+            得到第一版版次
+            </summary>
+            <param name="BMList_dt">某一天的版面列表</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.web.Paper.Components.DataOP.getPreRQ(System.Int32,System.Int32)">
+            <summary>
+            得到上一期的报纸出版日期(返回-1说明没有上一期)
+            </summary>
+            <param name="paperID">报纸ID</param>
+            <param name="RQ">当前出版日期</param>
+            <returns>返回-1说明没有上一期</returns>
+        </member>
+        <member name="M:PU.web.Paper.Components.DataOP.getNextRQ(System.Int32,System.Int32)">
+            <summary>
+            得到下一期的报纸出版日期(返回-1说明没有下一期)
+            </summary>
+            <param name="paperID">报纸ID</param>
+            <param name="RQ">当前出版日期</param>
+            <returns>返回-1说明没有下一期</returns>
+        </member>
+        <member name="M:PU.web.Paper.Components.DataOP.getPreArticleKID(System.Data.DataTable,System.Data.DataTable,System.Int64)">
+            <summary>
+            得到上一篇文章KID(返回-1说明已是本版的第一篇)
+            </summary>
+            <param name="Article_dt">某版的文章列表</param>
+            <param name="ArticleHaveBT_dt">有标题的文章数据表</param>
+            <param name="KID">当前文章KID</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.web.Paper.Components.DataOP.getNextArticleKID(System.Data.DataTable,System.Data.DataTable,System.Int64)">
+            <summary>
+            得到下一篇文章KID(返回-1说明已是本版的最后一篇)
+            </summary>
+            <param name="Article_dt">某版的文章列表</param>
+            <param name="ArticleHaveBT_dt">有标题的文章数据表</param>
+            <param name="KID">当前文章KID</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.web.Paper.Components.DataOP.getPaperRQListWithMonth(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            得到某个月的报纸出版日期列表
+            </summary>
+            <param name="paperID">报纸ID</param>
+            <param name="year">年份</param>
+            <param name="month">月份</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.web.Paper.Components.DataOP.getPaperLastRQ(System.Int32)">
+            <summary>
+            得到报纸最近的出版日期(返回-1说明没有数据)
+            </summary>
+            <param name="paperID">报纸ID</param>
+            <returns>返回-1说明没有数据</returns>
+        </member>
+        <member name="M:PU.web.Paper.Components.DataOP.calendarDateHtml(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            生成日历天html
+            </summary>
+            <param name="paperID">报纸ID</param>
+            <param name="year">年份</param>
+            <param name="month">月份</param>
+            <param name="RQ">当前版面日期</param>
+        </member>
+        <member name="T:PU.web.MyInformation.newsRecommendInfoList">
+            <summary>
+            推荐报道
+            </summary>
+        </member>
+        <member name="F:PU.web.MyInformation.newsRecommendInfoList.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsRecommendInfoList.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsRecommendInfoList.BtRef">
+            <summary>
+            BtRef 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsRecommendInfoList.HidValue">
+            <summary>
+            HidValue 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsRecommendInfoList.HidCommand">
+            <summary>
+            HidCommand 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsRecommendInfoList.BtCommand">
+            <summary>
+            BtCommand 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsRecommendInfoList.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsRecommendInfoList.left2">
+            <summary>
+            left2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsRecommendInfoList.BtdelSelect">
+            <summary>
+            BtdelSelect 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsRecommendInfoList.BtFavorites">
+            <summary>
+            BtFavorites 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsRecommendInfoList.BtClippingSend">
+            <summary>
+            BtClippingSend 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsRecommendInfoList.BtMyOpus">
+            <summary>
+            BtMyOpus 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsRecommendInfoList.rptRetList">
+            <summary>
+            rptRetList 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsRecommendInfoList.pageControl1">
+            <summary>
+            pageControl1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsRecommendInfoList.footer2">
+            <summary>
+            footer2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.MyInformation.newsRecommendInfoList.delPower">
+            <summary>
+            131	报道推荐移除
+            </summary>
+        </member>
+        <member name="M:PU.web.MyInformation.newsRecommendInfoList.inIt">
+            <summary>
+            页面初始化
+            </summary>
+        </member>
+        <member name="M:PU.web.MyInformation.newsRecommendInfoList.search">
+            <summary>
+            检索(转到第一页)
+            </summary>
+        </member>
+        <member name="M:PU.web.MyInformation.newsRecommendInfoList.dataBind">
+            <summary>
+            数据绑定
+            </summary>
+        </member>
+        <member name="F:PU.web.Resource.dowmResource.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.articlepingfen.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.articlepingfen.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.articlepingfen.BtRef">
+            <summary>
+            BtRef 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.articlepingfen.HidValue">
+            <summary>
+            HidValue 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.articlepingfen.HidCommand">
+            <summary>
+            HidCommand 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.articlepingfen.BtCommand">
+            <summary>
+            BtCommand 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.articlepingfen.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.articlepingfen.left2">
+            <summary>
+            left2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.articlepingfen.BtdelSelect">
+            <summary>
+            BtdelSelect 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.articlepingfen.BtFavorites">
+            <summary>
+            BtFavorites 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.articlepingfen.BtClippingSend">
+            <summary>
+            BtClippingSend 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.articlepingfen.BtMyOpus">
+            <summary>
+            BtMyOpus 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.articlepingfen.pageControl1">
+            <summary>
+            pageControl1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.articlepingfen.footer2">
+            <summary>
+            footer2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="T:PU.web.pressClipping.pressClippingSPList">
+            <summary>
+            剪报审批
+            </summary>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSPList.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSPList.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSPList.BtRef">
+            <summary>
+            BtRef 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSPList.HidValue">
+            <summary>
+            HidValue 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSPList.HidCommand">
+            <summary>
+            HidCommand 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSPList.BtCommand">
+            <summary>
+            BtCommand 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSPList.head2">
+            <summary>
+            head2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSPList.left2">
+            <summary>
+            left2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSPList.rptRetList">
+            <summary>
+            rptRetList 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSPList.pageControl1">
+            <summary>
+            pageControl1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:PU.web.pressClipping.pressClippingSPList.footer2">
+            <summary>
+            footer2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:PU.web.pressClipping.pressClippingSPList.inIt">
+            <summary>
+            页面初始化
+            </summary>
+        </member>
+        <member name="M:PU.web.pressClipping.pressClippingSPList.search">
+            <summary>
+            检索(转到第一页)
+            </summary>
+        </member>
+        <member name="M:PU.web.pressClipping.pressClippingSPList.dataBind">
+            <summary>
+            数据绑定
+            </summary>
+        </member>
+    </members>
+</doc>

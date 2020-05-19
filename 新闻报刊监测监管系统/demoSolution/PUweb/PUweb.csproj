@@ -1,0 +1,1015 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AF9531E5-10A6-43DB-BC51-C1C9161A9707}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PU.web</RootNamespace>
+    <AssemblyName>PU.web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\PU.web.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PM.BLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\老报刊库代码\PMBLL\bin\Debug\PM.BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="PM.ClientLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\老报刊库代码\PMBLL\bin\Debug\PM.ClientLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="PM.Command, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\老报刊库代码\PMBLL\bin\Debug\PM.Command.dll</HintPath>
+    </Reference>
+    <Reference Include="PM.DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\老报刊库代码\PMBLL\bin\Debug\PM.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="PM.Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\老报刊库代码\PMBLL\bin\Debug\PM.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="PU.BLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\PUBLL\bin\Debug\PU.BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="PU.Command, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\PUCommand\bin\Debug\PU.Command.dll</HintPath>
+    </Reference>
+    <Reference Include="PU.DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\PUDAL\bin\Debug\PU.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="PU.Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\PUModel\bin\Debug\PU.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="PubControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\PubControls.dll</HintPath>
+    </Reference>
+    <Reference Include="PubTool, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\PubTool.dll</HintPath>
+    </Reference>
+    <Reference Include="SgmlReaderDll, Version=1.8.7.38524, Culture=neutral, PublicKeyToken=46b2db9ca481831b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\老报刊库代码\PMBLL\bin\Debug\SgmlReaderDll.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="User.BLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\老报刊库代码\UserBLL\bin\Debug\User.BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="User.Command, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\老报刊库代码\UserCommand\bin\Debug\User.Command.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="articlepingfen.aspx" />
+    <Content Include="ArticlePingFenPingLun.aspx" />
+    <Content Include="articlepinglun.aspx" />
+    <Content Include="Command\dataPost.aspx" />
+    <Content Include="Command\ExchangeData.aspx" />
+    <Content Include="css\style.css" />
+    <Content Include="css\tabStyle.css" />
+    <Content Include="images\all_toolbar_tiny.gif" />
+    <Content Include="images\banner_di.jpg" />
+    <Content Include="images\banner_middle.jpg" />
+    <Content Include="images\button001.jpg" />
+    <Content Include="images\button002.jpg" />
+    <Content Include="images\button003.jpg" />
+    <Content Include="images\button004.jpg" />
+    <Content Include="images\button005.jpg" />
+    <Content Include="images\button006.jpg" />
+    <Content Include="images\button007.jpg" />
+    <Content Include="images\button008.jpg" />
+    <Content Include="images\button009.jpg" />
+    <Content Include="images\button01.gif" />
+    <Content Include="images\button010.jpg" />
+    <Content Include="images\button011.jpg" />
+    <Content Include="images\button02.gif" />
+    <Content Include="images\button03.gif" />
+    <Content Include="images\button04.gif" />
+    <Content Include="images\button05.gif" />
+    <Content Include="images\button06.gif" />
+    <Content Include="images\button07.gif" />
+    <Content Include="images\gb.gif" />
+    <Content Include="images\jpg01.gif" />
+    <Content Include="images\jpg02.gif" />
+    <Content Include="images\kong.gif" />
+    <Content Include="images\leftdi.jpg" />
+    <Content Include="images\left_button_di_01.jpg" />
+    <Content Include="images\left_di_01.jpg" />
+    <Content Include="images\line.jpg" />
+    <Content Include="images\linedot.jpg" />
+    <Content Include="images\login.jpg" />
+    <Content Include="images\loginbg.jpg" />
+    <Content Include="images\loginlogo.jpg" />
+    <Content Include="images\loginno.jpg" />
+    <Content Include="images\login_c0.jpg" />
+    <Content Include="images\login_c1.jpg" />
+    <Content Include="images\login_c2.jpg" />
+    <Content Include="images\logo.jpg" />
+    <Content Include="images\middledot.jpg" />
+    <Content Include="images\middle_di_01.jpg" />
+    <Content Include="images\noPower.jpg" />
+    <Content Include="images\pdf01.gif" />
+    <Content Include="images\pdf02.gif" />
+    <Content Include="images\pic-btn01.gif" />
+    <Content Include="images\pic01.jpg" />
+    <Content Include="images\pic_bg.gif" />
+    <Content Include="images\pic_menu1.png" />
+    <Content Include="images\pic_menu2.png" />
+    <Content Include="images\pic_menu3.png" />
+    <Content Include="images\qflogo.png" />
+    <Content Include="images\qianfang.gif" />
+    <Content Include="images\rx_2.gif" />
+    <Content Include="images\skin-x.jpg" />
+    <Content Include="images\table_top.jpg" />
+    <Content Include="images\top_01.jpg" />
+    <Content Include="images\top_02.jpg" />
+    <Content Include="images\tubiao01.gif" />
+    <Content Include="images\tubiao02.gif" />
+    <Content Include="images\tubiao03.gif" />
+    <Content Include="images\tubiao04.gif" />
+    <Content Include="images\tubiao05.gif" />
+    <Content Include="images\tubiao06.gif" />
+    <Content Include="images\tubiao07.gif" />
+    <Content Include="images\tubiao08.gif" />
+    <Content Include="images\tubiao09.gif" />
+    <Content Include="images\tubiao10.gif" />
+    <Content Include="images\tubiao100.gif" />
+    <Content Include="images\tubiao11.gif" />
+    <Content Include="images\tubiao12.gif" />
+    <Content Include="images\tubiao13.gif" />
+    <Content Include="images\tubiao14.gif" />
+    <Content Include="images\tubiao15.gif" />
+    <Content Include="images\tubiao16.gif" />
+    <Content Include="images\tubiao17.gif" />
+    <Content Include="images\tubiao18.gif" />
+    <Content Include="images\tubiao19.gif" />
+    <Content Include="images\tubiao20.gif" />
+    <Content Include="images\tubiao21.gif" />
+    <Content Include="images\tubiao22.gif" />
+    <Content Include="images\tubiao23.gif" />
+    <Content Include="images\tubiao24.gif" />
+    <Content Include="images\tubiao25.gif" />
+    <Content Include="images\tubiao26.gif" />
+    <Content Include="images\tubiao27.gif" />
+    <Content Include="images\tubiao28.gif" />
+    <Content Include="images\tubiao29.gif" />
+    <Content Include="images\tubiao30.gif" />
+    <Content Include="images\tubiao31.gif" />
+    <Content Include="images\tubiao32.gif" />
+    <Content Include="images\tubiao33.gif" />
+    <Content Include="images\tubiao34.gif" />
+    <Content Include="images\tubiao35.gif" />
+    <Content Include="images\tubiao36.gif" />
+    <Content Include="images\tubiao37.gif" />
+    <Content Include="images\tubiao38.gif" />
+    <Content Include="images\tubiao39.gif" />
+    <Content Include="images\tubiao40.gif" />
+    <Content Include="images\tubiao41.gif" />
+    <Content Include="images\tubiao42.gif" />
+    <Content Include="images\tubiao43.gif" />
+    <Content Include="images\tubiao44.gif" />
+    <Content Include="images\tubiao45.gif" />
+    <Content Include="images\tubiao46.gif" />
+    <Content Include="images\tubiao47.gif" />
+    <Content Include="images\tubiao48.gif" />
+    <Content Include="images\tubiao49.gif" />
+    <Content Include="images\tubiao50.gif" />
+    <Content Include="images\tubiao51.gif" />
+    <Content Include="images\tubiao52.gif" />
+    <Content Include="index.html" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\PubJSLibrary.js" />
+    <Content Include="js\PUweb.js" />
+    <Content Include="My97DatePicker\calendar.js" />
+    <Content Include="My97DatePicker\config.js" />
+    <Content Include="My97DatePicker\lang\en.js" />
+    <Content Include="My97DatePicker\lang\zh-cn.js" />
+    <Content Include="My97DatePicker\lang\zh-tw.js" />
+    <Content Include="My97DatePicker\My97DatePicker.htm" />
+    <Content Include="My97DatePicker\skin\datePicker.gif" />
+    <Content Include="My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="My97DatePicker\skin\default\img.gif" />
+    <Content Include="My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="My97DatePicker\WdatePicker.js" />
+    <Content Include="My97DatePicker\开发包\lang\en.js" />
+    <Content Include="My97DatePicker\开发包\lang\zh-cn.js" />
+    <Content Include="My97DatePicker\开发包\lang\zh-tw.js" />
+    <Content Include="My97DatePicker\开发包\readme.txt" />
+    <Content Include="My97DatePicker\开发包\skin\datePicker.gif" />
+    <Content Include="My97DatePicker\开发包\skin\default\datepicker.css" />
+    <Content Include="My97DatePicker\开发包\skin\default\img.gif" />
+    <Content Include="My97DatePicker\开发包\skin\WdatePicker.css" />
+    <Content Include="My97DatePicker\开发包\skin\whyGreen\bg.jpg" />
+    <Content Include="My97DatePicker\开发包\skin\whyGreen\datepicker.css" />
+    <Content Include="My97DatePicker\开发包\skin\whyGreen\img.gif" />
+    <Content Include="MyInformation\newsCollectionInex.aspx" />
+    <Content Include="MyInformation\newsCollectionTypeAdd.aspx" />
+    <Content Include="MyInformation\newsCollectionTypeSelect.aspx" />
+    <Content Include="MyInformation\newsRecommendInfoList.aspx" />
+    <Content Include="MyInformation\paperCollectionList.aspx" />
+    <Content Include="MyInformation\BMCollectionList.aspx" />
+    <Content Include="MyOpus\aliasInfoList.aspx" />
+    <Content Include="MyOpus\opusNewsList.aspx" />
+    <Content Include="MyOpus\opusNewsQR.aspx" />
+    <Content Include="MzTreeView10\book.gif" />
+    <Content Include="MzTreeView10\bookopen.gif" />
+    <Content Include="MzTreeView10\collection.gif" />
+    <Content Include="MzTreeView10\exit.gif" />
+    <Content Include="MzTreeView10\file.gif" />
+    <Content Include="MzTreeView10\folder.gif" />
+    <Content Include="MzTreeView10\folderopen.gif" />
+    <Content Include="MzTreeView10\L0.gif" />
+    <Content Include="MzTreeView10\L1.gif" />
+    <Content Include="MzTreeView10\L2.gif" />
+    <Content Include="MzTreeView10\L3.gif" />
+    <Content Include="MzTreeView10\L4.gif" />
+    <Content Include="MzTreeView10\L5.gif" />
+    <Content Include="MzTreeView10\M0.gif" />
+    <Content Include="MzTreeView10\M1.gif" />
+    <Content Include="MzTreeView10\M2.gif" />
+    <Content Include="MzTreeView10\M3.gif" />
+    <Content Include="MzTreeView10\MzTreeView10.htm" />
+    <Content Include="MzTreeView10\MzTreeView10.js" />
+    <Content Include="MzTreeView10\P0.gif" />
+    <Content Include="MzTreeView10\P1.gif" />
+    <Content Include="MzTreeView10\P2.gif" />
+    <Content Include="MzTreeView10\P3.gif" />
+    <Content Include="MzTreeView10\property.gif" />
+    <Content Include="MzTreeView10\root.gif" />
+    <Content Include="MzTreeView10\tree.mdb">
+    </Content>
+    <Content Include="MzTreeView10\treeview.asp" />
+    <Content Include="other\index.aspx" />
+    <Content Include="other\NoPower.aspx" />
+    <Content Include="other\paperSelect.aspx" />
+    <Content Include="outgiving\CustomerBasisInfoAdd.aspx" />
+    <Content Include="outgiving\CustomerBasisInfoList.aspx" />
+    <Content Include="outgiving\CustomerHavePaper.aspx" />
+    <Content Include="outgiving\CustomerPaperFW.aspx" />
+    <Content Include="pagestudy.aspx" />
+    <Content Include="PaperLook\ex.aspx" />
+    <Content Include="PaperLook\groupPaper.aspx" />
+    <Content Include="PaperLook\allPaper.aspx" />
+    <Content Include="PaperLook\provincePaper.aspx" />
+    <Content Include="PaperLook\typePaper.aspx" />
+    <Content Include="PaperLook\groupPaper1.aspx" />
+    <Content Include="PaperLook\groupPaper7.aspx" />
+    <Content Include="PaperLook\groupPaper2.aspx" />
+    <Content Include="PaperLook\groupPaper3.aspx" />
+    <Content Include="PaperLook\groupPaper4.aspx" />
+    <Content Include="PaperLook\groupPaper5.aspx" />
+    <Content Include="PaperLook\groupPaper6.aspx" />
+    <Content Include="Paper\ArticlePage.aspx" />
+    <Content Include="Paper\BMList.aspx" />
+    <Content Include="Paper\calendarPage.aspx" />
+    <Content Include="Paper\footer.ascx" />
+    <Content Include="Paper\framepage\TTSPost.htm" />
+    <Content Include="Paper\image\arrow.gif" />
+    <Content Include="Paper\image\ba_page01.jpg" />
+    <Content Include="Paper\image\ba_page02.jpg" />
+    <Content Include="Paper\image\bg-2.gif" />
+    <Content Include="Paper\image\bg.jpg" />
+    <Content Include="Paper\image\bg01.jpg" />
+    <Content Include="Paper\image\bgfooter.gif" />
+    <Content Include="Paper\image\bground.jpg" />
+    <Content Include="Paper\image\bg_body.gif" />
+    <Content Include="Paper\image\bg_header.gif" />
+    <Content Include="Paper\image\biaoqian_1.jpg" />
+    <Content Include="Paper\image\biaoqian_2.jpg" />
+    <Content Include="Paper\image\biaoqian_3.jpg" />
+    <Content Include="Paper\image\biaoti.jpg" />
+    <Content Include="Paper\image\biaoti_1.jpg" />
+    <Content Include="Paper\image\biaoti_2.jpg" />
+    <Content Include="Paper\image\biaoti_3.jpg" />
+    <Content Include="Paper\image\bk-01.jpg" />
+    <Content Include="Paper\image\bkg1.gif" />
+    <Content Include="Paper\image\bmdd.jpg" />
+    <Content Include="Paper\image\bmdd_bg.jpg" />
+    <Content Include="Paper\image\bmdd_bt.jpg" />
+    <Content Include="Paper\image\bmml.jpg" />
+    <Content Include="Paper\image\bmml_01.jpg" />
+    <Content Include="Paper\image\bmml_top.jpg" />
+    <Content Include="Paper\image\btdh.jpg" />
+    <Content Include="Paper\image\btdh_bg.jpg" />
+    <Content Include="Paper\image\btdh_bottom.jpg" />
+    <Content Include="Paper\image\btn_next.gif" />
+    <Content Include="Paper\image\btn_prev.gif" />
+    <Content Include="Paper\image\checkbox.gif" />
+    <Content Include="Paper\image\c_02.gif" />
+    <Content Include="Paper\image\c_04.gif" />
+    <Content Include="Paper\image\c_05.gif" />
+    <Content Include="Paper\image\c_06.gif" />
+    <Content Include="Paper\image\c_07.gif" />
+    <Content Include="Paper\image\d.gif" />
+    <Content Include="Paper\image\d1.gif" />
+    <Content Include="Paper\image\di.jpg" />
+    <Content Include="Paper\image\dian.jpg" />
+    <Content Include="Paper\image\downnav.gif" />
+    <Content Include="Paper\image\evbg.gif" />
+    <Content Include="Paper\image\FFNPlayer.htm" />
+    <Content Include="Paper\image\first_box_bg.gif" />
+    <Content Include="Paper\image\footbg.jpg" />
+    <Content Include="Paper\image\founderLOGO.gif" />
+    <Content Include="Paper\image\fu.jpg" />
+    <Content Include="Paper\image\gengduo_zhibo2.jpg" />
+    <Content Include="Paper\image\gengduo_zhibo3.jpg" />
+    <Content Include="Paper\image\gengduo_zhibo4.jpg" />
+    <Content Include="Paper\image\get_adobe_reader.gif" />
+    <Content Include="Paper\image\ggFrame.htm" />
+    <Content Include="Paper\image\houfan.jpg" />
+    <Content Include="Paper\image\image01.jpg" />
+    <Content Include="Paper\image\image02.jpg" />
+    <Content Include="Paper\image\image03.jpg" />
+    <Content Include="Paper\image\image04.jpg" />
+    <Content Include="Paper\image\image06.jpg" />
+    <Content Include="Paper\image\image10.gif" />
+    <Content Include="Paper\image\images09.gif" />
+    <Content Include="Paper\image\images_08.jpg" />
+    <Content Include="Paper\image\images_09.gif" />
+    <Content Include="Paper\image\index_01.jpg" />
+    <Content Include="Paper\image\index_02.jpg" />
+    <Content Include="Paper\image\index_03.jpg" />
+    <Content Include="Paper\image\index_03_2.jpg" />
+    <Content Include="Paper\image\index_03_3.jpg" />
+    <Content Include="Paper\image\index_04.jpg" />
+    <Content Include="Paper\image\index_05.jpg" />
+    <Content Include="Paper\image\index_06.jpg" />
+    <Content Include="Paper\image\index_07.jpg" />
+    <Content Include="Paper\image\index_16.jpg" />
+    <Content Include="Paper\image\index_25.gif" />
+    <Content Include="Paper\image\JIAFENG.jpg" />
+    <Content Include="Paper\image\jpg.gif" />
+    <Content Include="Paper\image\jpg02.gif" />
+    <Content Include="Paper\image\jwb_red_r1_c1.jpg" />
+    <Content Include="Paper\image\jwb_red_r1_c2.jpg" />
+    <Content Include="Paper\image\jwb_red_r1_c3.jpg" />
+    <Content Include="Paper\image\jwb_red_r6_c3.jpg" />
+    <Content Include="Paper\image\jwb_red_r6_c3b.jpg" />
+    <Content Include="Paper\image\jwb_red_r8_c2.jpg" />
+    <Content Include="Paper\image\jwb_red_r8_c3.jpg" />
+    <Content Include="Paper\image\logo.gif" />
+    <Content Include="Paper\image\logo.jpg" />
+    <Content Include="Paper\image\logosy.jpg" />
+    <Content Include="Paper\image\logo_csjr.gif" />
+    <Content Include="Paper\image\logo_dskb.gif" />
+    <Content Include="Paper\image\logo_dszb.gif" />
+    <Content Include="Paper\image\logo_gggxb.jpg" />
+    <Content Include="Paper\image\logo_homepage.jpg" />
+    <Content Include="Paper\image\logo_hzrb.gif" />
+    <Content Include="Paper\image\logo_jjshb.gif" />
+    <Content Include="Paper\image\logo_jrzb.gif" />
+    <Content Include="Paper\image\logo_mrsb.gif" />
+    <Content Include="Paper\image\logo_msb.gif" />
+    <Content Include="Paper\image\logo_pasb.gif" />
+    <Content Include="Paper\image\logo_qjwb.gif" />
+    <Content Include="Paper\image\logo_szbz.gif" />
+    <Content Include="Paper\image\logo_xms.gif" />
+    <Content Include="Paper\image\logo_zbdjt.gif" />
+    <Content Include="Paper\image\logo_zjcb.gif" />
+    <Content Include="Paper\image\logo_zjlnb.gif" />
+    <Content Include="Paper\image\logo_zjrb.jpg" />
+    <Content Include="Paper\image\menu01.jpg" />
+    <Content Include="Paper\image\menu02.jpg" />
+    <Content Include="Paper\image\menu03.jpg" />
+    <Content Include="Paper\image\menu04.jpg" />
+    <Content Include="Paper\image\menu05.jpg" />
+    <Content Include="Paper\image\menu_r2_c1.jpg" />
+    <Content Include="Paper\image\menu_r3_c1.jpg" />
+    <Content Include="Paper\image\menu_r4_c1.jpg" />
+    <Content Include="Paper\image\menu_r5_c1.gif" />
+    <Content Include="Paper\image\next.gif" />
+    <Content Include="Paper\image\next3.gif" />
+    <Content Include="Paper\image\Page_b.jpg" />
+    <Content Include="Paper\image\pdf.gif" />
+    <Content Include="Paper\image\pdf02.gif" />
+    <Content Include="Paper\image\pre.gif" />
+    <Content Include="Paper\image\prev4.gif" />
+    <Content Include="Paper\image\pv_page01.jpg" />
+    <Content Include="Paper\image\pv_page02.jpg" />
+    <Content Include="Paper\image\qianfan.jpg" />
+    <Content Include="Paper\image\round.gif" />
+    <Content Include="Paper\image\r_star.jpg" />
+    <Content Include="Paper\image\scby.gif" />
+    <Content Include="Paper\image\searchBg.gif" />
+    <Content Include="Paper\image\searchBtn.jpg" />
+    <Content Include="Paper\image\sech.jpg" />
+    <Content Include="Paper\image\shadow01.gif" />
+    <Content Include="Paper\image\shadow02.gif" />
+    <Content Include="Paper\image\shouye.jpg" />
+    <Content Include="Paper\image\shugang.jpg" />
+    <Content Include="Paper\image\shuo.jpg" />
+    <Content Include="Paper\image\soundon.gif" />
+    <Content Include="Paper\image\stamp.gif" />
+    <Content Include="Paper\image\s_01.jpg" />
+    <Content Include="Paper\image\title_chenbao.gif" />
+    <Content Include="Paper\image\title_gyrb.jpg" />
+    <Content Include="Paper\image\top-nav.gif" />
+    <Content Include="Paper\image\top.jpg" />
+    <Content Include="Paper\image\topBG.jpg" />
+    <Content Include="Paper\image\TTSPost.htm" />
+    <Content Include="Paper\image\tu.jpg" />
+    <Content Include="Paper\image\xeb.gif" />
+    <Content Include="Paper\image\yqLink.htm" />
+    <Content Include="Paper\image\zjrbBG.jpg" />
+    <Content Include="Paper\image\zoomact.gif" />
+    <Content Include="Paper\image\zoomin.gif" />
+    <Content Include="Paper\image\zoomout.gif" />
+    <Content Include="Paper\js\excanvas.compiled.js" />
+    <Content Include="Paper\js\highlight.js" />
+    <Content Include="Paper\js\jquery-1.3.2.min.js" />
+    <Content Include="Paper\js\paper.js" />
+    <Content Include="Paper\NoData.aspx" />
+    <Content Include="Paper\style\calendar.css" />
+    <Content Include="Paper\titleIndex.aspx" />
+    <Content Include="pressClipping\pressClippingAdd.aspx" />
+    <Content Include="pressClipping\pressClippingList.aspx" />
+    <Content Include="pressClipping\pressClippingNews.aspx" />
+    <Content Include="pressClipping\pressClippingSearchList.aspx" />
+    <Content Include="pressClipping\pressClippingSelect.aspx" />
+    <Content Include="pressClipping\pressClippingSPList.aspx" />
+    <Content Include="Resource\dowmResource.aspx" />
+    <Content Include="Resource\getResource.aspx" />
+    <Content Include="Resource\showJPG.aspx" />
+    <Content Include="Resource\showJPGWH.aspx" />
+    <Content Include="Search\ArticleEdit.aspx" />
+    <Content Include="Search\LookArticle.aspx" />
+    <Content Include="Search\PaperSelect.ascx" />
+    <Content Include="Search\pubSearchIndex.aspx" />
+    <Content Include="Search\pubSearchList.aspx" />
+    <Content Include="Search\scriptureInput.aspx" />
+    <Content Include="Search\searchRetList.aspx" />
+    <Content Include="Search\andInput.aspx" />
+    <Content Include="Search\orInput.aspx" />
+    <Content Include="Search\FxInput.aspx" />
+    <Content Include="UserControl\footer.ascx" />
+    <Content Include="UserControl\head.ascx" />
+    <Content Include="UserControl\left.ascx" />
+    <Content Include="UserManage\TextFile1.txt" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="articlepingfen.aspx.cs">
+      <DependentUpon>articlepingfen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="articlepingfen.aspx.designer.cs">
+      <DependentUpon>articlepingfen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ArticlePingFenPingLun.aspx.cs">
+      <DependentUpon>ArticlePingFenPingLun.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArticlePingFenPingLun.aspx.designer.cs">
+      <DependentUpon>ArticlePingFenPingLun.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="articlepinglun.aspx.cs">
+      <DependentUpon>articlepinglun.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="articlepinglun.aspx.designer.cs">
+      <DependentUpon>articlepinglun.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Command\dataPost.aspx.cs">
+      <DependentUpon>dataPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Command\dataPost.aspx.designer.cs">
+      <DependentUpon>dataPost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Command\ExchangeData.aspx.cs">
+      <DependentUpon>ExchangeData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Command\ExchangeData.aspx.designer.cs">
+      <DependentUpon>ExchangeData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Command\Tool.cs" />
+    <Compile Include="MyInformation\newsCollectionInex.aspx.cs">
+      <DependentUpon>newsCollectionInex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyInformation\newsCollectionInex.aspx.designer.cs">
+      <DependentUpon>newsCollectionInex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyInformation\newsCollectionTypeAdd.aspx.cs">
+      <DependentUpon>newsCollectionTypeAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyInformation\newsCollectionTypeAdd.aspx.designer.cs">
+      <DependentUpon>newsCollectionTypeAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyInformation\newsCollectionTypeSelect.aspx.cs">
+      <DependentUpon>newsCollectionTypeSelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyInformation\newsCollectionTypeSelect.aspx.designer.cs">
+      <DependentUpon>newsCollectionTypeSelect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyInformation\newsRecommendInfoList.aspx.cs">
+      <DependentUpon>newsRecommendInfoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyInformation\newsRecommendInfoList.aspx.designer.cs">
+      <DependentUpon>newsRecommendInfoList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyInformation\paperCollectionList.aspx.cs">
+      <DependentUpon>paperCollectionList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyInformation\paperCollectionList.aspx.designer.cs">
+      <DependentUpon>paperCollectionList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyInformation\BMCollectionList.aspx.cs">
+      <DependentUpon>BMCollectionList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyInformation\BMCollectionList.aspx.designer.cs">
+      <DependentUpon>BMCollectionList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyOpus\aliasInfoList.aspx.cs">
+      <DependentUpon>aliasInfoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyOpus\aliasInfoList.aspx.designer.cs">
+      <DependentUpon>aliasInfoList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyOpus\opusNewsList.aspx.cs">
+      <DependentUpon>opusNewsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyOpus\opusNewsList.aspx.designer.cs">
+      <DependentUpon>opusNewsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyOpus\opusNewsQR.aspx.cs">
+      <DependentUpon>opusNewsQR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyOpus\opusNewsQR.aspx.designer.cs">
+      <DependentUpon>opusNewsQR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="other\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="other\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="other\NoPower.aspx.cs">
+      <DependentUpon>NoPower.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="other\NoPower.aspx.designer.cs">
+      <DependentUpon>NoPower.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="other\paperSelect.aspx.cs">
+      <DependentUpon>paperSelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="other\paperSelect.aspx.designer.cs">
+      <DependentUpon>paperSelect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="outgiving\CustomerBasisInfoAdd.aspx.cs">
+      <DependentUpon>CustomerBasisInfoAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="outgiving\CustomerBasisInfoAdd.aspx.designer.cs">
+      <DependentUpon>CustomerBasisInfoAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="outgiving\CustomerBasisInfoList.aspx.cs">
+      <DependentUpon>CustomerBasisInfoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="outgiving\CustomerBasisInfoList.aspx.designer.cs">
+      <DependentUpon>CustomerBasisInfoList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="outgiving\CustomerHavePaper.aspx.cs">
+      <DependentUpon>CustomerHavePaper.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="outgiving\CustomerHavePaper.aspx.designer.cs">
+      <DependentUpon>CustomerHavePaper.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="outgiving\CustomerPaperFW.aspx.cs">
+      <DependentUpon>CustomerPaperFW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="outgiving\CustomerPaperFW.aspx.designer.cs">
+      <DependentUpon>CustomerPaperFW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagestudy.aspx.cs">
+      <DependentUpon>pagestudy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagestudy.aspx.designer.cs">
+      <DependentUpon>pagestudy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaperLook\ex.aspx.cs">
+      <DependentUpon>ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaperLook\ex.aspx.designer.cs">
+      <DependentUpon>ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaperLook\groupPaper.aspx.cs">
+      <DependentUpon>groupPaper.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaperLook\groupPaper.aspx.designer.cs">
+      <DependentUpon>groupPaper.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaperLook\allPaper.aspx.cs">
+      <DependentUpon>allPaper.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaperLook\allPaper.aspx.designer.cs">
+      <DependentUpon>allPaper.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaperLook\provincePaper.aspx.cs">
+      <DependentUpon>provincePaper.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaperLook\provincePaper.aspx.designer.cs">
+      <DependentUpon>provincePaper.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaperLook\typePaper.aspx.cs">
+      <DependentUpon>typePaper.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaperLook\typePaper.aspx.designer.cs">
+      <DependentUpon>typePaper.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaperLook\groupPaper1.aspx.cs">
+      <DependentUpon>groupPaper1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaperLook\groupPaper1.aspx.designer.cs">
+      <DependentUpon>groupPaper1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaperLook\groupPaper7.aspx.cs">
+      <DependentUpon>groupPaper7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaperLook\groupPaper7.aspx.designer.cs">
+      <DependentUpon>groupPaper7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaperLook\groupPaper2.aspx.cs">
+      <DependentUpon>groupPaper2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaperLook\groupPaper2.aspx.designer.cs">
+      <DependentUpon>groupPaper2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaperLook\groupPaper3.aspx.cs">
+      <DependentUpon>groupPaper3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaperLook\groupPaper3.aspx.designer.cs">
+      <DependentUpon>groupPaper3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaperLook\groupPaper4.aspx.cs">
+      <DependentUpon>groupPaper4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaperLook\groupPaper4.aspx.designer.cs">
+      <DependentUpon>groupPaper4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaperLook\groupPaper5.aspx.cs">
+      <DependentUpon>groupPaper5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaperLook\groupPaper5.aspx.designer.cs">
+      <DependentUpon>groupPaper5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaperLook\groupPaper6.aspx.cs">
+      <DependentUpon>groupPaper6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaperLook\groupPaper6.aspx.designer.cs">
+      <DependentUpon>groupPaper6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paper\ArticlePage.aspx.cs">
+      <DependentUpon>ArticlePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paper\ArticlePage.aspx.designer.cs">
+      <DependentUpon>ArticlePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paper\BMList.aspx.cs">
+      <DependentUpon>BMList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paper\BMList.aspx.designer.cs">
+      <DependentUpon>BMList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paper\calendarPage.aspx.cs">
+      <DependentUpon>calendarPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paper\calendarPage.aspx.designer.cs">
+      <DependentUpon>calendarPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paper\Components\BMmodel.cs" />
+    <Compile Include="Paper\Components\DataOP.cs" />
+    <Compile Include="Paper\footer.ascx.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paper\footer.ascx.designer.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Paper\NoData.aspx.cs">
+      <DependentUpon>NoData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paper\NoData.aspx.designer.cs">
+      <DependentUpon>NoData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paper\titleIndex.aspx.cs">
+      <DependentUpon>titleIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paper\titleIndex.aspx.designer.cs">
+      <DependentUpon>titleIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pressClipping\pressClippingAdd.aspx.cs">
+      <DependentUpon>pressClippingAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pressClipping\pressClippingAdd.aspx.designer.cs">
+      <DependentUpon>pressClippingAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pressClipping\pressClippingList.aspx.cs">
+      <DependentUpon>pressClippingList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pressClipping\pressClippingList.aspx.designer.cs">
+      <DependentUpon>pressClippingList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pressClipping\pressClippingNews.aspx.cs">
+      <DependentUpon>pressClippingNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pressClipping\pressClippingNews.aspx.designer.cs">
+      <DependentUpon>pressClippingNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pressClipping\pressClippingSearchList.aspx.cs">
+      <DependentUpon>pressClippingSearchList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pressClipping\pressClippingSearchList.aspx.designer.cs">
+      <DependentUpon>pressClippingSearchList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pressClipping\pressClippingSelect.aspx.cs">
+      <DependentUpon>pressClippingSelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pressClipping\pressClippingSelect.aspx.designer.cs">
+      <DependentUpon>pressClippingSelect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pressClipping\pressClippingSPList.aspx.cs">
+      <DependentUpon>pressClippingSPList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pressClipping\pressClippingSPList.aspx.designer.cs">
+      <DependentUpon>pressClippingSPList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource\dowmResource.aspx.cs">
+      <DependentUpon>dowmResource.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resource\dowmResource.aspx.designer.cs">
+      <DependentUpon>dowmResource.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource\getResource.aspx.cs">
+      <DependentUpon>getResource.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resource\getResource.aspx.designer.cs">
+      <DependentUpon>getResource.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource\showJPG.aspx.cs">
+      <DependentUpon>showJPG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resource\showJPG.aspx.designer.cs">
+      <DependentUpon>showJPG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource\showJPGWH.aspx.cs">
+      <DependentUpon>showJPGWH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resource\showJPGWH.aspx.designer.cs">
+      <DependentUpon>showJPGWH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\ArticleEdit.aspx.cs">
+      <DependentUpon>ArticleEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\ArticleEdit.aspx.designer.cs">
+      <DependentUpon>ArticleEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\LookArticle.aspx.cs">
+      <DependentUpon>LookArticle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\LookArticle.aspx.designer.cs">
+      <DependentUpon>LookArticle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\PaperSelect.ascx.cs">
+      <DependentUpon>PaperSelect.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\PaperSelect.ascx.designer.cs">
+      <DependentUpon>PaperSelect.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\pubSearchIndex.aspx.cs">
+      <DependentUpon>pubSearchIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\pubSearchIndex.aspx.designer.cs">
+      <DependentUpon>pubSearchIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\pubSearchList.aspx.cs">
+      <DependentUpon>pubSearchList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\pubSearchList.aspx.designer.cs">
+      <DependentUpon>pubSearchList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\scriptureInput.aspx.cs">
+      <DependentUpon>scriptureInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\scriptureInput.aspx.designer.cs">
+      <DependentUpon>scriptureInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\searchRetList.aspx.cs">
+      <DependentUpon>searchRetList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\searchRetList.aspx.designer.cs">
+      <DependentUpon>searchRetList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\andInput.aspx.cs">
+      <DependentUpon>andInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\andInput.aspx.designer.cs">
+      <DependentUpon>andInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\orInput.aspx.cs">
+      <DependentUpon>orInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\orInput.aspx.designer.cs">
+      <DependentUpon>orInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\FxInput.aspx.cs">
+      <DependentUpon>FxInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\FxInput.aspx.designer.cs">
+      <DependentUpon>FxInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\footer.ascx.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\footer.ascx.designer.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\head.ascx.cs">
+      <DependentUpon>head.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\head.ascx.designer.cs">
+      <DependentUpon>head.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\left.ascx.cs">
+      <DependentUpon>left.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\left.ascx.designer.cs">
+      <DependentUpon>left.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MzTreeView10\MzTreeView10 开发文档.mht" />
+    <None Include="MzTreeView10\Thumbs.db" />
+    <None Include="Paper\image\02.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="BMJPGCach\20110703\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>1689</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

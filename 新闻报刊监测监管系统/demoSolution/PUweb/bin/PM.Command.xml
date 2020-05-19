@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PM.Command</name>
+    </assembly>
+    <members>
+        <member name="T:PM.Command.ConfigProvider">
+            <summary>
+            基础数据配置类
+            </summary>
+        </member>
+        <!-- 对于成员“P:PM.Command.ConfigProvider.PubLogDBconn”忽略有格式错误的 XML 注释 -->
+    </members>
+</doc>

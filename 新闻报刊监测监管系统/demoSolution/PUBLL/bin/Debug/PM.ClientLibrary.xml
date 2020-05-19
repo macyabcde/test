@@ -1,0 +1,329 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PM.ClientLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:PM.ClientLibrary.SearchLink">
+            <summary>
+            检索引擎链接执行类
+            </summary>
+        </member>
+        <member name="M:PM.ClientLibrary.SearchLink.exeServer(System.String,System.String)">
+            <summary>
+            执行检索引擎提供中的方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.ClientLibrary.SearchLink.exeServer(System.String)">
+            <summary>
+            执行检索引擎提供中的方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.ClientLibrary.SearchLink.exeServerNoRet(System.String)">
+            <summary>
+            执行检索引擎提供中的方法(没返回值)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PM.ClientLibrary.Search">
+            <summary>
+            检索类
+            </summary>
+        </member>
+        <member name="M:PM.ClientLibrary.Search.FullSearch(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            全文查询
+            如果没有满足件件的数据返回空的table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.ClientLibrary.Search.searchWithSql(System.String,System.Int32,System.Int32,System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            根据Sql代码查询数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.ClientLibrary.Search.searchWithSql(System.String,System.Int32,System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            根据Sql代码查询数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.ClientLibrary.Search.FullSearchToGroup(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            全文查询并返回分组
+            如果没有满足件件的数据返回空的table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.ClientLibrary.Search.FullSearchToGroupGetYear(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.String,System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            全文查询并返回分组(获取某一年份数据)
+            如果没有满足件件的数据返回空的table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.ClientLibrary.Search.FullSearchToGroupGetPaper(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.String,System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            全文查询并返回分组(获取某一报纸数据)
+            如果没有满足件件的数据返回空的table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.ClientLibrary.Search.CombinationSearch(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            组合查询
+            如果没有满足条件的数据返回空的table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.ClientLibrary.Search.FXSearch(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Int32)">
+            <summary>
+            分项查询
+            如果没有满足条件的数据返回空的table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.ClientLibrary.Search.FXSearchToGroup(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Int32)">
+            <summary>
+            分项查询并返回分组
+            如果没有满足件件的数据返回空的table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.ClientLibrary.Search.FXSearchToGroupGetYear(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            分项查询并返回分组(获取某一年份数据)
+            如果没有满足件件的数据返回空的table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.ClientLibrary.Search.FXSearchToGroupGetPaper(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            分项查询并返回分组(获取某一报纸数据)
+            如果没有满足件件的数据返回空的table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PM.ClientLibrary.Paper">
+            <summary>
+            报纸信息类
+            </summary>
+        </member>
+        <member name="M:PM.ClientLibrary.Paper.getBMList(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            获取某一段日期内的报纸版面列表
+            </summary> 
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:PM.ClientLibrary.Paper.getFirstBMList(System.Int32,System.Int32)”忽略有格式错误的 XML 注释 -->
+        <member name="M:PM.ClientLibrary.Paper.UpdateFirstBMList(System.Int32,System.Int32)">
+            <summary>
+            更新报纸首版信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.ClientLibrary.Paper.getArticleListForSZB(System.Int32,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取某一段日期内某一版面的文章列表
+            </summary>    
+            <returns></returns>
+        </member>
+        <member name="M:PM.ClientLibrary.Paper.getArticleList(System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            获取某一段日期内的文章列表
+            </summary>
+             <returns></returns>
+        </member>
+        <member name="M:PM.ClientLibrary.Paper.getDataWithKID(System.String,System.String)">
+            <summary>
+            根据KID得到需要的数据（顺序与传入的KID相同)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.ClientLibrary.Paper.getArticleInfoBModel(System.Int64)">
+            <summary>
+            根据KID得文章实体
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.ClientLibrary.Paper.UpdateArticleInfoB(PM.Model.MDL_ArticleInfoB)">
+            <summary>
+            修改文章信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.ClientLibrary.Paper.delArticleInfoB(System.Int64)">
+            <summary>
+            删除文章信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.ClientLibrary.Paper.getPaperName(System.Int32)">
+            <summary>
+            获取报纸名称(返回空说明该报纸不存在)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.ClientLibrary.Paper.getPaperID(System.String)">
+            <summary>
+            获取报纸名称(返回-1说明该报纸不存在)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PM.ClientLibrary.Cache">
+            <summary>
+            缓存类
+            </summary>
+        </member>
+        <member name="M:PM.ClientLibrary.Cache.ClearCache">
+            <summary>
+            清空缓存(内部已对“检索结果缓存列表”加锁)
+            </summary>
+        </member>
+        <member name="M:PM.ClientLibrary.Cache.getCacheTotalRowSL">
+            <summary>
+            获取缓存总行数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.ClientLibrary.Cache.getCacheSL">
+            <summary>
+            获取缓存个数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PM.ClientLibrary.CanUseDB">
+            <summary>
+            当前可用的数据库类
+            </summary>
+        </member>
+        <member name="M:PM.ClientLibrary.CanUseDB.LoadCanUseDB">
+            <summary>
+             重新加载当前可用的数据库实体列表(以存储数据的开始时间asc排序)
+            </summary>
+        </member>
+        <member name="T:PM.ClientLibrary.Resource">
+            <summary>
+            资源操作类
+            </summary>
+        </member>
+        <member name="F:PM.ClientLibrary.Resource._blockLength">
+            <summary>
+            文件数据块大小
+            </summary>
+        </member>
+        <member name="M:PM.ClientLibrary.Resource.#ctor">
+            <summary>
+            构造器
+            </summary>
+        </member>
+        <member name="M:PM.ClientLibrary.Resource.getResourcesPath(System.Int32,System.Int32,System.String,System.Int32)">
+            <summary>
+            获取资源文件存储路径
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.ClientLibrary.Resource.getResourcesServerAndPath(System.Int32,System.Int32,System.String,System.Int32,System.String)">
+            <summary>
+            获取资源服务器和文件存储路径
+            </summary>
+            <returns>serverIP:端口;文件路径</returns>
+        </member>
+        <member name="M:PM.ClientLibrary.Resource.getResourcesServerAndPath2(System.Int32,System.Int32)">
+            <summary>
+            获取资源服务器和文件存储路径2
+            </summary>
+            <returns>serverIP:端口;文件路径</returns>
+        </member>
+        <member name="M:PM.ClientLibrary.Resource.getResourcesServerAndPath2(System.Int32,System.Int32,System.String@,System.Int32@,System.String@)">
+            <summary>
+            获取资源服务器和文件存储路径2
+            </summary>
+            <returns>true：可以用、false： 该日期当前没有可用的源服务器，或报纸不存在</returns>
+        </member>
+        <member name="M:PM.ClientLibrary.Resource.getResourcesServer(System.Int32)">
+            <summary>
+            获取资源服务器(空说明该日期当前没有可用的源服务器)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.ClientLibrary.Resource.SaveFile(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String)">
+            <summary>
+            文件保到资源服务器磁盘
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.ClientLibrary.Resource.getFile(System.Int32,System.Int32,System.String,System.Int32,System.String)">
+            <summary>
+            获取文件(返回null表示服务不在存或出错，长度为0表示文件为空)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.ClientLibrary.Resource.SaveFile(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            文件保到资源服务器磁盘
+            </summary>
+            <param name="filePath">要发送的本地文件完整路径</param>
+            <param name="SavefilePath">资源服务器文件存储的完整路径</param>
+            <param name="ResourceServerIP">资源服务器IP地址</param>
+            <param name="ResourcePort">资源服务器端口</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.ClientLibrary.Resource.getFile(System.String,System.String,System.Int32)">
+            <summary>
+            获取文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.ClientLibrary.Resource.SaveFile2(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String},System.String,System.Int32)">
+            <summary>
+            文件保到资源服务器磁盘2
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PM.ClientLibrary.config">
+            <summary>
+            基础配置信息
+            </summary>
+        </member>
+        <member name="P:PM.ClientLibrary.config.cache">
+            <summary>
+            启用检索引擎缓存
+            </summary>
+        </member>
+        <member name="P:PM.ClientLibrary.config.SearchServerIP">
+            <summary>
+            检索引擎IP地址
+            </summary>
+        </member>
+        <member name="P:PM.ClientLibrary.config.SearchPort">
+            <summary>
+            检索引擎端口
+            </summary>
+        </member>
+        <member name="P:PM.ClientLibrary.config.SearchTimeout">
+            <summary>
+             检索引擎tcp超时时间（单位：毫秒）
+            </summary>
+        </member>
+        <member name="P:PM.ClientLibrary.config.ResourceTimeout">
+            <summary>
+             资源服务器tcp超时间(单位：毫秒)
+            </summary>
+        </member>
+        <member name="T:PM.ClientLibrary.ArticleRKClass">
+            <summary>
+            文章入库类
+            </summary>
+        </member>
+        <member name="M:PM.ClientLibrary.ArticleRKClass.ArticleRK(System.Collections.Generic.List{PM.Model.MDL_ArticleInfoB}[],System.Int32)">
+            <summary>
+            文章入库
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

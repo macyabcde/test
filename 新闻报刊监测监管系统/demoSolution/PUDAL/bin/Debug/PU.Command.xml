@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PU.Command</name>
+    </assembly>
+    <members>
+        <member name="T:PU.Command.ConfigProvider">
+            <summary>
+            基础数据配置类
+            </summary>
+        </member>
+        <member name="P:PU.Command.ConfigProvider.PUDBconn">
+            <summary>
+            报刊库应用数据库链接串
+            </summary>
+        </member>
+        <member name="P:PU.Command.ConfigProvider.PMDBconn">
+            <summary>
+            报刊库管理数据库链接串
+            </summary>
+        </member>
+        <member name="P:PU.Command.ConfigProvider.PMwebServiceUrl">
+            <summary>
+            检索引擎WebServiceUrl
+            </summary>
+        </member>
+        <member name="P:PU.Command.ConfigProvider.groupName">
+            <summary>
+            所属报业集团
+            </summary>
+        </member>
+        <member name="P:PU.Command.ConfigProvider.DefaultNewsCollectionType">
+            <summary>
+            默认新建的报道收藏类别
+            </summary>
+        </member>
+        <member name="P:PU.Command.ConfigProvider.footerMsg">
+            <summary>
+            footer显示内容
+            </summary>
+        </member>
+        <member name="P:PU.Command.ConfigProvider.footerMsgForPaper">
+            <summary>
+            动态数字报footer显示内容
+            </summary>
+        </member>
+    </members>
+</doc>

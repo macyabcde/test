@@ -1,0 +1,540 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PU.DAL</name>
+    </assembly>
+    <members>
+        <member name="T:PU.DAL.DAL_customerBasisInfoB">
+            <summary>
+            客户基本信息数据访问类
+            </summary>
+        </member>
+        <member name="M:PU.DAL.DAL_customerBasisInfoB.#ctor">
+            <summary>
+            客户基本信息数据访问类
+            </summary>
+        </member>
+        <member name="M:PU.DAL.DAL_customerBasisInfoB.GetModel(System.String)">
+            <summary>
+            获取一个客户基本信息实体
+            </summary>
+            <param name="customerID">客户基本信息ID</param>
+            <returns>客户基本信息实体</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_customerBasisInfoB.Add(PU.Model.MDL_customerBasisInfoB)">
+            <summary>
+            添加客户基本信息,返回所影响的行数
+            </summary>
+            <param name="model">客户基本信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_customerBasisInfoB.Update(PU.Model.MDL_customerBasisInfoB)">
+            <summary>
+            修改客户基本信息,返回所影响的行数
+            </summary>
+            <param name="model">客户基本信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_customerBasisInfoB.Delete(System.String)">
+            <summary>
+            删除客户基本信息,返回所影响的行数
+            </summary>
+            <param name="customerID">客户基本信息ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_customerBasisInfoB.SetCustomerActive(System.String,System.Int32)">
+            <summary>
+            设置客户有效状态
+            </summary>
+            <param name="customerID">客户ID</param>
+            <param name="active">有效状态：1启用；0 禁用</param>
+            <returns>返回所影响的行数</returns>
+        </member>
+        <member name="T:PU.DAL.DAL_editionCollectionInfoB">
+            <summary>
+            版面收藏信息数据访问类
+            </summary>
+        </member>
+        <member name="M:PU.DAL.DAL_editionCollectionInfoB.#ctor">
+            <summary>
+            版面收藏信息数据访问类
+            </summary>
+        </member>
+        <member name="M:PU.DAL.DAL_editionCollectionInfoB.GetModel(System.Int32)">
+            <summary>
+            获取一个版面收藏信息实体
+            </summary>
+            <param name="editionCollectionInfoID">版面收藏信息ID</param>
+            <returns>版面收藏信息实体</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_editionCollectionInfoB.Add(PU.Model.MDL_editionCollectionInfoB)">
+            <summary>
+            添加版面收藏信息,返回当前添加信息的ID
+            </summary>
+            <param name="model">版面收藏信息实体类</param>
+            <returns>当前添加信息的ID</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_editionCollectionInfoB.Update(PU.Model.MDL_editionCollectionInfoB)">
+            <summary>
+            修改版面收藏信息,返回所影响的行数
+            </summary>
+            <param name="model">作品报道信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_editionCollectionInfoB.Delete(System.Int32)">
+            <summary>
+            删除版面收藏信息,返回所影响的行数
+            </summary>
+            <param name="editionCollectionInfoID">版面收藏信息ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="T:PU.DAL.DAL_pressClippingNewsInfoB">
+            <summary>
+            剪报报道信息数据访问类
+            </summary>
+        </member>
+        <member name="M:PU.DAL.DAL_pressClippingNewsInfoB.#ctor">
+            <summary>
+            剪报报道信息数据访问类
+            </summary>
+        </member>
+        <member name="M:PU.DAL.DAL_pressClippingNewsInfoB.GetModel(System.Int32)">
+            <summary>
+            获取一个剪报报道信息实体
+            </summary>
+            <param name="pressClippingNewsInfoID">剪报报道信息ID</param>
+            <returns>剪报报道信息实体</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_pressClippingNewsInfoB.Add(PU.Model.MDL_pressClippingNewsInfoB)">
+            <summary>
+            添加剪报报道信息,返回当前添加信息的ID
+            </summary>
+            <param name="model">剪报报道信息实体类</param>
+            <returns>当前添加信息的ID</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_pressClippingNewsInfoB.Update(PU.Model.MDL_pressClippingNewsInfoB)">
+            <summary>
+            修改剪报报道信息,返回所影响的行数
+            </summary>
+            <param name="model">剪报报道信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_pressClippingNewsInfoB.Delete(System.Int32)">
+            <summary>
+            删除剪报报道信息,返回所影响的行数
+            </summary>
+            <param name="pressClippingNewsInfoID">剪报报道信息ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_pressClippingNewsInfoB.DeleteWithPressClippingBasisInfoID(System.Int32)">
+            <summary>
+            删除剪报报道信息,返回所影响的行数
+            </summary>
+            <param name="pressClippingBasisInfoID">剪报基本信息ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="T:PU.DAL.DAL_opusNewsInfoB">
+            <summary>
+            作品报道信息数据访问层
+            </summary>
+        </member>
+        <member name="M:PU.DAL.DAL_opusNewsInfoB.#ctor">
+            <summary>
+            作品报道信息数据访问层
+            </summary>
+        </member>
+        <member name="M:PU.DAL.DAL_opusNewsInfoB.GetModel(System.Int32)">
+            <summary>
+            获取一个作品报道信息实体
+            </summary>
+            <param name="opusNewsInfoID">作品报道信息ID</param>
+            <returns>作品报道信息实体</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_opusNewsInfoB.Add(PU.Model.MDL_opusNewsInfoB)">
+            <summary>
+            添加作品报道信息,返回当前添加信息的ID
+            </summary>
+            <param name="model">作品报道信息实体类</param>
+            <returns>当前添加信息的ID</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_opusNewsInfoB.Update(PU.Model.MDL_opusNewsInfoB)">
+            <summary>
+            修改作品报道信息,返回所影响的行数
+            </summary>
+            <param name="model">作品报道信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_opusNewsInfoB.Delete(System.Int32)">
+            <summary>
+            删除作品报道信息,返回所影响的行数
+            </summary>
+            <param name="opusNewsInfoID">作品报道信息ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="T:PU.DAL.DAL_opusBasisInfoB">
+            <summary>
+            作品基本信息数据访问类
+            </summary>
+        </member>
+        <member name="M:PU.DAL.DAL_opusBasisInfoB.#ctor">
+            <summary>
+            作品基本信息数据访问类
+            </summary>
+        </member>
+        <member name="M:PU.DAL.DAL_opusBasisInfoB.GetModel(System.Int32)">
+            <summary>
+            获取一个作品基本信息实体
+            </summary>
+            <param name="opusBasisInfoID">作品基本信息ID</param>
+            <returns>作品基本信息实体</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_opusBasisInfoB.Add(PU.Model.MDL_opusBasisInfoB)">
+            <summary>
+            添加作品基本信息,返回当前添加信息的ID
+            </summary>
+            <param name="model">作品基本信息实体类</param>
+            <returns>当前添加信息的ID</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_opusBasisInfoB.Update(PU.Model.MDL_opusBasisInfoB)">
+            <summary>
+            修改作品基本信息,返回所影响的行数
+            </summary>
+            <param name="model">作品基本信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_opusBasisInfoB.Delete(System.Int32)">
+            <summary>
+            删除作品基本信息,返回所影响的行数
+            </summary>
+            <param name="opusBasisInfoID">作品基本信息ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="T:PU.DAL.DAL_newsCollectionTypeB">
+            <summary>
+            报道收藏类别数据访问类
+            </summary>
+        </member>
+        <member name="M:PU.DAL.DAL_newsCollectionTypeB.#ctor">
+            <summary>
+            报道收藏类别数据访问类
+            </summary>
+        </member>
+        <member name="M:PU.DAL.DAL_newsCollectionTypeB.GetModel(System.Int32)">
+            <summary>
+            获取一个报道收藏类别实体
+            </summary>
+            <param name="newsCollectionTypeID">报道收藏类别ID</param>
+            <returns>报道收藏类别实体</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_newsCollectionTypeB.Add(PU.Model.MDL_newsCollectionTypeB)">
+            <summary>
+            添加报道收藏类别,返回当前添加信息的ID
+            </summary>
+            <param name="model">报道收藏类别实体类</param>
+            <returns>当前添加信息的ID</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_newsCollectionTypeB.Update(PU.Model.MDL_newsCollectionTypeB)">
+            <summary>
+            修改报道收藏类别,返回所影响的行数
+            </summary>
+            <param name="model">作品报道信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_newsCollectionTypeB.Delete(System.Int32)">
+            <summary>
+            删除报道收藏类别,返回所影响的行数
+            </summary>
+            <param name="newsCollectionTypeID">报道收藏类别ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="T:PU.DAL.DAL_pressClippingBasisInfoB">
+            <summary>
+            剪报基本信息数据访问类
+            </summary>
+        </member>
+        <member name="M:PU.DAL.DAL_pressClippingBasisInfoB.#ctor">
+            <summary>
+            剪报基本信息数据访问类
+            </summary>
+        </member>
+        <member name="M:PU.DAL.DAL_pressClippingBasisInfoB.GetModel(System.Int32)">
+            <summary>
+            获取一个剪报基本信息实体
+            </summary>
+            <param name="pressClippingBasisInfoID">剪报基本信息ID</param>
+            <returns>剪报基本信息实体</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_pressClippingBasisInfoB.Add(PU.Model.MDL_pressClippingBasisInfoB)">
+            <summary>
+            添加剪报基本信息,返回当前添加信息的ID
+            </summary>
+            <param name="model">剪报基本信息实体类</param>
+            <returns>当前添加信息的ID</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_pressClippingBasisInfoB.Update(PU.Model.MDL_pressClippingBasisInfoB)">
+            <summary>
+            修改剪报基本信息,返回所影响的行数
+            </summary>
+            <param name="model">剪报基本信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_pressClippingBasisInfoB.Delete(System.Int32)">
+            <summary>
+            删除修改剪报基本,返回所影响的行数
+            </summary>
+            <param name="pressClippingBasisInfoID">修改剪报基本ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="T:PU.DAL.DAL_newsRecommendInfoB">
+            <summary>
+            报道推荐信息数据访问类
+            </summary>
+        </member>
+        <member name="M:PU.DAL.DAL_newsRecommendInfoB.#ctor">
+            <summary>
+            报道推荐信息数据访问类
+            </summary>
+        </member>
+        <member name="M:PU.DAL.DAL_newsRecommendInfoB.GetModel(System.Int32)">
+            <summary>
+            获取一个报道推荐信息实体
+            </summary>
+            <param name="newscInfoID">报道推荐信息ID</param>
+            <returns>报道推荐信息实体</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_newsRecommendInfoB.Add(PU.Model.MDL_newsRecommendInfoB)">
+            <summary>
+            添加报道推荐信息,返回当前添加信息的ID
+            </summary>
+            <param name="model">报道推荐信息实体类</param>
+            <returns>当前添加信息的ID</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_newsRecommendInfoB.Update(PU.Model.MDL_newsRecommendInfoB)">
+            <summary>
+            修改报道推荐信息,返回所影响的行数
+            </summary>
+            <param name="model">报道推荐信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_newsRecommendInfoB.Delete(System.Int32)">
+            <summary>
+            删除报道推荐信息,返回所影响的行数
+            </summary>
+            <param name="newscInfoID">报道推荐信息ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_newsRecommendInfoB.Delete(System.String,System.String,System.Int64)">
+            <summary>
+            删除报道推荐信息
+            </summary>
+            <param name="sourceUserGUID">来源用户GUID</param>
+            <param name="objectUserGUID">目标用户GUID</param>
+            <param name="KID">文章ID</param>
+            <returns></returns>
+        </member>
+        <member name="T:PU.DAL.DAL_paperCollectionInfoB">
+            <summary>
+            报纸收藏信息数据访问类
+            </summary>
+        </member>
+        <member name="M:PU.DAL.DAL_paperCollectionInfoB.#ctor">
+            <summary>
+            报纸收藏信息数据访问类
+            </summary>
+        </member>
+        <member name="M:PU.DAL.DAL_paperCollectionInfoB.GetModel(System.Int32)">
+            <summary>
+            获取一个报纸收藏信息实体
+            </summary>
+            <param name="paperCollectionInfoID">报纸收藏信息ID</param>
+            <returns>报纸收藏信息实体</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_paperCollectionInfoB.Add(PU.Model.MDL_paperCollectionInfoB)">
+            <summary>
+            添加报纸收藏信息,返回当前添加信息的ID
+            </summary>
+            <param name="model">报纸收藏信息实体类</param>
+            <returns>当前添加信息的ID</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_paperCollectionInfoB.Update(PU.Model.MDL_paperCollectionInfoB)">
+            <summary>
+            修改报纸收藏信息,返回所影响的行数
+            </summary>
+            <param name="model">报纸收藏信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_paperCollectionInfoB.Delete(System.Int32)">
+            <summary>
+            删除报纸收藏信息,返回所影响的行数
+            </summary>
+            <param name="paperCollectionInfoID">报纸收藏信息ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_paperCollectionInfoB.Delete(System.Int32,System.String)">
+            <summary>
+            删除报纸收藏信息
+            </summary>
+            <param name="paperID">报纸ID</param>
+            <param name="userGUID">用户GUID</param>
+            <returns></returns>
+        </member>
+        <member name="T:PU.DAL.DAL_customerPaperInfoB">
+            <summary>
+            客户报纸信息数据访问类
+            </summary>
+        </member>
+        <member name="M:PU.DAL.DAL_customerPaperInfoB.#ctor">
+            <summary>
+            客户报纸信息数据访问类
+            </summary>
+        </member>
+        <member name="M:PU.DAL.DAL_customerPaperInfoB.GetModel(System.Int32)">
+            <summary>
+            获取一个客户报纸信息实体
+            </summary>
+            <param name="customerPaperID">客户报纸信息ID</param>
+            <returns>客户报纸信息实体</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_customerPaperInfoB.GetModelForPaperID(System.Int32,System.String)">
+            <summary>
+            获取一个客户报纸信息实体
+            </summary>
+            <param name="paperID">报纸信息ID</param>
+            <param name="customerID">客户信息ID</param>
+            <returns>客户报纸信息实体</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_customerPaperInfoB.Add(System.String,System.Int32,System.String)">
+            <summary>
+            添加客户报纸信息,返回所影响的行数
+            </summary>
+            <param name="customerID">客户信息ID</param>
+            <param name="paperID">报纸信息ID</param>
+            <param name="updateOverDate">已更新到日期</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_customerPaperInfoB.EditupdateOverDate(System.String,System.Int32,System.DateTime)">
+            <summary>
+            修改已更新到日期
+            </summary>
+            <param name="customerID">客户信息ID</param>
+            <param name="paperID">报纸信息ID</param>
+            <param name="updateOverDate">已更新到日期</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_customerPaperInfoB.getupdateOverDate(System.String,System.Int32)">
+            <summary>
+            获取已更新到日期(返回3000-01-01 说明该客户没有该报纸)
+            </summary>
+            <param name="customerID">客户信息ID</param>
+            <param name="paperID">报纸信息ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:PU.DAL.DAL_customerPaperInfoB.Delete(System.Int32)">
+            <summary>
+            删除客户报纸信息,返回所影响的行数
+            </summary>
+            <param name="customerPaperID">客户报纸信息ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_customerPaperInfoB.Delete(System.String,System.Int32)">
+            <summary>
+            删除客户报纸信息,返回所影响的行数
+            </summary>
+            <param name="customerID">客户ID</param>
+            <param name="paperID">报纸ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_customerPaperInfoB.GetCustomerPaperList(System.String)">
+            <summary>
+            获取客户报纸信息列表
+            </summary>
+            <param name="customerID">客户ID</param>
+            <returns>客户报纸信息列表</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_customerPaperInfoB.IfHavePaper(System.String,System.Int32)">
+            <summary>
+            检测用户是否已有某份报纸信息。
+            返回0表示客户没有此客户信息；如果有返回客户报纸信息ID
+            </summary>
+            <param name="customerID">客户ID</param>
+            <param name="paperID">报纸ID</param>
+            <returns>返回0表示客户没有此客户信息；如果有返回客户报纸信息ID</returns>
+        </member>
+        <member name="T:PU.DAL.DAL_aliasInfoB">
+            <summary>
+            笔名信息数据访问类
+            </summary>
+        </member>
+        <member name="M:PU.DAL.DAL_aliasInfoB.#ctor">
+            <summary>
+            笔名信息数据访问类
+            </summary>
+        </member>
+        <member name="M:PU.DAL.DAL_aliasInfoB.GetModel(System.Int32)">
+            <summary>
+            获取一个笔名信息实体
+            </summary>
+            <param name="aliasInfoID">笔名信息ID</param>
+            <returns>笔名信息实体</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_aliasInfoB.Add(PU.Model.MDL_aliasInfoB)">
+            <summary>
+            添加笔名信息,返回当前添加信息的ID
+            </summary>
+            <param name="model">笔名信息实体类</param>
+            <returns>当前添加信息的ID</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_aliasInfoB.Update(PU.Model.MDL_aliasInfoB)">
+            <summary>
+            修改笔名信息,返回所影响的行数
+            </summary>
+            <param name="model">笔名信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_aliasInfoB.Delete(System.Int32)">
+            <summary>
+            删除笔名信息,返回所影响的行数
+            </summary>
+            <param name="aliasInfoID">笔名信息ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="T:PU.DAL.DAL_newsCollectionInfoB">
+            <summary>
+            报道收藏信息数据访问类
+            </summary>
+        </member>
+        <member name="M:PU.DAL.DAL_newsCollectionInfoB.#ctor">
+            <summary>
+            报道收藏信息数据访问类
+            </summary>
+        </member>
+        <member name="M:PU.DAL.DAL_newsCollectionInfoB.GetModel(System.Int32)">
+            <summary>
+            获取一个报道收藏信息实体
+            </summary>
+            <param name="newsCollectionInfoID">报道收藏信息ID</param>
+            <returns>报道收藏信息实体</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_newsCollectionInfoB.Add(PU.Model.MDL_newsCollectionInfoB)">
+            <summary>
+            添加报道收藏信息,返回当前添加信息的ID
+            </summary>
+            <param name="model">报道收藏信息实体类</param>
+            <returns>当前添加信息的ID</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_newsCollectionInfoB.Update(PU.Model.MDL_newsCollectionInfoB)">
+            <summary>
+            修改报道收藏信息,返回所影响的行数
+            </summary>
+            <param name="model">报道收藏信息实体类</param>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PU.DAL.DAL_newsCollectionInfoB.Delete(System.Int32)">
+            <summary>
+            删除报道收藏信息,返回所影响的行数
+            </summary>
+            <param name="newsCollectionInfoID">报道收藏信息ID</param>
+            <returns>所影响的行数</returns>
+        </member>
+    </members>
+</doc>

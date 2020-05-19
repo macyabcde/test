@@ -1,0 +1,233 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>User.Model</name>
+    </assembly>
+    <members>
+        <member name="T:User.Model.MDL_User">
+            <summary>
+            用户信息表实体类
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_User.userGUID">
+            <summary>
+            用户GUID
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_User.userLoginName">
+            <summary>
+            用户登录名
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_User.userName">
+            <summary>
+            用户姓名
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_User.password">
+            <summary>
+            用户密码
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_User.xuhao">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_User.tel">
+            <summary>
+            办公电话
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_User.mobile">
+            <summary>
+            手机号码
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_User.email">
+            <summary>
+            邮箱地址
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_User.departID">
+            <summary>
+            所在部门
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_User.explain">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_User.active">
+            <summary>
+            是否有效 1：代表有效   0：代表无效
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_User.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:User.Model.MDL_Department">
+            <summary>
+            组织信息表实体类
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_Department.departID">
+            <summary>
+            组织结构ID
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_Department.fatherID">
+            <summary>
+            上级组织ID
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_Department.departName">
+            <summary>
+            组织名称
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_Department.departShort">
+            <summary>
+            简称
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_Department.departPinyin">
+            <summary>
+            简拼
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_Department.xuhao">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_Department.hasDel">
+            <summary>
+            是否被删除 0:未被删除  1：已被删除
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_Department.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:User.Model.MDL_moduleB">
+            <summary>
+            系统模块表实体类
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_moduleB.moduleID">
+            <summary>
+            模块ID
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_moduleB.moduleName">
+            <summary>
+            模块名称
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_moduleB.Xuhao">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_moduleB.explain">
+            <summary>
+            说明
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_moduleB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:User.Model.MDL_popedomB">
+            <summary>
+            原子权限信息表实体类
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_popedomB.popedomCode">
+            <summary>
+            原子权限代码
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_popedomB.moduleID">
+            <summary>
+            模块ID
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_popedomB.popedomName">
+            <summary>
+            原子权限名称
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_popedomB.explain">
+            <summary>
+            说明
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_popedomB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:User.Model.MDL_User_PartB">
+            <summary>
+            用户角色信息表实体类
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_User_PartB.user_PartB_ID">
+            <summary>
+            用户角色ID
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_User_PartB.userGUID">
+            <summary>
+            用户GUID
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_User_PartB.partID">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_User_PartB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:User.Model.MDL_partB">
+            <summary>
+            角色信息表实体类
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_partB.partID">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_partB.partName">
+            <summary>
+            角色名称
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_partB.explain">
+            <summary>
+            说明
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_partB.popedom">
+            <summary>
+            原子权限
+            </summary>
+        </member>
+        <member name="P:User.Model.MDL_partB.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+    </members>
+</doc>

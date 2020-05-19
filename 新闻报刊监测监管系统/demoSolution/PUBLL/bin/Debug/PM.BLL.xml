@@ -1,0 +1,2975 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PM.BLL</name>
+    </assembly>
+    <members>
+        <member name="T:PM.BLL.get.FZSFServer">
+            <summary>
+            方正收费抓服务器(方正的报纸并且收费)
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZSFServer.HtmlSavePath">
+            <summary>
+            抓取的html及资源文件存储路径
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZSFServer.convergeServerID">
+            <summary>
+            抓取服务器ID
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZSFServer.NowRunGetPaper_dic">
+            <summary>
+            正在抓取的报纸字典
+            </summary>
+        </member>
+        <member name="M:PM.BLL.get.FZSFServer.#ctor(System.String,System.String)">
+            <summary>
+            构造器(抓取用)
+            </summary>
+            <param name="_HtmlSavePath">抓取的html及资源文件存储路径</param>
+            <param name="_convergeServerID">抓取服务器ID</param>
+        </member>
+        <member name="M:PM.BLL.get.FZSFServer.RunGetTask">
+            <summary>
+            运行抓取任务
+            </summary>
+        </member>
+        <member name="M:PM.BLL.get.FZSFServer.recoverTask">
+            <summary>
+            回收本服务器所有正在运行的任务
+            </summary>
+        </member>
+        <member name="T:PM.BLL.get.FZAnalysis">
+            <summary>
+            方正数字报分析
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZAnalysis.taskInfID">
+            <summary>
+            任务信息ID
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZAnalysis.HtmlsavePath">
+            <summary>
+            Html文件存储路径
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZAnalysis.XmlSavePath">
+            <summary>
+            XML文件存储路径
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZAnalysis.startTime">
+            <summary>
+            本次任务运行开始时间
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZAnalysis.taskInfoBJG">
+            <summary>
+            任务信息表实体对象
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZAnalysis.convergePaperBJG">
+            <summary>
+            抓取报纸信息表实体对象
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZAnalysis.paperBJG">
+            <summary>
+            报纸信息表实体对象
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZAnalysis.PropertyBJG">
+            <summary>
+            属性特征配置表实体对象
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZAnalysis.RegCs">
+            <summary>
+            正则类
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZAnalysis.XMLCs">
+            <summary>
+            XML处理类
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZAnalysis.toolCs">
+            <summary>
+            工具类
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZAnalysis.logSqlCs">
+            <summary>
+            sql日志类
+            </summary>
+        </member>
+        <member name="M:PM.BLL.get.FZAnalysis.#ctor(System.Int32,System.String,System.String)">
+            <summary>
+            构造器
+            </summary>
+            <param name="_taskInfID">任务信息ID</param>
+            <param name="_HtmlsavePath">Html文件存储路径</param>
+            <param name="_XmlSavePath">XML文件存储路径</param>
+        </member>
+        <member name="M:PM.BLL.get.FZAnalysis.Start">
+            <summary>
+            开始分析
+            </summary>
+        </member>
+        <member name="M:PM.BLL.get.FZAnalysis.createBMXML(System.IO.DirectoryInfo)">
+            <summary>
+            生成版面XML及资源文件
+            </summary>
+            <param name="dir">版次目录</param>
+        </member>
+        <member name="M:PM.BLL.get.FZAnalysis.AnalysisOneArticle(System.String)">
+            <summary>
+            分析单个文章html得到文章实体
+            </summary>
+            <param name="htmlPath">html文件路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.get.FZAnalysis.copyJPGAndPDF(PM.Model.MDL_ArticleInfoB)">
+            <summary>
+            拷贝JPG与PDF
+            </summary>
+            <param name="ArticleModel">文章实体</param>
+        </member>
+        <member name="M:PM.BLL.get.FZAnalysis.copyCT(System.Collections.Generic.List{PM.Model.MDL_ArticleInfoB})">
+            <summary>
+            拷贝插图
+            </summary>
+            <param name="ArticleList">文章实体列表</param>
+        </member>
+        <member name="M:PM.BLL.get.FZAnalysis.copyFile(System.String,System.String)">
+            <summary>
+            文件拷贝
+            </summary>
+            <param name="sourceFileName">要复制的文件的完整路径，到文件名</param>
+            <param name="destPath">要复制到的路径，只到文件夹</param>
+        </member>
+        <member name="M:PM.BLL.get.FZAnalysis.UpdateTaskForOK">
+            <summary>
+             成功时更新任务状态
+            </summary>
+        </member>
+        <member name="M:PM.BLL.get.FZAnalysis.UpdateTaskForErr">
+            <summary>
+             失败时更新任务状态
+            </summary>
+        </member>
+        <member name="M:PM.BLL.get.FZAnalysis.UpdateTaskForStart">
+            <summary>
+             开始运行时更新任务状态
+            </summary>
+        </member>
+        <member name="T:PM.BLL.BLL_databaseB">
+            <summary>
+            数据库信息数据处理
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_databaseB.#ctor">
+            <summary>
+            数据库信息数据处理
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_databaseB.GetModel(System.Int32)">
+            <summary>
+            获取一个数据库信息实体
+            </summary>
+            <returns>一个数据库信息实体</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_databaseB.Add(PM.Model.MDL_databaseB)">
+            <summary>
+            添加数据库信息,返回所影响的行
+            </summary>
+            <returns>所影响的行</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_databaseB.Update(PM.Model.MDL_databaseB)">
+            <summary>
+            修改数据库信息,返回所影响的行
+            </summary>
+            <returns>所影响的行</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_databaseB.Delete(System.Int32)">
+            <summary>
+            删除数据库信息
+            </summary>
+            <returns>所影响的行</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_databaseB.getDBAndServerList">
+            <summary>
+            获取数据库及对应的服务器列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_databaseB.GetPaperPageList(System.Int32,System.Int32)">
+            <summary>
+            获取数据库信息列表(分页)
+            </summary>
+            <returns>分页信息返回数据结构</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_databaseB.Hasdatabase(System.DateTime,System.DateTime,System.Int32)">
+            <summary>
+            检测该时间段内是否有库
+            </summary>
+            <returns>true存在,false不存在</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_databaseB.HasdatabaseName(System.Int32,System.String)">
+            <summary>
+            检测是否已存在数据库名称
+            </summary>
+            <returns>true存在,false不存在</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_databaseB.CheckdatabaseName(System.String)">
+            <summary>
+            判断名称是否可用
+            </summary>
+            <returns>数据库信息实体</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_databaseB.UpdateDBState">
+            <summary>
+            更新每个数据库状态
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PM.BLL.BLL_NetworkMultiThread">
+            <summary>
+            多线程检测URL并插入L_FillPaperURL 的操作类
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_NetworkMultiThread.#ctor(System.String,System.String,System.Int32,System.Int32,System.String,System.Int32,System.String)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="paperName1"></param>
+            <param name="paperURL1"></param>
+            <param name="KeyForNeedFillPaper1"></param>
+            <param name="orderID1"></param>
+            <param name="AutoNum1"></param>
+            <param name="DelayTime1"></param>
+            <param name="paperID1"></param>
+            <param name="RQ1"></param>
+        </member>
+        <member name="M:PM.BLL.BLL_NetworkMultiThread.MultiThreadWork(System.Object)">
+            <summary>
+            多线程插入L_FillPaperURL表 并创建抓取任务
+            </summary>
+            <param name="o"></param>
+        </member>
+        <member name="M:PM.BLL.BLL_NetworkMultiThread.CheckURL(System.String)">
+            <summary>
+            检查URL是否有效
+            </summary>
+            <param name="url">需要检测的URL</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_NetworkMultiThread.GetRealPageEncoding(System.String)">
+            <summary>
+            获取网页实际编码格式
+            </summary>
+            <param name="URL"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_NetworkMultiThread.NewGetRealPageEncoding(System.String)">
+            <summary>
+            尝试新的获取源码编码的方法
+            </summary>
+            <param name="URL"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_NetworkMultiThread.isLuan(System.String)">
+            <summary>
+            判断UTF-8页面是否有乱码
+            </summary>
+            <param name="txt">传入读取的HTML</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_NetworkMultiThread.GetAllOverTask(System.Int32,System.String)">
+            <summary>
+            获取这份报纸这一期次所有已经完成的任务
+            </summary>
+            <returns>返回paperID 和 RQ 的列表</returns>
+            只查询当前需要的paperID 和 RQ 的
+        </member>
+        <member name="M:PM.BLL.BLL_NetworkMultiThread.getAllNotOverTaskList(System.Int32,System.String)">
+            <summary>
+            获取这份报纸这个期次所有未完成的任务抓取和分析
+            </summary>
+            <returns>结果列表</returns>
+            只查询当前需要的paperID 和 RQ 的
+        </member>
+        <member name="M:PM.BLL.BLL_NetworkMultiThread.AddGetTask(System.Int32,System.DateTime,System.DateTime)">
+            <summary>
+            添加任务信息
+            </summary>
+        </member>
+        <member name="T:PM.BLL.search.SearchTool">
+            <summary>
+            检索工具类
+            </summary>
+        </member>
+        <member name="M:PM.BLL.search.SearchTool.createSearchGroupCacheModel(System.Data.DataRow[])">
+            <summary>
+            生成分组缓存对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.SearchTool.getMaxKID(System.Int32)">
+            <summary>
+            根据日期生成该日期最大的KID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.SearchTool.getMaxKID(System.Int32,System.Int32)">
+            <summary>
+            根据日期生成该日期最大的KID
+            </summary>
+            <param name="paperID">报纸ID。</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.SearchTool.getMinKID(System.Int32)">
+            <summary>
+            根据日期生成该日期最小的KID
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:PM.BLL.search.SearchTool.getMinKID(System.Int32,System.Int32)”忽略有格式错误的 XML 注释 -->
+        <member name="M:PM.BLL.search.SearchTool.RowArrWithKIDToString(System.Data.DataRow[])">
+            <summary>
+            将行数组中的KID列生成KID串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.SearchTool.RowArrWithKIDToString(System.Data.DataRowCollection)">
+            <summary>
+            将行数组中的KID列生成KID串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.SearchTool.getConnStrWithKIDGroup(System.String)">
+            <summary>
+            根据KID串得到需要查询的库链接串分组
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.SearchTool.CreaateKeyValueTable">
+            <summary>
+            创建键值信息表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PM.BLL.search.ArticleRKAgent">
+            <summary>
+            文章入库代理执行类
+            </summary>
+        </member>
+        <member name="M:PM.BLL.search.ArticleRKAgent.ArticleRK(System.Collections.Generic.List{PM.Model.MDL_ArticleInfoB}[],System.Int32)">
+            <summary>
+            文章入库(所有的文站必须是同一个出版日期)。一次可以入可入一天的一个版或多个版
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PM.BLL.BLL_paperKIDB">
+            <summary>
+            报纸KID
+            </summary>
+        </member>
+        <member name="T:PM.BLL.BLL_paperB">
+            <summary>
+            报纸信息数据处理
+            </summary>
+        </member>
+        <member name="F:PM.BLL.BLL_paperB.dicPaper">
+            <summary>
+            报纸名称字典
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_paperB.#ctor">
+            <summary>
+            报纸信息数据处理
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_paperB.getPaperNameFromDic(System.Int32)">
+            <summary>
+            获取报名称(从报纸名称字典)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperB.inItdicPaper">
+            <summary>
+            初始化报名称字典列表
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_paperB.GetModel(System.Int32)">
+            <summary>
+            获取一个报纸信息实体
+            </summary>
+            <returns>一个报纸信息实体</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperB.ifHaveData(System.Int32,System.String,System.DateTime)">
+            <summary>
+            判断某张报纸某天是否应该有数据(true：有、false：没有)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperB.getPaperName(System.Int32)">
+            <summary>
+            获取报纸名称(返回空说明该报纸不存在)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperB.getPaperID(System.String)">
+            <summary>
+            获取报纸名称(返回-1说明该报纸不存在)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperB.getAllPaperList">
+            <summary>
+            获取所有报纸列
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperB.getAllPaperList(System.Int32)">
+            <summary>
+            获取所有报纸列
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperB.getAllPaperList(System.String,System.Int32)">
+            <summary>
+            获取所有报纸列
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperB.GetList(System.String)">
+            <summary>
+            获取报报纸信息列表
+            </summary>
+            <returns>报纸信息列表</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperB.Add(PM.Model.MDL_paperB)">
+            <summary>
+            添加报纸信息
+            </summary>
+            <returns>所影响的行</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperB.Update(PM.Model.MDL_paperB)">
+            <summary>
+            修改报纸信息,返回所影响的行数
+            </summary>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperB.Updateactive(System.Int32,System.Int32)">
+            <summary>
+            启用或禁用报纸
+            </summary>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperB.Delete(System.Int32)">
+            <summary>
+            删除报纸信息,返回所影响的行数
+            </summary>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperB.GetPaperPageList(System.String,System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            获取报纸列
+            </summary>
+            <returns>分页信息返回数据结构</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperB.getTotalPaperSL">
+            <summary>
+            获取报纸总数量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperB.HaspaperID(System.Int32)">
+            <summary>
+            检测是否已存在报纸ID
+            </summary>
+            <returns>true存在,false不存在</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperB.HaspaperName(System.Int32,System.String)">
+            <summary>
+            检测是否已存在报纸名称
+            </summary>
+            <returns>true存在,false不存在</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperB.getGroupPaperList(System.String)">
+            <summary>
+            获取集团报刊列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperB.getProvincePaperObj">
+            <summary>
+            获取有报纸的省份报刊对象列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperB.getTypePaperObj">
+            <summary>
+            获取有报纸的类别报刊对象列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_DynamicMonitoring.GetPaperList(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取动态报纸检测报纸信息列表
+            </summary>
+            <returns>分页信息返回数据结构</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_DynamicMonitoring.CheckURL(System.String)">
+            <summary>
+            检查URL是否有效
+            </summary>
+            <param name="url">需要检测的URL</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_DynamicMonitoring.isLuan(System.String)">
+            <summary>
+            判断UTF-8页面是否有乱码
+            </summary>
+            <param name="txt">传入读取的HTML</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_DynamicMonitoring.GetAvaliblePaperNameAndURLAndAutoNum(System.Int32)">
+            <summary>
+            获取某份报纸有效的URL
+            </summary>
+            <param name="paperID">报纸ID</param>
+            <param name="RQ">出刊日期</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_DynamicMonitoring.InsertDynamicMonitoringTable(System.String,System.String)">
+            <summary>
+            操作动态报纸检测表
+            </summary>
+            <param name="paperIDStr">页面上输入的paperID以逗号分隔</param>
+            <param name="PublishRQ">页面上选择的出刊日期</param>
+        </member>
+        <member name="M:PM.BLL.BLL_DynamicMonitoring.OperateDynamicMonitoringTable(System.String,System.String)">
+            <summary>
+            新的操作动态监测表的方法
+            这个方法的目的是判断这份报纸是否动态的状态已经变化
+            </summary>
+            <param name="paperIDStr">页面上输入的paperID以逗号分隔</param>
+            <param name="PublishRQ">页面上选择的出刊日期</param>
+        </member>
+        <member name="T:PM.BLL.BLL_convergeServerB">
+            <summary>
+            抓取服务器数据处理
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_convergeServerB.#ctor">
+            <summary>
+            抓取服务器数据处理
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_convergeServerB.GetModel(System.String)">
+            <summary>
+            获取一个抓取服务器实体
+            </summary>
+            <returns>一个抓取服务器实体</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_convergeServerB.Add(PM.Model.MDL_convergeServerB)">
+            <summary>
+            添加抓取服务器信息,返回所影响的行数
+            </summary>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_convergeServerB.GetList(System.String)">
+            <summary>
+            获取抓取服务器信息列表
+            </summary>
+            <returns>抓取服务器信息表</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_convergeServerB.Update(PM.Model.MDL_convergeServerB)">
+            <summary>
+            修改抓取服务器信息,返回所影响的行数
+            </summary>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_convergeServerB.Delete(System.String)">
+            <summary>
+            删除抓取服务器信息,返回所影响的行数
+            </summary>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="T:PM.BLL.BLL_convergePaperB">
+            <summary>
+            抓取报纸信息数据处理
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_convergePaperB.getListForCreateTask">
+            <summary>
+            为生成抓取任务，获取抓取报纸配置报纸列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_convergePaperB.getConvergePaperList(System.String)">
+            <summary>
+            获取抓取报纸配置报纸列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_convergePaperB.getConvergePaperList(System.String,System.Int32)">
+            <summary>
+            获取抓取报纸配置报纸列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_convergePaperB.GetModel(System.Int32)">
+            <summary>
+            获取一个抓取报纸信息实体
+            </summary>
+            <returns>一个抓取报纸信息实体</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_convergePaperB.GetList(System.String)">
+            <summary>
+            获取抓取报纸信息列表
+            </summary>
+            <returns>抓取报纸信息表</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_convergePaperB.Add(PM.Model.MDL_convergePaperB)">
+            <summary>
+            添加抓取报纸信息,返回所影响的行数
+            </summary>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_convergePaperB.Update(PM.Model.MDL_convergePaperB)">
+            <summary>
+            修改抓取报纸信息,返回所影响的行数
+            </summary>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_convergePaperB.Delete(System.Int32)">
+            <summary>
+            删除抓取报纸信息,返回所影响的行数
+            </summary>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_convergePaperB.GetcCnvergePaperBList(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取抓取报纸信息列表
+            </summary>
+            <returns>分页信息返回数据结构</returns>
+        </member>
+        <member name="T:PM.BLL.BLL_BCMonitoring">
+            <summary>
+            用于版次检测的类
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_BCMonitoring.#ctor(System.Int32)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="TS1"></param>
+        </member>
+        <member name="M:PM.BLL.BLL_BCMonitoring.GetPaperList(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取版次检测报纸信息列表
+            </summary>
+            <returns>分页信息返回数据结构</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_BCMonitoring.FillBCMonitor">
+            <summary>
+            用于检测版面信息 将缺版漏版的期次记录下来
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_BCMonitoring.GetAllBCTask(System.Int32)">
+            <summary>
+            从paperInsertInfoB 表里面获取到所有需要检测的报纸期次(这个要去除没有属性配置的报纸)
+            要去除的是两种 1 就是没有属性配置记录的报纸  2  属性配置不全的报纸BMListReg都没有的那种
+            xplus格式的另外再做
+            </summary>
+            <TS>回溯天数</TS>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_BCMonitoring.GetPaperIDListFromTestServer">
+            <summary>
+            从测试服务器上获取到paperB 表中的所有paperID 只用于测试 正式版本不用
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PM.BLL.Comm.XMLClass">
+            <summary>
+            XML处理类
+            </summary>
+        </member>
+        <member name="M:PM.BLL.Comm.XMLClass.HtmlToXML(System.String)">
+            <summary>
+            html转成XML
+            </summary>
+            <param name="html">原始html</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.Comm.XMLClass.HtmlToXML_nb(System.String)">
+            <summary>
+            html转成XML
+            </summary>
+            <param name="html">原始html</param>
+            <returns></returns>
+        </member>
+        <member name="T:PM.BLL.BLL_paperFirstBMB">
+            <summary>
+            报纸首版信息数据处理
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_paperFirstBMB.getHaveDataRQList(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            获取某报纸一段时间内有数据的日期列表(返回 RQ列表)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperFirstBMB.GetModel(System.Int64)">
+            <summary>
+            获取一个报纸首版信息表实体
+            </summary>
+            <returns>报纸首版信息表实体</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperFirstBMB.GetMaxNewModel(System.Int32)">
+            <summary>
+            获取获取一个报纸最新一期首版信息实体
+            </summary>
+            <returns>报纸首版信息表实体</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperFirstBMB.Add(PM.Model.MDL_paperFirstBMB)">
+            <summary>
+            添加报纸首版信息
+            </summary>
+            <returns>所影响的行</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperFirstBMB.Update(PM.Model.MDL_paperFirstBMB)">
+            <summary>
+            修改报纸首版信息
+            </summary>
+            <returns>所影响的行</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperFirstBMB.Delete(System.Int64)">
+            <summary>
+            删除报纸首版信息表实体
+            </summary>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="T:PM.BLL.search.sqlCodeControl">
+            <summary>
+            sql代码创建器
+            </summary>
+        </member>
+        <member name="M:PM.BLL.search.sqlCodeControl.createFullSearchSql(System.Int32,System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            生成查询Sql
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.sqlCodeControl.createFXSearchSql(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            生成查询Sql
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PM.BLL.search.ResourcesAgent">
+            <summary>
+            资源文件代理执行类
+            </summary>
+        </member>
+        <member name="M:PM.BLL.search.ResourcesAgent.getResourcesPath(System.Int32,System.Int32,System.String,System.Int32)">
+            <summary>
+            获取资源文件存储路径
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.ResourcesAgent.getResourcesServerAndPath(System.Int32,System.Int32,System.String,System.Int32,System.String)">
+            <summary>
+            获取资源服务器和文件存储路径
+            </summary>
+            <returns>serverIP:端口;文件路径</returns>
+        </member>
+        <member name="M:PM.BLL.search.ResourcesAgent.getResourcesServerAndPath2(System.Int32,System.Int32)">
+            <summary>
+            获取资源服务器和文件存储路径
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.ResourcesAgent.getResourcesServer(System.Int32)">
+            <summary>
+            获取资源服务器(空说明该日期当前没有可用的源服务器)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PM.BLL.search.PaperAgent">
+            <summary>
+            报纸信息代理执行类
+            </summary>
+        </member>
+        <member name="M:PM.BLL.search.PaperAgent.getBMList(System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            获取某一段日期内的报纸版面列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.PaperAgent.ifNeedPx(System.Data.DataTable,System.Int32@)">
+            <summary>
+            判断是否需要对版次进行排序
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.PaperAgent.BCPx(System.Data.DataTable,System.Int32)">
+            <summary>
+            对版次进行位数相同处理后排序
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.PaperAgent.getFirstBMList(System.Int32,System.Int32)">
+            <summary>
+            获取某天报纸第一版信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.PaperAgent.UpdateFirstBMList(System.Int32,System.Int32)">
+            <summary>
+            更新报纸首版信息
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:PM.BLL.search.PaperAgent.getArticleListForSZB(System.Int32,System.String,System.Int32,System.Int32,System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <member name="M:PM.BLL.search.PaperAgent.getArticleList(System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            获取某一段日期内的文章列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.PaperAgent.getArticleList(System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            获取某一段日期内的文章列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.PaperAgent.getDataWithKID(System.String,System.String)">
+            <summary>
+            根据KID得到需要的数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.PaperAgent.getArticleInfoBModel(System.Int64)">
+            <summary>
+            根据KID得文章实体
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.PaperAgent.UpdateArticleInfoB(PM.Model.MDL_ArticleInfoB)">
+            <summary>
+            修改文章信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.PaperAgent.delArticleInfoB(System.Int64)">
+            <summary>
+            删除文章信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.PaperAgent.getPaperName(System.Int32)">
+            <summary>
+            获取报纸名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.PaperAgent.getPaperID(System.String)">
+            <summary>
+            获取报纸名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PM.BLL.Comm.tool">
+            <summary>
+            工具类
+            </summary>
+        </member>
+        <member name="M:PM.BLL.Comm.tool.getFilePath(System.String,System.String)">
+            <summary>
+            根据完整路径拼接资源路径
+            </summary>
+            <param name="startPath">起始完整路径，到文件名</param>
+            <param name="endPath">结束路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.Comm.tool.getFileNameWithPath(System.String)">
+            <summary>
+            根据完整路径获取文件名
+            </summary>
+            <param name="path">路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.Comm.tool.getPathNoFileName(System.String)">
+            <summary>
+            根据完整路径获取不包含文件名的路径
+            </summary>
+            <param name="path">路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.Comm.tool.getRootPath(System.String)">
+            <summary>
+            根据路径获取网站根路径(包含http://)
+            </summary>
+            <param name="path">路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.Comm.tool.ConvertHex(System.String,System.String)">
+            <summary>
+            转变xml中无效字符串
+            </summary>
+            <param name="responseXml">包含无效字符串的xml字符</param>
+            <param name="encoding">编码</param>
+            <returns>string</returns>
+        </member>
+        <member name="M:PM.BLL.Comm.tool.getPageXml(System.String,System.Int32)">
+            <summary>
+            获取网页XML代码
+            </summary>
+            <param name="url">网页url地址</param>
+            <param name="timeOut">超时时间（秒）</param>
+            <returns>  retMsg.Succeed = true： retMsg.Msg=html代码 retMsg.Msg2=编码名称。 retMsg.Succeed = false： retMsg.Msg=错误信息 retMsg.Msg2=详细错误信息</returns>
+        </member>
+        <member name="M:PM.BLL.Comm.tool.getPageHtml(System.String,System.Int32,System.String)">
+            <summary>
+            获取网页html代码
+            </summary>
+            <param name="url">网页url地址</param>
+            <param name="timeOut">超时时间（秒）</param>
+            <param name="CookieValue">Cookie值。空表示忽略本参数</param>
+            <returns>  retMsg.Succeed = true： retMsg.Msg=html代码 retMsg.Msg2=编码名称。 retMsg.Succeed = false： retMsg.Msg=错误信息 retMsg.Msg2=详细错误信息</returns>
+        </member>
+        <member name="M:PM.BLL.Comm.tool.DownFile(System.String,System.String,System.String,System.String)">
+            <summary>
+            下载资源文件
+            </summary>
+            <param name="url">资源Url</param>
+            <param name="savePath">保存的路径</param>
+            <param name="saveFileName">保存的文件名</param>
+            <param name="CookieValue">Cookie值。空表示忽略本参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.Comm.tool.GetPageEncoding(System.String,System.Int32,System.String)">
+            <summary>
+            获取网页编码
+            </summary>
+            <param name="url">网页url地址</param>
+            <param name="timeOut">超时时间（秒）</param>
+            <param name="CookieValue">Cookie值。空表示忽略本参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.Comm.tool.WriteTxt(System.String,System.String)">
+            <summary>
+            写文本文件
+            </summary>
+            <param name="html">文本内容</param>
+            <param name="path">完成路径，到文件名</param>
+        </member>
+        <member name="M:PM.BLL.Comm.tool.getPicWithAndHeight(System.String,System.Int32@,System.Int32@)">
+            <summary>
+            获取图片像素尺寸
+            </summary>
+            <param name="path">图片路径</param>
+            <param name="w">宽，X轴</param>
+            <param name="h">高，Y轴</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.Comm.tool.getJPGzbPercent(System.String,System.Int32,System.Int32)">
+            <summary>
+            坐标字符串及版面图尺寸，生成百分比形式的坐标符串
+            </summary>
+            <param name="zb">坐标字符串。以“,”隔开，如：x,y,x,y</param>
+            <param name="w">版面图尺寸宽，X轴</param>
+            <param name="h">版面图尺寸高，Y轴</param>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:PM.BLL.Comm.tool.getJPGPercentTozb(System.String,System.Int32,System.Int32)”忽略有格式错误的 XML 注释 -->
+        <member name="M:PM.BLL.Comm.tool.ReplaceFileName(System.String)">
+            <summary>
+            去除文件名中不合法的字符
+            </summary>
+            <param name="FileName">文件名</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.Comm.tool.NoHTML(System.String)">
+            <summary>
+            去除HTML标记
+            </summary>
+            <param name="html">原始html</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.Comm.tool.ReplaceRN(System.String)">
+            <summary>
+            去除回车标记
+            </summary>
+            <param name="str">原始字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.Comm.tool.getUrl(System.String,System.DateTime)">
+            <summary>
+            生成要抓取的url
+            </summary>
+            <param name="paperURL">配置的url地址</param>
+            <param name="RQ">要抓取的出版日期</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.Comm.tool.CloseAllIE">
+            <summary>
+            关闭所有IE窗口
+            </summary>
+        </member>
+        <member name="M:PM.BLL.Comm.tool.addZero(System.String,System.Int32)">
+            <summary>
+            将字符串补足到指定位数(从字符串中出现第一个数字的前面以“0”进行补足)
+            </summary>
+            <param name="str">原始字符串</param>
+            <param name="length">补足后的位数</param>
+            <returns>string</returns>
+        </member>
+        <member name="M:PM.BLL.Comm.tool.getPageHtmlBCMonitor(System.String,System.Int32,System.String)">
+            <summary>
+            获取网页html代码
+            </summary>
+            <param name="url">网页url地址</param>
+            <param name="timeOut">超时时间（秒）</param>
+            <param name="CookieValue">Cookie值。空表示忽略本参数</param>
+            <returns>  retMsg.Succeed = true： retMsg.Msg=html代码 retMsg.Msg2=编码名称。 retMsg.Succeed = false： retMsg.Msg=错误信息 retMsg.Msg2=详细错误信息</returns>
+        </member>
+        <member name="M:PM.BLL.Comm.tool.isLuan(System.String)">
+            <summary>
+            判断UTF-8页面是否有乱码
+            </summary>
+            <param name="txt">传入读取的HTML</param>
+            <returns></returns>
+        </member>
+        <member name="T:PM.BLL.BLL_PropertyB">
+            <summary>
+            属性特征配置数据处理
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_PropertyB.#ctor">
+            <summary>
+            属性特征配置数据处理
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_PropertyB.GetModel(System.Int32)">
+            <summary>
+            获取一个属性特征配置实体
+            </summary>
+            <returns>一个属性特征配置实体</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_PropertyB.GetModelWithPaperID(System.Int32)">
+            <summary>
+            获取一个属性特征配置实体
+            </summary>
+            <returns>一个属性特征配置实体</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_PropertyB.GetList(System.String)">
+            <summary>
+            获取属性特征配置列表
+            </summary>
+            <returns>属性特征配置列表</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_PropertyB.Add(PM.Model.MDL_PropertyB)">
+            <summary>
+            添加属性特征配置
+            </summary>
+            <returns>所影响的行</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_PropertyB.Update(PM.Model.MDL_PropertyB)">
+            <summary>
+            修改属性特征配置,返回所影响的行数
+            </summary>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_PropertyB.Delete(System.Int32)">
+            <summary>
+            删除属性特征配置
+            </summary>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_PropertyB.GetPropertyID(System.Int32)">
+            <summary>
+            根据报纸ID获取属性特征ID
+            </summary>
+            <returns>属性特征ID</returns>
+        </member>
+        <member name="T:PM.BLL.search.RWThreadClass">
+            <summary>
+            调动要执行的任务类
+            </summary>
+        </member>
+        <member name="F:PM.BLL.search.RWThreadClass.client">
+            <summary>
+            客户连接
+            </summary>
+        </member>
+        <member name="M:PM.BLL.search.RWThreadClass.taskAttemper">
+            <summary>
+            任务调度
+            </summary>
+        </member>
+        <member name="T:PM.BLL.Report.JSClass">
+            <summary>
+            报表计算类
+            </summary>
+        </member>
+        <member name="M:PM.BLL.Report.JSClass.getAllDBFullRate(System.Int32)">
+            <summary>
+            统计某天的全库属性完整率
+            </summary>
+            <param name="RQ">出版日期(20101103)</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.Report.JSClass.getPaperFullRate(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            统计某报纸的全库属性完整率
+            </summary>
+            <param name="paperID">要查询的报纸ID</param>
+            <param name="startRQ">开始出版日期 格式：yyyyMMdd（20110401)</param>
+            <param name="endRQ">结束出版日期 格式：yyyyMMdd（20110531)</param>
+            <returns></returns>
+        </member>
+        <member name="T:PM.BLL.get.FZget">
+            <summary>
+            方正数字报抓取
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZget.taskInfID">
+            <summary>
+            任务信息ID
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZget.savePath">
+            <summary>
+            文件存储路径
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZget.startTime">
+            <summary>
+            本次任务运行开始时间
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZget.taskInfoBJG">
+            <summary>
+            任务信息表实体对象
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZget.convergePaperBJG">
+            <summary>
+            抓取报纸信息表实体对象
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZget.paperBJG">
+            <summary>
+            报纸信息表实体对象
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZget.PropertyBJG">
+            <summary>
+            属性特征配置表实体对象
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZget.RegCs">
+            <summary>
+            正则类
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZget.XMLCs">
+            <summary>
+            XML处理类
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZget.toolCs">
+            <summary>
+            工具类
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZget.logSqlCs">
+            <summary>
+            sql日志类
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZget.NowGetPaper_dic">
+            <summary>
+            正在抓取的报纸字典
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZget.ctDic">
+            <summary>
+            已下载的插图字典
+            </summary>
+        </member>
+        <member name="M:PM.BLL.get.FZget.#ctor(System.Int32,System.String,System.Collections.Generic.Dictionary{System.Int32,System.Int32})">
+            <summary>
+            构造器
+            </summary>
+            <param name="_taskInfID">任务信息ID</param>
+            <param name="_savePath">文件存储路径</param>
+            <param name="_NowGetPaper_dic">正在抓取的报纸字典，不需要控制每个报纸只用一个线程，请传入null</param>
+        </member>
+        <member name="M:PM.BLL.get.FZget.Start">
+            <summary>
+            开始抓取
+            方正抓取的服务现在需要添加一个新的功能
+            就是在抓取的同时将获取到的版面信息插入一张版面信息表
+            用于版次检测比对本地资源和网站资源的完整性
+            </summary>
+        </member>
+        <member name="M:PM.BLL.get.FZget.AnalysisBMList(System.String,System.String)">
+            <summary>
+            分析版面列表
+            </summary>
+            <param name="html">第一个版面html代码</param>
+            <param name="url">第一个版面html代码对应的网页url</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.get.FZget.AnalysisBMGetWZList(PM.Model.get.MDL_BM)">
+            <summary>
+            分析单个版面得到文章列表并下载PDF与JPG
+            </summary>
+            <param name="BMJG">版面实例</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.get.FZget.DownWZ(PM.Model.get.MDL_WZ)">
+            <summary>
+            下载文章
+            </summary>
+            <param name="WZJG">文章实例</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.get.FZget.downPDF(System.String,System.String,PM.Model.get.MDL_BM)">
+            <summary>
+            下载PDF
+            </summary>
+            <param name="html">版面html</param>
+            <param name="xml">版面xml</param>
+            <param name="BMJG">版面对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.get.FZget.downJPG(System.String,System.String,PM.Model.get.MDL_BM)">
+            <summary>
+            下载JPG
+            </summary>
+            <param name="html">版面html</param>
+            <param name="xml">版面xml</param>
+            <param name="BMJG">版面对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.get.FZget.downWZct(System.String,PM.Model.get.MDL_WZ)">
+            <summary>
+            下载文章中的所有插图
+            </summary>
+            <param name="html">文章html</param>
+            <param name="WZJG">文章对象</param>
+        </member>
+        <member name="M:PM.BLL.get.FZget.getFirstUrl">
+            <summary>
+             获取要抓取的第一个url
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.get.FZget.UpdateTaskForOK">
+            <summary>
+             成功时更新任务状态
+            </summary>
+        </member>
+        <member name="M:PM.BLL.get.FZget.UpdateTaskForErr">
+            <summary>
+             失败时更新任务状态
+            </summary>
+        </member>
+        <member name="M:PM.BLL.get.FZget.UpdateTaskForStart">
+            <summary>
+             开始运行时更新任务状态
+            </summary>
+        </member>
+        <member name="M:PM.BLL.get.FZget.CreateAnalysisTask">
+            <summary>
+             新建分析任务状态
+            </summary>
+        </member>
+        <member name="T:PM.BLL.search.SearchAgent">
+            <summary>
+            检索代理执行类
+            </summary>
+        </member>
+        <member name="M:PM.BLL.search.SearchAgent.FullSearch(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.String,System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            全文查询
+            如果没有满足件件的数据返回空的table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.SearchAgent.FullSearchToGroup(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.String,System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            全文查询并返回分组
+            如果没有满足件件的数据返回空的table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.SearchAgent.FullSearchToGroupGetYear(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            全文查询并返回分组(获取某一年份数据)
+            如果没有满足件件的数据返回空的table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.SearchAgent.FullSearchToGroupGetPaper(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            全文查询并返回分组(获取某一报纸数据)
+            如果没有满足件件的数据返回空的table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.SearchAgent.FXSearch(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            分项查询
+            如果没有满足条件的数据返回空的table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.SearchAgent.FXSearchToGroup(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            分项查询并返回分组
+            如果没有满足件件的数据返回空的table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.SearchAgent.FXSearchToGroupGetYear(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            分项查询并返回分组(获取某一年份数据)
+            如果没有满足件件的数据返回空的table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.SearchAgent.FXSearchToGroupGetPaper(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            分项查询并返回分组(获取某一报纸数据)
+            如果没有满足件件的数据返回空的table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PM.BLL.search.CanUseDB">
+            <summary>
+            当前可用的数据库类
+            </summary>
+        </member>
+        <member name="F:PM.BLL.search.CanUseDB.CanUseDBList">
+            <summary>
+            当前可用的数据库实体列表
+            </summary>
+        </member>
+        <member name="F:PM.BLL.search.CanUseDB.totalPaperSL">
+            <summary>
+            报纸总数量
+            </summary>
+        </member>
+        <member name="M:PM.BLL.search.CanUseDB.InIt">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:PM.BLL.search.CanUseDB.totalPaperSLUpate">
+            <summary>
+            更新报纸总数量
+            </summary>
+        </member>
+        <member name="M:PM.BLL.search.CanUseDB.getTotalPaperSL">
+            <summary>
+            获取报纸总数量
+            </summary>
+        </member>
+        <member name="M:PM.BLL.search.CanUseDB.LoadCanUseDB">
+            <summary>
+             重新加载当前可用的数据库实体列表
+            </summary>
+        </member>
+        <member name="M:PM.BLL.search.CanUseDB.updateCanUseDB">
+            <summary>
+             更新当前可用的数据库实体列表
+            </summary>
+        </member>
+        <member name="M:PM.BLL.search.CanUseDB.getCanUseDBList(System.Int32,System.Int32)">
+            <summary>
+            得到当前可用的数据库实体列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.CanUseDB.getCanUseDB(System.Int32)">
+            <summary>
+            得到当前可用的数据库实体(null表示没有可用的库)
+            </summary>
+            <param name="date">日期 格式：yyyyMMdd（20110401)</param>
+            <returns></returns>
+        </member>
+        <member name="T:PM.BLL.search.Cache">
+            <summary>
+            缓存类
+            </summary>
+        </member>
+        <member name="F:PM.BLL.search.Cache.SearchCacheDic">
+            <summary>
+            检索结果缓存列表
+            </summary>
+        </member>
+        <member name="F:PM.BLL.search.Cache.CacheInfo_dt">
+            <summary>
+            创建缓存信息表(用户存储检索结果缓存中的信息，如每个结果的行数)
+            </summary>
+        </member>
+        <member name="F:PM.BLL.search.Cache.CacheRowSL">
+            <summary>
+            当前缓存行数
+            </summary>
+        </member>
+        <member name="F:PM.BLL.search.Cache.dicGroup">
+            <summary>
+            检索结果分组缓存列表
+            </summary>
+        </member>
+        <member name="M:PM.BLL.search.Cache.InIt">
+            <summary>
+            初始化(只要在启动后初始化一次就可以了)
+            </summary>
+        </member>
+        <member name="M:PM.BLL.search.Cache.getCacheKey(System.String,System.Int32,System.Int32,System.String,System.Int32)">
+            <summary>
+            生成缓存主键
+            </summary>
+            <param name="paperIDStr">要查询的报纸ID串，多个以“,”隔开</param>
+            <param name="startDate">开始日期 格式：yyyyMMdd（20110401)</param>
+            <param name="endDate">结束日期 格式：yyyyMMdd（20110531)</param>
+            <param name="sql">查询sql代码</param>
+            <param name="searchRetOrder">检索结果排序。201：出版日期降序、202：出版日期升序、203：相关度降序、204：相关度升序</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.Cache.add(System.Int32,System.Data.DataRow[])">
+            <summary>
+            添加缓存
+            </summary>
+            <param name="key">缓存主键</param>
+            <param name="rowArr">要缓存的行</param>
+        </member>
+        <member name="M:PM.BLL.search.Cache.addGroup(System.Int32,PM.Model.search.MDL_SearchGroupCache)">
+            <summary>
+            添加分组缓存
+            </summary>
+            <param name="key">缓存主键</param>
+            <param name="GroupCacheJG">单个检索结果分组缓存对象</param>
+        </member>
+        <member name="M:PM.BLL.search.Cache.get(System.Int32)">
+            <summary>
+            获取缓存(null：表示没有该主键的缓存)
+            </summary>
+            <param name="key">缓存主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.Cache.getGroup(System.Int32)">
+            <summary>
+            获取分组缓存(null：表示没有该主键的缓存)
+            </summary>
+            <param name="key">缓存主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.Cache.delCacheWithTimeOut">
+            <summary>
+            删除过期的缓存(内部已对“检索结果缓存列表”加锁)
+            </summary>
+        </member>
+        <member name="M:PM.BLL.search.Cache.ClearCache">
+            <summary>
+            清空缓存(内部已对“检索结果缓存列表”加锁)
+            </summary>
+        </member>
+        <member name="M:PM.BLL.search.Cache.getCacheTotalRowSL">
+            <summary>
+            获取缓存总行数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.Cache.getCacheSL">
+            <summary>
+            获取缓存个数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.Cache.delCache(System.Int32)">
+            <summary>
+            删除缓存
+            </summary>
+            <param name="delRowSL">最少要删除的行数</param>
+        </member>
+        <member name="M:PM.BLL.search.Cache.addCacheInfoTable(System.Int32,System.Int32,System.DateTime)">
+            <summary>
+            添加缓存信息表
+            </summary>
+            <param name="key">缓存主键</param>
+            <param name="rowSL">缓存行数</param>
+            <param name="createTime">加入缓存的时间</param>
+        </member>
+        <member name="M:PM.BLL.search.Cache.CreaateCacheInfoTable">
+            <summary>
+            创建缓存信息表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PM.BLL.BLL_getOverB">
+            <summary>
+            已抓取信息数据处理
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_getOverB.ListgetOver(System.Int32,System.DateTime)">
+            <summary>
+            获取当前日期前多少天的已抓取报纸列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_getOverB.ListgetOverWithDate(System.DateTime,System.DateTime)">
+            <summary>
+            获取一段时间内的已抓取报纸列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_getOverB.delGetOver(System.Int32,System.DateTime)">
+            <summary>
+            删除已抓取记录
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_getOverB.GetModel(System.Int32)">
+            <summary>
+            获取一个已抓取信息实体
+            </summary>
+            <returns>一个已抓取信息实体</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_getOverB.GetList(System.String)">
+            <summary>
+            获取已抓取信息列表
+            </summary>
+            <returns>已抓取信息列表</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_getOverB.Add(PM.Model.MDL_getOverB)">
+            <summary>
+            添加已抓取信息,返回所影响的行数
+            </summary>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_getOverB.Update(PM.Model.MDL_getOverB)">
+            <summary>
+            修改已抓取信息,返回所影响的行数
+            </summary>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_getOverB.Delete(System.Int32)">
+            <summary>
+            删除已抓取信息,返回所影响的行数
+            </summary>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="T:PM.BLL.BLL_BCMultiThread">
+            <summary>
+            用于版次检测的多线程具体实现
+            1 问题 当版面没有文章时 抓取入库的是一个virtual.html 所以出现比对有问题。
+            2 问题 多线程时会出现相互干扰（不确定是否有还需要观察）
+            </summary>
+        </member>
+        <member name="F:PM.BLL.BLL_BCMultiThread.convergePaperBJG">
+            <summary>
+            抓取报纸信息表实体对象
+            </summary>
+        </member>
+        <member name="F:PM.BLL.BLL_BCMultiThread.paperBJG">
+            <summary>
+            报纸信息表实体对象
+            </summary>
+        </member>
+        <member name="F:PM.BLL.BLL_BCMultiThread.PropertyBJG">
+            <summary>
+            属性特征配置表实体对象
+            </summary>
+        </member>
+        <member name="F:PM.BLL.BLL_BCMultiThread.RegCs">
+            <summary>
+            正则类
+            </summary>
+        </member>
+        <member name="F:PM.BLL.BLL_BCMultiThread.XMLCs">
+            <summary>
+            XML处理类
+            </summary>
+        </member>
+        <member name="F:PM.BLL.BLL_BCMultiThread.toolCs">
+            <summary>
+            工具类
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_BCMultiThread.#ctor(System.Int32,System.Int32)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="paperID1"></param>
+            <param name="RQ1"></param>
+        </member>
+        <member name="M:PM.BLL.BLL_BCMultiThread.start(System.Object)">
+            <summary>
+            用于检测报纸期次是否缺版 漏版需要重新抓取
+            需要首先检测一下报纸的URL 是否有效
+            获取本地报纸信息的方法由检索服务改为从一张数据表中读取
+            </summary>
+            <param name="o">无用参数 null</param>
+        </member>
+        <member name="M:PM.BLL.BLL_BCMultiThread.CheckURL(System.String)">
+            <summary>
+            检查URL是否有效
+            </summary>
+            <param name="url">需要检测的URL</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_BCMultiThread.getFirstUrl">
+            <summary>
+            获取到数字报检测期次的URL
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_BCMultiThread.AnalysisBMList(System.String,System.String)">
+            <summary>
+            分析版面列表
+            </summary>
+            <param name="html">第一个版面html代码</param>
+            <param name="url">第一个版面html代码对应的网页url</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_BCMultiThread.AnalysisBMGetWZList(PM.Model.get.MDL_BM)">
+            <summary>
+            分析单个版面得到文章列表
+            </summary>
+            <param name="BMJG">版面实例</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_BCMultiThread.GetBMListFromBCMonitoringPaperInfo(System.Int32,System.DateTime,System.DateTime)">
+            <summary>
+            从BCMonitoringPaperInfo表中获取版面信息
+            </summary>
+            <param name="paperID">报纸ID</param>
+            <param name="startDate">报纸期次的开始时间</param>
+            <param name="endDate">报纸期次的结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_BCMultiThread.GetArticelListFromBCMonitoringPaperInfo(System.Int32,System.String,System.DateTime,System.DateTime)">
+            <summary>
+            从BCMonitoringPaperInfo表中获取某一版次内的文章信息
+            </summary>
+            <param name="paperID">报纸ID</param>
+            <param name="BC">报纸版次</param>
+            <param name="startDate">报纸期次的开始时间</param>
+            <param name="endDate">报纸期次的结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="T:PM.BLL.search.searchServer">
+            <summary>
+            检索服务器
+            </summary>
+        </member>
+        <member name="F:PM.BLL.search.searchServer.server">
+            <summary>
+            TcpListener
+            </summary>
+        </member>
+        <member name="F:PM.BLL.search.searchServer._SearchServerIP">
+            <summary>
+            检索服务器IP地址
+            </summary>
+        </member>
+        <member name="F:PM.BLL.search.searchServer._SearchPort">
+            <summary>
+            检索服务器端口
+            </summary>
+        </member>
+        <member name="F:PM.BLL.search.searchServer._SearchTimeout">
+            <summary>
+            tcp超时间(单位：毫秒)
+            </summary>
+        </member>
+        <member name="F:PM.BLL.search.searchServer._ClearCachTimerInterval">
+            <summary>
+            缓存清除时钟周期(单位：毫秒)
+            </summary>
+        </member>
+        <member name="F:PM.BLL.search.searchServer.ClearCachTimer">
+            <summary>
+            缓存清除时钟对象
+            </summary>
+        </member>
+        <member name="F:PM.BLL.search.searchServer._UpdateCanUseDBTimerInterval">
+            <summary>
+            当前可用库更新时钟周期(单位：毫秒)
+            </summary>
+        </member>
+        <member name="F:PM.BLL.search.searchServer.UpdateCanUseDBTimer">
+            <summary>
+            当前可用库更新时钟对象
+            </summary>
+        </member>
+        <member name="M:PM.BLL.search.searchServer.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            构造器
+            </summary>
+        </member>
+        <member name="M:PM.BLL.search.searchServer.Start">
+            <summary>
+            启动检索服务器
+            </summary>
+        </member>
+        <member name="M:PM.BLL.search.searchServer.Stop">
+            <summary>
+            关闭检索服务器
+            </summary>
+        </member>
+        <member name="M:PM.BLL.search.searchServer.ClearCachTimer_Tick(System.Object,System.EventArgs)">
+            <summary>
+            缓存清除时钟事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PM.BLL.search.searchServer.UpdateCanUseDBTimer_Tick(System.Object,System.EventArgs)">
+            <summary>
+            当前可用库更新时钟事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:PM.BLL.Comm.dictionaryClass">
+            <summary>
+            字典类
+            </summary>
+        </member>
+        <member name="F:PM.BLL.Comm.dictionaryClass.dt_wordList">
+            <summary>
+            字典数据列表
+            </summary>
+        </member>
+        <member name="F:PM.BLL.Comm.dictionaryClass.dic_wordList">
+            <summary>
+            字典键值对应表
+            </summary>
+        </member>
+        <member name="M:PM.BLL.Comm.dictionaryClass.#ctor">
+            <summary>
+            构造器
+            </summary>
+        </member>
+        <member name="M:PM.BLL.Comm.dictionaryClass.InitData">
+            <summary>
+            初始化数据
+            </summary>
+        </member>
+        <member name="M:PM.BLL.Comm.dictionaryClass.Find(System.Int32)">
+            <summary>
+            检索 字典名称
+            </summary>
+            <param name="dictionaryInfoID">字典信息ID的值</param>
+            <returns>字典名称</returns>
+        </member>
+        <member name="M:PM.BLL.Comm.dictionaryClass.GetOnedictionaryType(System.String)">
+            <summary>
+            获取某个字典类型的列表
+            </summary>
+            <param name="dictionaryType">字典类型</param>
+            <returns></returns>
+        </member>
+        <member name="T:PM.BLL.BLL_paperInsertInfoB">
+            <summary>
+            报纸入库信息数据处理类
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_paperInsertInfoB.#ctor">
+            <summary>
+            报纸入库信息数据处理类
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_paperInsertInfoB.GetModel(System.Int32)">
+            <summary>
+            获取一个报纸入库信息实体
+            </summary>
+            <returns>报纸入库信息实体</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperInsertInfoB.getRKList(System.String,System.Int32,System.Int32)">
+            <summary>
+            获取报纸入库信息列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperInsertInfoB.getAverageRKtime(System.Int32)">
+            <summary>
+            获取报纸平均入库时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperInsertInfoB.Add(System.Int32,System.Int32)">
+            <summary>
+            添加报纸入库信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperInsertInfoB.Add(PM.Model.MDL_paperInsertInfoB)">
+            <summary>
+            添加报纸入库信息
+            </summary>
+            <returns>当前添加信息的报纸入库信息ID</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperInsertInfoB.Update(PM.Model.MDL_paperInsertInfoB)">
+            <summary>
+            修改报纸入库信息,返回所影响的行数
+            </summary>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperInsertInfoB.Delete(System.Int32)">
+            <summary>
+            删除报纸入库信息,返回所影响的行数
+            </summary>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperInsertInfoB.DeleteBypaperID(System.Int32,System.Int32)">
+            <summary>
+            传入报纸ID和日期删除报纸入库信息
+            </summary>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperInsertInfoB.geterrorType(System.Int32,System.Int32)">
+            <summary>
+            获取错误类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperInsertInfoB.createGetUrl(System.String,System.DateTime)">
+            <summary>
+            生成抓取的url
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PM.BLL.BLL_databaseServerB">
+            <summary>
+            数据库服务器数据处理
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_databaseServerB.#ctor">
+            <summary>
+            数据库服务器数据处理
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_databaseServerB.Getdatabase">
+            <summary>
+            返回数据库服务器名称
+            </summary>
+            <returns>数据库服务器名称</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_databaseServerB.GetModel(System.Int32)">
+            <summary>
+            获取一个数据库服务器实体
+            </summary>
+            <returns>数据库服务器实体</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_databaseServerB.Add(PM.Model.MDL_databaseServerB)">
+            <summary>
+            添加数据库服务器,返回所影响的行
+            </summary>
+            <returns>所影响的行</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_databaseServerB.Update(PM.Model.MDL_databaseServerB)">
+            <summary>
+            修改数据库服务器,返回所影响的行
+            </summary>
+            <returns>所影响的行</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_databaseServerB.Delete(System.Int32)">
+            <summary>
+            删除数据库服务器
+            </summary>
+            <returns>所影响的行</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_databaseServerB.GetPaperPageList(System.Int32,System.Int32)">
+            <summary>
+            获取数据库服务器列表
+            </summary>
+            <returns>分页信息返回数据结构</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_databaseServerB.CheckName(System.String)">
+            <summary>
+            根据数据库名称返回实体
+            </summary>
+            <returns>数据库服务器实体</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_databaseServerB.HasserverName(System.Int32,System.String)">
+            <summary>
+            检测是否已存在数据库名称
+            </summary>
+            <returns>true存在,false不存在</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_databaseServerB.Hasdatabase(System.Int32)">
+            <summary>
+            检测该服务器是否有数据库
+            </summary>
+            <returns>true存在,false不存在</returns>
+        </member>
+        <member name="T:PM.BLL.Report.errPagerClass">
+            <summary>
+            错误报纸数据处理类
+            </summary>
+        </member>
+        <member name="M:PM.BLL.Report.errPagerClass.getErrPagerList(System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            获取错误报纸列表
+            </summary>
+            <param name="paperIDStr">要查询的报纸ID串，多个以“,”隔开，空表示所有报纸</param>
+            <param name="startDate">开始日期 格式：yyyyMMdd（20110401)</param>
+            <param name="endDate">结束日期 格式：yyyyMMdd（20110531)</param>
+            <param name="remindErrorType">预警类型。-1表示忽略</param>
+            <param name="trueErrorType">实际类型。-1表示忽略</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.Report.errPagerClass.getMonitorPagerList(System.String,System.DateTime,System.DateTime,System.Int32,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            获取数据监测报纸列表
+            </summary>
+            <param name="paperIDStr">要查询的报纸ID串，多个以“,”隔开，空表示所有报纸</param>
+            <param name="startDateTime">开始入库日期</param>
+            <param name="endDateTime">结束入库日期</param>
+            <param name="remindErrorType">预警类型。-1表示忽略</param>
+            <param name="trueErrorType">实际类型。-1表示忽略</param>
+            <param name="ignoreOPover">忽略已处理</param>
+            <param name="NotRK">只显示未入库。true：只显示近3天来该入库但还未入库的报纸，false：不显示</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.Report.errPagerClass.createGetUrl(System.String,System.DateTime)">
+            <summary>
+            生成抓取的url
+            </summary>
+            <param name="paperURL">配置的抓取url</param>
+            <param name="RQ">要抓取的日期</param>
+            <returns></returns>
+        </member>
+        <member name="M:Aheading.ZJJX.Utility.DateTimeExtension.ToAheadingYear(System.DateTime)">
+            <summary>
+            日期 格式未 2012
+            </summary>
+            <param name="self"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Aheading.ZJJX.Utility.DateTimeExtension.ToAheadingDate(System.DateTime)">
+            <summary>
+            日期 格式未 2012-01-31
+            </summary>
+            <param name="self"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Aheading.ZJJX.Utility.DateTimeExtension.ToAheadingDateTime(System.DateTime)">
+            <summary>
+            日期 格式未 2012-01-31 12:45:35
+            </summary>
+            <param name="self"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Aheading.ZJJX.Utility.DateTimeExtension.ToAheadingTime(System.DateTime)">
+            <summary>
+            时间 格式未05:45:45
+            </summary>
+            <param name="self"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Aheading.ZJJX.Utility.DateTimeExtension.ToAheadingTimeWithMilliSecond(System.DateTime)">
+            <summary>
+            时间带微秒 格式未05:45:45.456
+            </summary>
+            <param name="self"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Aheading.ZJJX.Utility.DateTimeExtension.ToAheadingDateTimeWithMilliSecond(System.DateTime)">
+            <summary>
+             日期时间 带微秒 2012-01-31 05:45:45.456
+            </summary>
+            <param name="self"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PM.BLL.BLL_taskInfoB">
+            <summary>
+            任务信息数据处理
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_taskInfoB.AutoCreateGetTask(System.Int32,System.DateTime)">
+            <summary>
+            自动创建抓取任务
+            参数 ts:回溯天数  startDate：任务创建不能超过的最早日期
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_taskInfoB.AutoCreateGetTaskNew(System.Int32,System.DateTime)">
+            <summary>
+            新的自动创建抓取任务（分为可以自动监测的报纸和不能自动监测的报纸）
+            现在只创建不能自动检测的报纸的抓去任务 
+            自动检测报纸的任务在外网检测服务里面创建
+            </summary>
+            <param name="ts">不能自动监测报纸的回溯天数</param>
+            <param name="startDate">创建任务不能超过最早时间</param>
+        </member>
+        <member name="M:PM.BLL.BLL_taskInfoB.ManualCreateTask(System.Int32,System.DateTime,System.DateTime,System.String,System.DateTime)">
+            <summary>
+            手动创建任务(会自动排除没有出版的日期)
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_taskInfoB.getNotOverTaskList(System.Int32)">
+            <summary>
+            获取未完成的任务列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_taskInfoB.getAllNotOverTaskList">
+            <summary>
+            获取所有未完成的任务抓取和分析
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_taskInfoB.getNeedRunTaskList(System.Int32,System.String)">
+            <summary>
+            获取当前需要运行的任务列表
+            </summary>
+            <returns></returns>	
+        </member>
+        <member name="M:PM.BLL.BLL_taskInfoB.getNeedRunTaskListForSF(System.Int32,System.String)">
+            <summary>
+            获取当前需要运行的任务列表
+            </summary>
+            <returns></returns>	
+        </member>
+        <member name="M:PM.BLL.BLL_taskInfoB.delOverTask">
+            <summary>
+            删除所有已完成的任务
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_taskInfoB.delOverTask(System.Int32)">
+            <summary>
+            删除所有已完成的任务
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_taskInfoB.recoverTask(System.Int32)">
+            <summary>
+            回收长时间处在“正在运行”状态的任务
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_taskInfoB.recoverTask(System.String)">
+            <summary>
+            回收某服务器处在“正在运行”状态的任务
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_taskInfoB.haveNotOverTask(System.Int32,System.Int32,System.DateTime)">
+            <summary>
+            判断是否有未完成的任务
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_taskInfoB.GetModel(System.Int32)">
+            <summary>
+            获取一个任务信息实体
+            </summary>
+            <returns>一个任务信息实体</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_taskInfoB.GetList(System.String)">
+            <summary>
+            获取任务信息列表
+            </summary>
+            <returns>任务信息列表</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_taskInfoB.AddGetTask(System.Int32,System.DateTime,System.DateTime)">
+            <summary>
+            添加任务信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_taskInfoB.AddFXTask(System.Int32,System.DateTime,System.DateTime)">
+            <summary>
+            添加分析任务信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_taskInfoB.Add(PM.Model.MDL_taskInfoB)">
+            <summary>
+            添加任务信息列表
+            </summary>
+            <returns>所影响的行</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_taskInfoB.Update(PM.Model.MDL_taskInfoB)">
+            <summary>
+            修改任务信息,返回所影响的行数
+            </summary>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_taskInfoB.Delete(System.Int32)">
+            <summary>
+            删除任务信息
+            </summary>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_taskInfoB.UpdateTaskForOK(System.Int32)">
+            <summary>
+            成功时更新任务状态
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_taskInfoB.UpdateTaskForErr(System.Int32)">
+            <summary>
+             失败时更新任务状态
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_taskInfoB.UpdateTaskForStart(System.Int32)">
+            <summary>
+             开始运行时更新任务状态
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_taskInfoB.GetPaperPageList(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取任务信息列表
+            </summary>
+            <returns>分页信息返回数据结构</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_taskInfoB.GetChargePageList(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取收费抓取列表
+            </summary>
+            <returns>分页信息返回数据结构</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_taskInfoB.UpdateCookie(System.Int32,System.String)">
+            <summary>
+            修改Cookie值,返回所影响的行数
+            </summary>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_taskInfoB.GetCookie(System.Int32)">
+            <summary>
+            获取Cookie值
+            </summary>
+            <returns>Cookie值</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_taskInfoB.GetList(System.Int32)">
+            <summary>
+            获取任务列表
+            </summary>
+            <returns>任务列表</returns>
+        </member>
+        <member name="T:PM.BLL.BLL_paperTypeB">
+            <summary>
+            报纸分类数据处理
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_paperTypeB.#ctor">
+            <summary>
+            报纸分类数据处理
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_paperTypeB.GetModel(System.Int32)">
+            <summary>
+            获取一个报纸分类实体
+            </summary>
+            <returns>一个报纸分类实体</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperTypeB.GetList(System.String)">
+            <summary>
+            获取报纸分类列表
+            </summary>
+            <returns>报纸分类列表</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperTypeB.Add(PM.Model.MDL_paperTypeB)">
+            <summary>
+            添加报纸分类,返回所影响的行数
+            </summary>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperTypeB.Update(PM.Model.MDL_paperTypeB)">
+            <summary>
+            修改报纸分类,返回所影响的行数
+            </summary>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperTypeB.Delete(System.Int32)">
+            <summary>
+            删除报纸分类,返回所影响的行数
+            </summary>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperTypeB.GetpaperType">
+            <summary>
+            获取报纸分类信息
+            </summary>
+            <returns>报纸分类信息</returns>
+        </member>
+        <member name="T:PM.BLL.BLL_paperNewBMB">
+            <summary>
+            报纸最新版面信息数据处理
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_paperNewBMB.GetModel(System.Int64)">
+            <summary>
+            获取一个报纸最新版面信息表实体
+            </summary>
+            <returns>报纸最新版面信息表实体</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperNewBMB.Add(PM.Model.MDL_paperNewBMB)">
+            <summary>
+            添加报纸最新版面信息
+            </summary>
+            <returns>所影响的行</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperNewBMB.Update(PM.Model.MDL_paperNewBMB)">
+            <summary>
+            修改报纸最新版面信息
+            </summary>
+            <returns>所影响的行</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperNewBMB.Delete(System.Int64)">
+            <summary>
+            删除报纸最新版面信息
+            </summary>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperNewBMB.DeleteWithPaperID(System.Int32)">
+            <summary>
+             删除报纸最新版面信息(根据报纸ID)
+            </summary>
+            <returns>所影响的行数</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_paperNewBMB.UpdateWithPaperFirstBMB(System.Int32)">
+            <summary>
+            更新报纸最新版面信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PM.BLL.BLL_NetworkMonitoring">
+            <summary>
+            用于外网监测的类
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_NetworkMonitoring.GetPaperList(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取有效URL报纸信息列表
+            </summary>
+            <returns>分页信息返回数据结构</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_NetworkMonitoring.CheckURL(System.String)">
+            <summary>
+            监测网址是否有效
+            </summary>
+            <param name="url">用于监测的网址http://</param>
+            <returns>true 有效；false 无效</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_NetworkMonitoring.getListNotOverPaper">
+            <summary>
+            获取所有符合要求的报纸列表（URL未赋值）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_NetworkMonitoring.getListAutoPaperAllQC(System.String)">
+            <summary>
+            得到一张自动检测报纸的所有需要抓取的记录
+            用于PMTaskService
+            </summary>
+            <param name="paperID">报纸ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_NetworkMonitoring.ReplaceURL(System.String,System.DateTime)">
+            <summary>
+            填充回溯时间内的URL
+            </summary>
+            <param name="url">报纸的URL带有yyyy-mm-dd</param>
+            <param name="RQ">需要填充的日期</param>
+            <returns>返回正确的URL</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_NetworkMonitoring.ReplaceURL(System.String,System.Int32)">
+            <summary>
+            填充回溯时间内的URL
+            </summary>
+            <param name="url">报纸的URL带有yyyy-mm-dd</param>
+            <param name="ts">回溯的日期</param>
+            <returns>返回正确的URL</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_NetworkMonitoring.DeleteFillTable(System.Int32)">
+            <summary>
+            删除表L_FillPaperURL表中的历史数据
+            <param name="ts">多少天前的</param>
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_NetworkMonitoring.GetAllOverTask">
+            <summary>
+            获取所有已经完成的任务
+            </summary>
+            <returns>返回paperID 和 RQ 的列表</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_NetworkMonitoring.getAllNotOverTaskList">
+            <summary>
+            获取所有未完成的任务抓取和分析
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_NetworkMonitoring.FillURLToPaperTest(System.Int32)">
+            <summary>
+            用于操作外网检测的方法
+            </summary>
+            <param name="ts">回溯天数</param>
+        </member>
+        <member name="T:PM.BLL.BLL_ArticleInfoB">
+            <summary>
+            报纸报道信息表数据处理
+            </summary>
+        </member>
+        <member name="M:PM.BLL.BLL_ArticleInfoB.createXML(PM.Model.MDL_ArticleInfoB)">
+            <summary>
+            根据单个文章实表生成XML
+            </summary>
+            <returns>XML文档对象</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_ArticleInfoB.createXML(System.Collections.Generic.List{PM.Model.MDL_ArticleInfoB})">
+            <summary>
+            根据文章实体列表生成XML(列表中的文章必须是同一版)
+            </summary>
+            <returns>XML文档对象</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_ArticleInfoB.createMetaGroupXML(PM.Model.MDL_ArticleInfoB)">
+            <summary>
+            生成版面部份XML
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_ArticleInfoB.createArticleXML(PM.Model.MDL_ArticleInfoB)">
+            <summary>
+            生成文章部份XML
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_ArticleInfoB.getArticleListFromXML(System.String)">
+            <summary>
+            根据版面XML生成文章实体例表
+            </summary>
+            <returns>文章实体例表</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_ArticleInfoB.getArticleListFromXML(System.Xml.XmlDocument)">
+            <summary>
+            根据版面XML生成文章实体例表
+            </summary>
+            <returns>文章实体例表</returns>
+        </member>
+        <member name="M:PM.BLL.BLL_ArticleInfoB.getMaxNuValue(System.Int32,System.Int32,System.String)">
+            <summary>
+            获取库中文章已有的最大ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_ArticleInfoB.getModel(System.Int64,System.String)">
+            <summary>
+            获取文章实体
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_ArticleInfoB.add(PM.Model.MDL_ArticleInfoB,System.String)">
+            <summary>
+            添加文章
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_ArticleInfoB.Update(PM.Model.MDL_ArticleInfoB,System.String)">
+            <summary>
+            修改文章
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_ArticleInfoB.delete(System.Int64,System.String)">
+            <summary>
+            删除文章
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_ArticleInfoB.deleteBMArticle(System.Int32,System.String,System.Int32,System.String)">
+            <summary>
+            删除某个日期某个版面的所有文章
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_ArticleInfoB.getNrStr(PM.Model.MDL_ArticleInfoB)">
+            <summary>
+            得到内容串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_ArticleInfoB.createOtherRes(PM.Model.MDL_ArticleInfoB)">
+            <summary>
+            生成文章其它精度资源
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_ArticleInfoB.AnalysisBMOtherRes(System.String)">
+            <summary>
+            解析版面其它精度资源
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_ArticleInfoB.AnalysisCT(System.String,System.String,System.String,System.String)">
+            <summary>
+            解析插图
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.BLL_ArticleInfoB.checkArticleDB(System.String)">
+            <summary>
+            检测文章库的可能状态
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PM.BLL.Resource.FileClass">
+            <summary>
+            网络文件操作类
+            </summary>
+        </member>
+        <member name="F:PM.BLL.Resource.FileClass._blockLength">
+            <summary>
+            文件数据块大小
+            </summary>
+        </member>
+        <member name="M:PM.BLL.Resource.FileClass.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PM.BLL.Resource.FileClass.SaveFile(System.Net.Sockets.NetworkStream)">
+            <summary>
+            文件保到磁盘 选发送 SavefilePath 、fileSize
+            </summary>
+            <param name="stream">网络流</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.Resource.FileClass.getFile(System.Net.Sockets.NetworkStream)">
+            <summary>
+            获取文件 选发送 filePath
+            </summary>
+            <param name="stream">网络流</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.Resource.FileClass.SaveFile2(System.Net.Sockets.NetworkStream)">
+            <summary>
+            文件保到磁盘2 选发送 SavefilePath 、fileSize
+            </summary>
+            <param name="stream">网络流</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.Resource.FileClass.deleteFile(System.String)">
+            <summary>
+            删除文件
+            </summary>
+            <param name="filePath">文件路径</param>
+        </member>
+        <member name="T:PM.BLL.get.FZServer">
+            <summary>
+            方正抓取与分析服务器
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZServer.AnalysisThreadSL">
+            <summary>
+            分析的线程数量
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZServer.HtmlSavePath">
+            <summary>
+            抓取的html及资源文件存储路径
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZServer.XmlSavePath">
+            <summary>
+            分析后的xml及资源文件存储路径
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZServer.convergeServerID">
+            <summary>
+            抓取服务器ID
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZServer.getInterValTime">
+            <summary>
+            抓取的时钟周期，单位为毫秒
+            </summary>
+        </member>
+        <member name="F:PM.BLL.get.FZServer.AnalysisInterValTime">
+            <summary>
+            分析的时钟周期，单位为毫秒
+            </summary>
+        </member>
+        <member name="M:PM.BLL.get.FZServer.#ctor(System.String,System.String,System.Int32)">
+            <summary>
+            构造器(抓取用)
+            </summary>
+            <param name="_HtmlSavePath">抓取的html及资源文件存储路径</param>
+            <param name="_convergeServerID">抓取服务器ID</param>
+            <param name="_getInterValTime">抓取的时钟周期，单位为毫秒</param>
+        </member>
+        <member name="M:PM.BLL.get.FZServer.#ctor(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            构造器(分析用)
+            </summary>
+            <param name="_HtmlSavePath">抓取的html及资源文件存储路径</param>
+            <param name="_XmlSavePath">分析后的xml及资源文件存储路径</param>
+            <param name="_convergeServerID">抓取服务器ID</param>
+            <param name="_AnalysisInterValTime">分析的时钟周期，单位为毫秒</param>
+            <param name="_AnalysisThreadSL">分析的线程数量</param>
+        </member>
+        <member name="M:PM.BLL.get.FZServer.RunGetTask">
+            <summary>
+            运行抓取任务
+            </summary>
+        </member>
+        <member name="M:PM.BLL.get.FZServer.recoverTask">
+            <summary>
+            回收本服务器所有正在运行的任务
+            </summary>
+        </member>
+        <member name="M:PM.BLL.get.FZServer.RunAnalysisTask">
+            <summary>
+            运行分析任务
+            </summary>
+        </member>
+        <member name="M:PM.BLL.get.FZServer.CanUseThread(System.Threading.Thread[])">
+            <summary>
+            检查线程当前可用状态
+            </summary>
+            <param name="tArr">线程数组</param>
+            <returns>-1：没有可用的线程，大于-1表示该线程数组元素可用</returns>
+        </member>
+        <member name="M:PM.BLL.get.FZServer.threadIsOver(System.Threading.Thread[])">
+            <summary>
+            检查所有线程是否都已完成
+            </summary>
+            <param name="tArr">线程数组</param>
+            <returns>true：已全部完成，false：未全部完成</returns>
+        </member>
+        <member name="T:PM.BLL.search.SearchControl">
+            <summary>
+            查询控制器
+            </summary>
+        </member>
+        <member name="M:PM.BLL.search.SearchControl.search(System.String,System.Int32,System.Int32,System.String,System.Int32,System.Boolean)">
+            <summary>
+            查询数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.SearchControl.getDataWithKID(System.String,System.String)">
+            <summary>
+            根据KID得到需要的数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.SearchControl.threadIsOver(System.Threading.Thread[])">
+            <summary>
+            检查所有线程是否都已完成
+            </summary>
+            <returns>true：已全部完成，false：未全部完成</returns>
+        </member>
+        <member name="T:PM.BLL.Comm.RegClass">
+            <summary>
+            正则类
+            </summary>
+        </member>
+        <member name="M:PM.BLL.Comm.RegClass.getMatch(System.String,System.String,System.String)">
+            <summary>
+            获取匹配结果
+            </summary>
+            <param name="input">用来匹配的字符串</param>
+            <param name="pattern">原定义的正则表达式，含有自定义的标签</param>
+            <param name="csStr">分组自定义的标签串，多个间用“,”隔开</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.Comm.RegClass.ReplaceHtmlForXML(System.String)">
+            <summary>
+            替换html中不可转成XML的字串
+            </summary>
+            <param name="html">原始html</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.Comm.RegClass.CreateRegStr(System.String,System.String)">
+            <summary>
+            生成正则表达式
+            </summary>
+            <param name="pattern">原定义的正则表达式，含有自定义的标签</param>
+            <param name="csStr">分组自定义的标签串，多个间用“,”隔开</param>
+            <returns></returns>
+        </member>
+        <member name="T:PM.BLL.Resource.RWThreadClass">
+            <summary>
+            调动要执行的任务类
+            </summary>
+        </member>
+        <member name="F:PM.BLL.Resource.RWThreadClass.client">
+            <summary>
+            客户连接
+            </summary>
+        </member>
+        <member name="M:PM.BLL.Resource.RWThreadClass.taskAttemper">
+            <summary>
+            任务调度
+            </summary>
+        </member>
+        <member name="T:PM.BLL.search.SearchSql">
+            <summary>
+            Sql查询器
+            </summary>
+        </member>
+        <member name="F:PM.BLL.search.SearchSql._connStr">
+            <summary>
+            数据库链接串
+            </summary>
+        </member>
+        <member name="F:PM.BLL.search.SearchSql._sql">
+            <summary>
+            要运行的sql代码
+            </summary>
+        </member>
+        <member name="F:PM.BLL.search.SearchSql._theadNu">
+            <summary>
+            线程序号
+            </summary>
+        </member>
+        <member name="F:PM.BLL.search.SearchSql._RetTable">
+            <summary>
+            返回的查询结果
+            </summary>
+        </member>
+        <member name="F:PM.BLL.search.SearchSql._startTime">
+            <summary>
+            开始运行时间
+            </summary>
+        </member>
+        <member name="F:PM.BLL.search.SearchSql._endTime">
+            <summary>
+            结束运行时间
+            </summary>
+        </member>
+        <member name="F:PM.BLL.search.SearchSql._totalRunLong">
+            <summary>
+            运行时长（单位毫秒）
+            </summary>
+        </member>
+        <member name="F:PM.BLL.search.SearchSql._searchLong">
+            <summary>
+            查询时长（单位毫秒）
+            </summary>
+        </member>
+        <member name="F:PM.BLL.search.SearchSql._delLong">
+            <summary>
+            剔除时长（单位毫秒）
+            </summary>
+        </member>
+        <member name="F:PM.BLL.search.SearchSql._err">
+            <summary>
+            是否有错误 true：有错误、false：无有错误
+            </summary>
+        </member>
+        <member name="F:PM.BLL.search.SearchSql._errMeg">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="F:PM.BLL.search.SearchSql._dicPaper">
+            <summary>
+            所选报纸ID列表。null或0个说明全部报纸，不需要剔除
+            </summary>
+        </member>
+        <member name="M:PM.BLL.search.SearchSql.#ctor(System.String,System.String,System.Int32,System.Collections.Generic.Dictionary{System.String,System.Int32})">
+            <summary>
+            构造器
+            </summary>
+            <param name="connStr">数据库链接串</param>
+            <param name="sql">要运行的sql代码</param>
+            <param name="theadNu">线程序号</param>
+            <param name="dicPaper">所选报纸ID列表。null或0个说明全部报纸，不需要剔除</param>
+        </member>
+        <member name="M:PM.BLL.search.SearchSql.#ctor(System.String,System.String,System.Int32)">
+            <summary>
+            构造器
+            </summary>
+        </member>
+        <member name="M:PM.BLL.search.SearchSql.runSearch">
+            <summary>
+            执行查询
+            </summary>
+        </member>
+        <member name="M:PM.BLL.search.SearchSql.runSearchNotDelRow">
+            <summary>
+            执行查询
+            </summary>
+        </member>
+        <member name="P:PM.BLL.search.SearchSql.RetTable">
+            <summary>
+            返回的查询结果
+            </summary>
+        </member>
+        <member name="P:PM.BLL.search.SearchSql.startTime">
+            <summary>
+            开始运行时间
+            </summary>
+        </member>
+        <member name="P:PM.BLL.search.SearchSql.endTime">
+            <summary>
+            结束运行时间
+            </summary>
+        </member>
+        <member name="P:PM.BLL.search.SearchSql.totalRunLong">
+            <summary>
+            运行时长（单位毫秒）
+            </summary>
+        </member>
+        <member name="P:PM.BLL.search.SearchSql.searchLong">
+            <summary>
+            查询时长（单位毫秒）
+            </summary>
+        </member>
+        <member name="P:PM.BLL.search.SearchSql.delLong">
+            <summary>
+            剔除时长（单位毫秒）
+            </summary>
+        </member>
+        <member name="P:PM.BLL.search.SearchSql.err">
+            <summary>
+            是否有错误 true：有错误、false：无有错误
+            </summary>
+        </member>
+        <member name="P:PM.BLL.search.SearchSql.errMeg">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="T:PM.BLL.search.TCPAgent">
+            <summary>
+            TCP代理类。检索引擎所有对外的接口都通过本类来完成。
+            </summary>
+        </member>
+        <member name="M:PM.BLL.search.TCPAgent.FullSearch(System.Net.Sockets.NetworkStream)">
+            <summary>
+            全文查询
+            如果没有满足件件的数据返回空的table
+            </summary>   
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.TCPAgent.FullSearchToGroup(System.Net.Sockets.NetworkStream)">
+            <summary>
+            全文查询并返回分组
+            如果没有满足件件的数据返回空的table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.TCPAgent.FullSearchToGroupGetYear(System.Net.Sockets.NetworkStream)">
+            <summary>
+            全文查询并返回分组(获取某一年份数据)
+            如果没有满足件件的数据返回空的table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.TCPAgent.FullSearchToGroupGetPaper(System.Net.Sockets.NetworkStream)">
+            <summary>
+            全文查询并返回分组(获取某一报纸数据)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.TCPAgent.FXSearch(System.Net.Sockets.NetworkStream)">
+            <summary>
+            分项查询
+            如果没有满足条件的数据返回空的table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.TCPAgent.FXSearchToGroup(System.Net.Sockets.NetworkStream)">
+            <summary>
+            分项查询并返回分组
+            如果没有满足件件的数据返回空的table
+            PageRetModel.otherDS 第一个表“年分组汇总信息表”
+            第二个表“报纸分组汇总信息表”
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.TCPAgent.FXSearchToGroupGetYear(System.Net.Sockets.NetworkStream)">
+            <summary>
+            分项查询并返回分组(获取某一年份数据)
+            如果没有满足件件的数据返回空的table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.TCPAgent.FXSearchToGroupGetPaper(System.Net.Sockets.NetworkStream)">
+            <summary>
+            分项查询并返回分组(获取某一报纸数据)
+            如果没有满足件件的数据返回空的table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.TCPAgent.getBMList(System.Net.Sockets.NetworkStream)">
+            <summary>
+            获取某一段日期内的报纸版面列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.TCPAgent.getFirstBMList(System.Net.Sockets.NetworkStream)">
+            <summary>
+            获取某天报纸第一版信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.TCPAgent.UpdateFirstBMList(System.Net.Sockets.NetworkStream)">
+            <summary>
+            更新报纸首版信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.TCPAgent.getArticleListForSZB(System.Net.Sockets.NetworkStream)">
+            <summary>
+            获取某一段日期内某一版面的文章列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.TCPAgent.getArticleList(System.Net.Sockets.NetworkStream)">
+            <summary>
+            获取某一段日期内的文章列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.TCPAgent.getDataWithKID(System.Net.Sockets.NetworkStream)">
+            <summary>
+            根据KID得到需要的数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.TCPAgent.getArticleInfoBModel(System.Net.Sockets.NetworkStream)">
+            <summary>
+            根据KID得文章实体
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.TCPAgent.UpdateArticleInfoB(System.Net.Sockets.NetworkStream)">
+            <summary>
+            修改文章信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.TCPAgent.delArticleInfoB(System.Net.Sockets.NetworkStream)">
+            <summary>
+            删除文章信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.TCPAgent.getPaperName(System.Net.Sockets.NetworkStream)">
+            <summary>
+            获取报纸名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.TCPAgent.getPaperID(System.Net.Sockets.NetworkStream)">
+            <summary>
+            获取报纸ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.TCPAgent.getResourcesPath(System.Net.Sockets.NetworkStream)">
+            <summary>
+            获取资源文件存储路径
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.TCPAgent.getResourcesServerAndPath(System.Net.Sockets.NetworkStream)">
+            <summary>
+            获取资源服务器和文件存储路径
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.TCPAgent.getResourcesServerAndPath2(System.Net.Sockets.NetworkStream)">
+            <summary>
+            获取资源服务器和文件存储路径2
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.TCPAgent.getResourcesServer(System.Net.Sockets.NetworkStream)">
+            <summary>
+            获取资源服务器
+            </summary>
+            <param name="stream">客户连接的网络流</param>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.TCPAgent.LoadCanUseDB(System.Net.Sockets.NetworkStream)">
+            <summary>
+            重新加载当前可用的数据库实体列表
+            </summary>
+        </member>
+        <member name="M:PM.BLL.search.TCPAgent.ClearCache(System.Net.Sockets.NetworkStream)">
+            <summary>
+            清空缓存
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.TCPAgent.getCacheTotalRowSL(System.Net.Sockets.NetworkStream)">
+            <summary>
+            获取缓存总行数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.TCPAgent.getCacheSL(System.Net.Sockets.NetworkStream)">
+            <summary>
+            获取缓存个数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PM.BLL.search.TCPAgent.ArticleRK(System.Net.Sockets.NetworkStream)">
+            <summary>
+            文章入库
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PM.BLL.Resource.ResourceServer">
+            <summary>
+            资源服务器
+            </summary>
+        </member>
+        <member name="F:PM.BLL.Resource.ResourceServer.server">
+            <summary>
+            TcpListener
+            </summary>
+        </member>
+        <member name="F:PM.BLL.Resource.ResourceServer._ResourceServerIP">
+            <summary>
+            资源服务器IP地址
+            </summary>
+        </member>
+        <member name="F:PM.BLL.Resource.ResourceServer._ResourcePort">
+            <summary>
+            TCP端口
+            </summary>
+        </member>
+        <member name="F:PM.BLL.Resource.ResourceServer._ResourceTimeout">
+            <summary>
+            超时时间（单位：毫秒）
+            </summary>
+        </member>
+        <member name="M:PM.BLL.Resource.ResourceServer.#ctor(System.String,System.Int32,System.Int32)">
+            <summary>
+            构造器
+            </summary>
+            <param name="ResourceServerIP">资源服务器IP地址</param>
+            <param name="ResourcePort">TCP端口</param>
+            <param name="ResourceTimeout">超时时间（单位：秒）</param>
+        </member>
+        <member name="M:PM.BLL.Resource.ResourceServer.Start">
+            <summary>
+            启动资源服务器
+            </summary>
+        </member>
+        <member name="M:PM.BLL.Resource.ResourceServer.Stop">
+            <summary>
+            关闭资源服务器
+            </summary>
+        </member>
+    </members>
+</doc>
